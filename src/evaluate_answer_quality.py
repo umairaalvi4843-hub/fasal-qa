@@ -1,6 +1,7 @@
 import json
 import re
 import sys
+import time
 import unicodedata
 from pathlib import Path
 
@@ -17,6 +18,10 @@ def normalize(text):
     text = unicodedata.normalize("NFKC", text)
     text = text.replace(",", "")
     text = text.replace("₹", " ")
+
+    # Remove spaces inserted inside numbers, e.g. "6 000" -> "6000".
+    text = re.sub(r"(?<=\d)\s+(?=\d)", "", text)
+
     text = re.sub(r"[^\w]+", " ", text.lower())
     return " ".join(text.split())
 
@@ -67,7 +72,7 @@ results = []
 print("\nFASAL QA ANSWER QUALITY EVALUATION")
 print("=" * 60)
 
-for test in tests:
+for index, test in enumerate(tests):
     print(f"\nRunning {test['id']}: {test['query']}")
 
     try:
@@ -149,6 +154,10 @@ for test in tests:
             "passed": False
         })
         print("ERROR:", type(error).__name__, error)
+
+    if index < len(tests) - 1:
+        print("Waiting 15 seconds before the next test...")
+        time.sleep(15)
 
 passed_count = sum(item["passed"] for item in results)
 total_count = len(results)

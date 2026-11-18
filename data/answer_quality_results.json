@@ -1,17 +1,17 @@
 {
-  "total_tests": 6,
-  "passed": 6,
-  "failed": 0,
-  "pass_rate": 1.0,
+  "total_tests": 10,
+  "passed": 9,
+  "failed": 1,
+  "pass_rate": 0.9,
   "results": [
     {
       "id": "AQ01",
       "query": "How much money does a farmer receive under PM-KISAN every year?",
       "mode": "Groq-generated answer",
-      "answer": "A farmer who is eligible for the PM‑Kisan scheme receives a total cash benefit of **₹ 6,000 per year**. This amount is paid in three equal installments of **₹ 2,000 each** (one every four months)[PMKISAN_SA2_P18].",
+      "answer": "A farmer who is eligible for the PM‑Kisan scheme receives a total financial benefit of **₹6,000 per year**, paid in three equal installments of ₹2,000 each [PMKISAN_SA2_P18].",
       "retrieved_passages": [
-        "PMKISAN_SA2_P8",
         "PMKISAN_SA2_P18",
+        "PMKISAN_SA2_P8",
         "PMKISAN_SA2_P16"
       ],
       "citations": [
@@ -19,13 +19,12 @@
       ],
       "checks": {
         "mode": true,
+        "language": true,
         "required_facts": true,
         "forbidden_claims": true,
         "citation_format": true,
         "citation_grounding": true,
-        "expected_citation": true,
-        "citation_exists_in_corpus": true,
-        "citation_is_retrieved": true
+        "expected_citation": true
       },
       "passed": true
     },
@@ -36,19 +35,18 @@
       "answer": "The retrieved official passages do not contain enough matching information to answer this question reliably.",
       "retrieved_passages": [
         "PMKISAN_SA2_P8",
-        "PMKISAN_SA2_P16",
-        "PMKISAN_SA2_P7"
+        "PMKISAN_SA2_P7",
+        "PMKISAN_SA2_P16"
       ],
       "citations": [],
       "checks": {
         "mode": true,
+        "language": true,
         "required_facts": true,
         "forbidden_claims": true,
         "citation_format": true,
         "citation_grounding": true,
-        "expected_citation": true,
-        "citation_exists_in_corpus": true,
-        "citation_is_retrieved": true
+        "expected_citation": true
       },
       "passed": true
     },
@@ -58,20 +56,19 @@
       "mode": "Insufficient evidence",
       "answer": "This question requires current or external information that is not available in the official scheme documents.",
       "retrieved_passages": [
+        "PMFBY_SA2_P9",
         "PMFBY_SA2_P219",
-        "KCC_SA2_P19",
-        "PMFBY_SA2_P9"
+        "KCC_SA2_P19"
       ],
       "citations": [],
       "checks": {
         "mode": true,
+        "language": true,
         "required_facts": true,
         "forbidden_claims": true,
         "citation_format": true,
         "citation_grounding": true,
-        "expected_citation": true,
-        "citation_exists_in_corpus": true,
-        "citation_is_retrieved": true
+        "expected_citation": true
       },
       "passed": true
     },
@@ -79,24 +76,23 @@
       "id": "AQ04",
       "query": "Can tenant farmers and sharecroppers obtain a Kisan Credit Card?",
       "mode": "Groq-generated answer",
-      "answer": "Yes. Tenant farmers and sharecroppers are listed among the categories that are eligible to obtain a Kisan Credit Card for working‑capital needs [KCC_SA2_P6].",
+      "answer": "Yes. Tenant farmers and sharecroppers are listed among the categories that are eligible to avail credit for cultivation, which includes obtaining a Kisan Credit Card [KCC_SA2_P6].",
       "retrieved_passages": [
-        "PMFBY_SA2_P25",
+        "KCC_SA2_P6",
         "PMFBY_SA2_P61",
-        "KCC_SA2_P6"
+        "PMFBY_SA2_P25"
       ],
       "citations": [
         "KCC_SA2_P6"
       ],
       "checks": {
         "mode": true,
+        "language": true,
         "required_facts": true,
         "forbidden_claims": true,
         "citation_format": true,
         "citation_grounding": true,
-        "expected_citation": true,
-        "citation_exists_in_corpus": true,
-        "citation_is_retrieved": true
+        "expected_citation": true
       },
       "passed": true
     },
@@ -104,10 +100,10 @@
       "id": "AQ05",
       "query": "What is the PMFBY yield-based crop insurance claim formula?",
       "mode": "Groq-generated answer",
-      "answer": "The PMFBY claim is calculated at the Insurance‑Unit level using the formula  \n\n**Claim = (Threshold Yield – Actual Yield) ÷ Threshold Yield × Sum Insured**  \n\nwhere **Threshold Yield** is the average of the best 5 years out of the past 7 years, multiplied by the notified indemnity level for that crop and season[PMFBY_SA2_P233].",
+      "answer": "The PMFBY yield‑based claim is calculated at the Insurance Unit (IU) level using the formula:\n\n**Claim = (Threshold Yield – Actual Yield) ÷ Threshold Yield × Sum Insured**  \n\n[PMFBY_SA2_P233]",
       "retrieved_passages": [
-        "PMFBY_SA2_P232",
         "PMFBY_SA2_P233",
+        "PMFBY_SA2_P232",
         "PMFBY_SA2_P82"
       ],
       "citations": [
@@ -115,13 +111,12 @@
       ],
       "checks": {
         "mode": true,
+        "language": true,
         "required_facts": true,
         "forbidden_claims": true,
         "citation_format": true,
         "citation_grounding": true,
-        "expected_citation": true,
-        "citation_exists_in_corpus": true,
-        "citation_is_retrieved": true
+        "expected_citation": true
       },
       "passed": true
     },
@@ -129,25 +124,120 @@
       "id": "AQ06",
       "query": "Does PMFBY exclude a particular type of crop loss if the supplied passages do not specify it?",
       "mode": "Groq-generated answer",
-      "answer": "The passages you have shared describe how PMFBY handles different loss types – such as localized claims, mid‑term loss, yield loss and post‑harvest loss – and how the sum insured is adjusted for them[PMFBY_SA2_P497].  \nHowever, none of the provided documents state that PMFBY excludes any particular type of crop loss. Because the passages do not contain an explicit exclusion, we cannot say that the scheme excludes a loss type that is not mentioned.  \n\nSo, based on the available documents, no specific exclusion is established.",
+      "answer": "The passages you provided describe how PMFBY handles different loss types (mid‑term, localized, yield‑loss) and how the sum insured is adjusted, but they do not mention any crop‑loss category that is excluded from coverage. Therefore, based on the available documents, there is no stated exclusion of a particular type of crop loss. [PMFBY_SA2_P484] [PMFBY_SA2_P497]",
       "retrieved_passages": [
-        "PMFBY_SA2_P484",
+        "PMFBY_SA2_P233",
         "PMFBY_SA2_P497",
-        "PMFBY_SA2_P233"
+        "PMFBY_SA2_P484"
       ],
       "citations": [
+        "PMFBY_SA2_P484",
         "PMFBY_SA2_P497"
       ],
       "checks": {
         "mode": true,
+        "language": true,
+        "required_facts": false,
+        "forbidden_claims": true,
+        "citation_format": true,
+        "citation_grounding": true,
+        "expected_citation": true
+      },
+      "passed": false
+    },
+    {
+      "id": "AQ07",
+      "query": "PM-KISAN ke tahat kisan ko har saal kitni financial help milti hai?",
+      "mode": "Groq-generated answer",
+      "answer": "PM‑Kisan ke tahat har eligible kisan ko Rs.6,000 per year direct bank account mein DBT ke through milta hai[PMKISAN_SA2_P1].",
+      "retrieved_passages": [
+        "PMKISAN_SA2_P8",
+        "PMFBY_SA2_P21",
+        "PMKISAN_SA2_P1"
+      ],
+      "citations": [
+        "PMKISAN_SA2_P1"
+      ],
+      "checks": {
+        "mode": true,
+        "language": true,
         "required_facts": true,
         "forbidden_claims": true,
         "citation_format": true,
         "citation_grounding": true,
-        "expected_citation": true,
-        "citation_exists_in_corpus": true,
-        "citation_is_retrieved": true,
-        "exclusion_limitation": true
+        "expected_citation": true
+      },
+      "passed": true
+    },
+    {
+      "id": "AQ08",
+      "query": "पीएम-किसान योजना के तहत किसानों को सालाना कितनी आर्थिक सहायता मिलती है?",
+      "mode": "Groq-generated answer",
+      "answer": "पीएम‑किसान योजना के तहत पात्र किसानों को सालाना ₹ 6,000 की आर्थिक सहायता दी जाती है, जिसे तीन किस्तों में प्रत्येक ₹ 2,000 के रूप में वितरित किया जाता है[PMKISAN_SA2_P18].",
+      "retrieved_passages": [
+        "PMKISAN_SA2_P18",
+        "PMKISAN_SA2_P16",
+        "PMFBY_SA2_P21"
+      ],
+      "citations": [
+        "PMKISAN_SA2_P18"
+      ],
+      "checks": {
+        "mode": true,
+        "language": true,
+        "required_facts": true,
+        "forbidden_claims": true,
+        "citation_format": true,
+        "citation_grounding": true,
+        "expected_citation": true
+      },
+      "passed": true
+    },
+    {
+      "id": "AQ09",
+      "query": "Kya tenant farmers aur sharecroppers KCC ke liye apply kar sakte hain?",
+      "mode": "Groq-generated answer",
+      "answer": "Haan, tenant farmers aur sharecroppers dono KCC (Kisan Credit Card) ke liye apply kar sakte hain. Ye dono groups KCC ke eligible group mein shamil hain [KCC_SA2_P6].",
+      "retrieved_passages": [
+        "KCC_SA2_P6",
+        "PMFBY_SA2_P25",
+        "KCC_SA2_P14"
+      ],
+      "citations": [
+        "KCC_SA2_P6"
+      ],
+      "checks": {
+        "mode": true,
+        "language": true,
+        "required_facts": true,
+        "forbidden_claims": true,
+        "citation_format": true,
+        "citation_grounding": true,
+        "expected_citation": true
+      },
+      "passed": true
+    },
+    {
+      "id": "AQ10",
+      "query": "क्या किरायेदार किसान और बटाईदार किसान किसान क्रेडिट कार्ड के लिए पात्र हैं?",
+      "mode": "Groq-generated answer",
+      "answer": "हाँ, किरायेदार किसान और बटाईदार (शेयरक्रॉपर) किसान भी किसान क्रेडिट कार्ड (KCC) के लिए पात्र हैं। यह नियम KCC के पात्रता मानदंडों में स्पष्ट रूप से उल्लेखित है[KCC_SA2_P6]।",
+      "retrieved_passages": [
+        "KCC_SA2_P6",
+        "PMFBY_SA2_P158",
+        "PMFBY_SA2_P25"
+      ],
+      "citations": [
+        "KCC_SA2_P6"
+      ],
+      "checks": {
+        "mode": true,
+        "language": true,
+        "required_facts": true,
+        "forbidden_claims": true,
+        "citation_format": true,
+        "citation_grounding": true,
+        "expected_citation": true
       },
       "passed": true
     }

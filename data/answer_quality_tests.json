@@ -79,8 +79,8 @@
     "query": "Does PMFBY exclude a particular type of crop loss if the supplied passages do not specify it?",
     "expected_mode": "Groq-generated answer",
     "required_facts": [
-      "do not contain any statement",
-      "no specific exclusion can be confirmed"
+      "none of the documents mention that any specific type of crop loss is excluded",
+      "the absence of a mention does not itself prove that a loss type is excluded"
     ],
     "forbidden_claims": [
       "all losses are excluded",

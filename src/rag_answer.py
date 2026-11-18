@@ -604,6 +604,69 @@ Answer the farmer in the same language as the question.
             if answer and answer.strip():
                 answer = answer.strip()
 
+                # Enforce Roman script for Roman-script Hinglish questions.
+                is_roman_hinglish = (
+                    not re.search(r"[\u0900-\u097F]", question)
+                    and re.search(
+                        r"\b(ke|ki|ka|hai|hain|kya|kitna|kitni|kar|sakte|liye|mein|milti|tahath)\b",
+                        question.lower()
+                    )
+                )
+
+                contains_devanagari = bool(
+                    re.search(r"[\u0900-\u097F]", answer)
+                )
+
+                if is_roman_hinglish and contains_devanagari:
+                    print(
+                        "Roman-script check failed. Requesting one corrected answer...",
+                        flush=True
+                    )
+
+                    retry_payload = dict(payload)
+                    retry_payload["messages"] = payload["messages"] + [
+                        {
+                            "role": "assistant",
+                            "content": answer
+                        },
+                        {
+                            "role": "user",
+                            "content": (
+                                "Your previous answer used Devanagari script. "
+                                "Rewrite the entire answer in Roman-script Hinglish. "
+                                "Use ONLY Latin/Roman characters. Do not use any "
+                                "Devanagari characters. Preserve the factual meaning "
+                                "and valid passage citations. Return only the corrected answer."
+                            )
+                        }
+                    ]
+
+                    retry_request = urllib.request.Request(
+                        GROQ_API_URL,
+                        data=json.dumps(retry_payload).encode("utf-8"),
+                        headers={
+                            "Content-Type": "application/json",
+                            "Authorization": f"Bearer {current_key}",
+                            "User-Agent": "FasalQA/1.0"
+                        },
+                        method="POST"
+                    )
+
+                    with urllib.request.urlopen(
+                        retry_request,
+                        timeout=REQUEST_TIMEOUT
+                    ) as retry_response:
+                        retry_result = json.loads(
+                            retry_response.read().decode("utf-8")
+                        )
+
+                    corrected_answer = (
+                        retry_result["choices"][0]["message"]["content"]
+                    ).strip()
+
+                    if corrected_answer:
+                        answer = corrected_answer
+
                 # Normalize citations and reject IDs not present
                 # in the retrieved passages.
                 allowed_ids = {passage["id"] for passage in passages}
@@ -674,7 +737,7 @@ Answer the farmer in the same language as the question.
             if attempt == MAX_RETRIES:
                 raise
 
-        delay = 2 ** (attempt - 1)
+            delay = 2 ** (attempt - 1)
 
         print(f"Retrying in {delay} seconds...", flush=True)
         time.sleep(delay)
