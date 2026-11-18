@@ -1,0 +1,215 @@
+{
+    "comparison": [
+        {
+            "original_hindi_query": "पीएम-किसान योजना के तहत एक वर्ष में किसान को कितनी सहायता मिलती है?",
+            "translated_english_query": "How much aid is the farmer receives in a year under PM-Kisan Yojana?",
+            "relevant_passages": [
+                "PMKISAN_SA2_P1"
+            ],
+            "baseline_retrieved": [
+                "PMFBY_SA2_P164",
+                "PMFBY_SA2_P158",
+                "PMFBY_SA2_P161"
+            ],
+            "translated_retrieved": [
+                "PMKISAN_SA2_P17",
+                "PMKISAN_SA2_P1",
+                "PMKISAN_SA2_P15"
+            ],
+            "baseline_recall_at_3": 0.0,
+            "translated_recall_at_3": 1.0,
+            "baseline_mrr_at_3": 0.0,
+            "translated_mrr_at_3": 0.5
+        },
+        {
+            "original_hindi_query": "क्या बटाईदार और किरायेदार किसान किसान क्रेडिट कार्ड बनवा सकते हैं?",
+            "translated_english_query": "Can sharecroppers and tenant farmers make Kisan credit card?",
+            "relevant_passages": [
+                "KCC_SA2_P6"
+            ],
+            "baseline_retrieved": [
+                "PMFBY_SA2_P155",
+                "PMFBY_SA2_P164",
+                "PMFBY_SA2_P172"
+            ],
+            "translated_retrieved": [
+                "PMFBY_SA2_P25",
+                "PMFBY_SA2_P21",
+                "KCC_SA2_P6"
+            ],
+            "baseline_recall_at_3": 0.0,
+            "translated_recall_at_3": 1.0,
+            "baseline_mrr_at_3": 0.0,
+            "translated_mrr_at_3": 0.3333333333333333
+        },
+        {
+            "original_hindi_query": "पीएमएफबीवाई के लिए किसान ऑनलाइन आवेदन कैसे कर सकता है?",
+            "translated_english_query": "How can a farmer apply online for PMFBY?",
+            "relevant_passages": [
+                "PMFBY_SA2_P164",
+                "PMFBY_SA2_P168"
+            ],
+            "baseline_retrieved": [
+                "PMFBY_SA2_P164",
+                "PMFBY_SA2_P168",
+                "PMFBY_SA2_P167"
+            ],
+            "translated_retrieved": [
+                "PMFBY_SA2_P168",
+                "PMFBY_SA2_P164",
+                "PMFBY_SA2_P520"
+            ],
+            "baseline_recall_at_3": 1.0,
+            "translated_recall_at_3": 1.0,
+            "baseline_mrr_at_3": 1.0,
+            "translated_mrr_at_3": 1.0
+        },
+        {
+            "original_hindi_query": "फसल बीमा योजना में शिकायत का समाधान कितने दिनों में होना चाहिए?",
+            "translated_english_query": "How long should complaint be resolved in crop insurance scheme?",
+            "relevant_passages": [
+                "PMFBY_SA2_P360"
+            ],
+            "baseline_retrieved": [
+                "PMFBY_SA2_P167",
+                "PMFBY_SA2_P170",
+                "PMFBY_SA2_P133"
+            ],
+            "translated_retrieved": [
+                "PMFBY_SA2_P361",
+                "PMFBY_SA2_P214",
+                "PMFBY_SA2_P197"
+            ],
+            "baseline_recall_at_3": 0.0,
+            "translated_recall_at_3": 0.0,
+            "baseline_mrr_at_3": 0.0,
+            "translated_mrr_at_3": 0.0
+        }
+    ],
+    "baseline_results": [
+        {
+            "original_hindi_query": "पीएम-किसान योजना के तहत एक वर्ष में किसान को कितनी सहायता मिलती है?",
+            "retrieval_query": "पीएम-किसान योजना के तहत एक वर्ष में किसान को कितनी सहायता मिलती है?",
+            "condition": "original_hindi",
+            "relevant_passages": [
+                "PMKISAN_SA2_P1"
+            ],
+            "retrieved_passages": [
+                "PMFBY_SA2_P164",
+                "PMFBY_SA2_P158",
+                "PMFBY_SA2_P161"
+            ],
+            "recall_at_3": 0.0,
+            "reciprocal_rank": 0.0
+        },
+        {
+            "original_hindi_query": "क्या बटाईदार और किरायेदार किसान किसान क्रेडिट कार्ड बनवा सकते हैं?",
+            "retrieval_query": "क्या बटाईदार और किरायेदार किसान किसान क्रेडिट कार्ड बनवा सकते हैं?",
+            "condition": "original_hindi",
+            "relevant_passages": [
+                "KCC_SA2_P6"
+            ],
+            "retrieved_passages": [
+                "PMFBY_SA2_P155",
+                "PMFBY_SA2_P164",
+                "PMFBY_SA2_P172"
+            ],
+            "recall_at_3": 0.0,
+            "reciprocal_rank": 0.0
+        },
+        {
+            "original_hindi_query": "पीएमएफबीवाई के लिए किसान ऑनलाइन आवेदन कैसे कर सकता है?",
+            "retrieval_query": "पीएमएफबीवाई के लिए किसान ऑनलाइन आवेदन कैसे कर सकता है?",
+            "condition": "original_hindi",
+            "relevant_passages": [
+                "PMFBY_SA2_P164",
+                "PMFBY_SA2_P168"
+            ],
+            "retrieved_passages": [
+                "PMFBY_SA2_P164",
+                "PMFBY_SA2_P168",
+                "PMFBY_SA2_P167"
+            ],
+            "recall_at_3": 1.0,
+            "reciprocal_rank": 1.0
+        },
+        {
+            "original_hindi_query": "फसल बीमा योजना में शिकायत का समाधान कितने दिनों में होना चाहिए?",
+            "retrieval_query": "फसल बीमा योजना में शिकायत का समाधान कितने दिनों में होना चाहिए?",
+            "condition": "original_hindi",
+            "relevant_passages": [
+                "PMFBY_SA2_P360"
+            ],
+            "retrieved_passages": [
+                "PMFBY_SA2_P167",
+                "PMFBY_SA2_P170",
+                "PMFBY_SA2_P133"
+            ],
+            "recall_at_3": 0.0,
+            "reciprocal_rank": 0.0
+        }
+    ],
+    "translated_results": [
+        {
+            "original_hindi_query": "How much aid is the farmer receives in a year under PM-Kisan Yojana?",
+            "retrieval_query": "How much aid is the farmer receives in a year under PM-Kisan Yojana?",
+            "condition": "nllb_translated_english",
+            "relevant_passages": [
+                "PMKISAN_SA2_P1"
+            ],
+            "retrieved_passages": [
+                "PMKISAN_SA2_P17",
+                "PMKISAN_SA2_P1",
+                "PMKISAN_SA2_P15"
+            ],
+            "recall_at_3": 1.0,
+            "reciprocal_rank": 0.5
+        },
+        {
+            "original_hindi_query": "Can sharecroppers and tenant farmers make Kisan credit card?",
+            "retrieval_query": "Can sharecroppers and tenant farmers make Kisan credit card?",
+            "condition": "nllb_translated_english",
+            "relevant_passages": [
+                "KCC_SA2_P6"
+            ],
+            "retrieved_passages": [
+                "PMFBY_SA2_P25",
+                "PMFBY_SA2_P21",
+                "KCC_SA2_P6"
+            ],
+            "recall_at_3": 1.0,
+            "reciprocal_rank": 0.3333333333333333
+        },
+        {
+            "original_hindi_query": "How can a farmer apply online for PMFBY?",
+            "retrieval_query": "How can a farmer apply online for PMFBY?",
+            "condition": "nllb_translated_english",
+            "relevant_passages": [
+                "PMFBY_SA2_P164",
+                "PMFBY_SA2_P168"
+            ],
+            "retrieved_passages": [
+                "PMFBY_SA2_P168",
+                "PMFBY_SA2_P164",
+                "PMFBY_SA2_P520"
+            ],
+            "recall_at_3": 1.0,
+            "reciprocal_rank": 1.0
+        },
+        {
+            "original_hindi_query": "How long should complaint be resolved in crop insurance scheme?",
+            "retrieval_query": "How long should complaint be resolved in crop insurance scheme?",
+            "condition": "nllb_translated_english",
+            "relevant_passages": [
+                "PMFBY_SA2_P360"
+            ],
+            "retrieved_passages": [
+                "PMFBY_SA2_P361",
+                "PMFBY_SA2_P214",
+                "PMFBY_SA2_P197"
+            ],
+            "recall_at_3": 0.0,
+            "reciprocal_rank": 0.0
+        }
+    ]
+}

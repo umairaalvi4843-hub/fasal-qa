@@ -1,0 +1,21 @@
+{
+    "experiment": "Hindi versus NLLB-translated English retrieval",
+    "translation_model": "facebook/nllb-200-distilled-600M",
+    "retrieval_model": "intfloat/multilingual-e5-small",
+    "fusion": "Reciprocal Rank Fusion",
+    "rrf_k": 60,
+    "top_k": 3,
+    "corpus_passages": 573,
+    "baseline": {
+        "total_queries": 4,
+        "recall_at_3": 0.25,
+        "mrr_at_3": 0.25
+    },
+    "translated": {
+        "total_queries": 4,
+        "recall_at_3": 0.75,
+        "mrr_at_3": 0.4583333333333333
+    },
+    "recall_improvement": 0.5,
+    "mrr_improvement": 0.20833333333333331
+}
