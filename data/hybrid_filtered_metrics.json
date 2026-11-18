@@ -1,0 +1,7 @@
+{
+    "total_queries": 12,
+    "average_recall_at_3": 0.3680555555555555,
+    "mean_reciprocal_rank": 0.5277777777777778,
+    "rrf_constant": 60,
+    "scheme_filtering": true
+}

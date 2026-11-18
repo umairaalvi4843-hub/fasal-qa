@@ -1,0 +1,391 @@
+[
+    {
+        "query": "How to get a KCC loan",
+        "relevant_passages": [
+            "KCC_P12",
+            "KCC_P5"
+        ],
+        "top_3_results": [
+            {
+                "id": "PMFBY_P127",
+                "rrf_score": 0.030018,
+                "bm25_rank": 2,
+                "dense_rank": 12,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P20",
+                "rrf_score": 0.029851,
+                "bm25_rank": 7,
+                "dense_rank": 7,
+                "relevant": false
+            },
+            {
+                "id": "KCC_P10",
+                "rrf_score": 0.028992,
+                "bm25_rank": 8,
+                "dense_rank": 10,
+                "relevant": false
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0
+    },
+    {
+        "query": "Who is eligible for KCC?",
+        "relevant_passages": [
+            "KCC_P8",
+            "KCC_P13",
+            "KCC_P5",
+            "KCC_P9"
+        ],
+        "top_3_results": [
+            {
+                "id": "PMFBY_P20",
+                "rrf_score": 0.032522,
+                "bm25_rank": 2,
+                "dense_rank": 1,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P330",
+                "rrf_score": 0.030886,
+                "bm25_rank": 1,
+                "dense_rank": 9,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P128",
+                "rrf_score": 0.03055,
+                "bm25_rank": 4,
+                "dense_rank": 7,
+                "relevant": false
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0
+    },
+    {
+        "query": "What documents are required for KCC?",
+        "relevant_passages": [
+            "KCC_P12",
+            "KCC_P13"
+        ],
+        "top_3_results": [
+            {
+                "id": "PMFBY_P20",
+                "rrf_score": 0.032787,
+                "bm25_rank": 1,
+                "dense_rank": 1,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P384",
+                "rrf_score": 0.030366,
+                "bm25_rank": 3,
+                "dense_rank": 9,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P342",
+                "rrf_score": 0.029139,
+                "bm25_rank": 14,
+                "dense_rank": 4,
+                "relevant": false
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0
+    },
+    {
+        "query": "What is the KCC loan limit?",
+        "relevant_passages": [
+            "KCC_P7",
+            "KCC_P6",
+            "KCC_P8",
+            "KCC_P5"
+        ],
+        "top_3_results": [
+            {
+                "id": "KCC_P7",
+                "rrf_score": 0.032266,
+                "bm25_rank": 1,
+                "dense_rank": 3,
+                "relevant": true
+            },
+            {
+                "id": "KCC_P20",
+                "rrf_score": 0.032258,
+                "bm25_rank": 2,
+                "dense_rank": 2,
+                "relevant": false
+            },
+            {
+                "id": "KCC_P11",
+                "rrf_score": 0.030886,
+                "bm25_rank": 9,
+                "dense_rank": 1,
+                "relevant": false
+            }
+        ],
+        "recall_at_3": 0.25,
+        "reciprocal_rank": 1.0
+    },
+    {
+        "query": "Is collateral required for KCC?",
+        "relevant_passages": [
+            "KCC_P11",
+            "KCC_P12"
+        ],
+        "top_3_results": [
+            {
+                "id": "KCC_P11",
+                "rrf_score": 0.032787,
+                "bm25_rank": 1,
+                "dense_rank": 1,
+                "relevant": true
+            },
+            {
+                "id": "KCC_P7",
+                "rrf_score": 0.031258,
+                "bm25_rank": 5,
+                "dense_rank": 3,
+                "relevant": false
+            },
+            {
+                "id": "KCC_P12",
+                "rrf_score": 0.030622,
+                "bm25_rank": 2,
+                "dense_rank": 9,
+                "relevant": true
+            }
+        ],
+        "recall_at_3": 1.0,
+        "reciprocal_rank": 1.0
+    },
+    {
+        "query": "Who is eligible for PMFBY crop insurance?",
+        "relevant_passages": [
+            "PMFBY_P24",
+            "PMFBY_P20"
+        ],
+        "top_3_results": [
+            {
+                "id": "PMFBY_P202",
+                "rrf_score": 0.029412,
+                "bm25_rank": 8,
+                "dense_rank": 8,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P378",
+                "rrf_score": 0.029274,
+                "bm25_rank": 5,
+                "dense_rank": 12,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P376",
+                "rrf_score": 0.028739,
+                "bm25_rank": 21,
+                "dense_rank": 1,
+                "relevant": false
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0
+    },
+    {
+        "query": "What premium does a farmer have to pay for crop insurance?",
+        "relevant_passages": [
+            "PMFBY_P95",
+            "PMFBY_P94"
+        ],
+        "top_3_results": [
+            {
+                "id": "PMFBY_P355",
+                "rrf_score": 0.028629,
+                "bm25_rank": 20,
+                "dense_rank": 2,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P242",
+                "rrf_score": 0.028259,
+                "bm25_rank": 15,
+                "dense_rank": 7,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P100",
+                "rrf_score": 0.026905,
+                "bm25_rank": 11,
+                "dense_rank": 18,
+                "relevant": false
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0
+    },
+    {
+        "query": "Which crops are covered under PMFBY?",
+        "relevant_passages": [
+            "PMFBY_P25"
+        ],
+        "top_3_results": [
+            {
+                "id": "PMFBY_P371",
+                "rrf_score": 0.027984,
+                "bm25_rank": 10,
+                "dense_rank": 13,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P370",
+                "rrf_score": 0.027056,
+                "bm25_rank": 24,
+                "dense_rank": 6,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P35",
+                "rrf_score": 0.026882,
+                "bm25_rank": 33,
+                "dense_rank": 2,
+                "relevant": false
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0
+    },
+    {
+        "query": "What types of crop damage are covered by PMFBY?",
+        "relevant_passages": [
+            "PMFBY_P26"
+        ],
+        "top_3_results": [
+            {
+                "id": "PMFBY_P371",
+                "rrf_score": 0.032266,
+                "bm25_rank": 3,
+                "dense_rank": 1,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P222",
+                "rrf_score": 0.03055,
+                "bm25_rank": 4,
+                "dense_rank": 7,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P372",
+                "rrf_score": 0.030018,
+                "bm25_rank": 2,
+                "dense_rank": 12,
+                "relevant": false
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0
+    },
+    {
+        "query": "How is crop insurance compensation calculated?",
+        "relevant_passages": [
+            "PMFBY_P194",
+            "PMFBY_P193"
+        ],
+        "top_3_results": [
+            {
+                "id": "PMFBY_P193",
+                "rrf_score": 0.030415,
+                "bm25_rank": 2,
+                "dense_rank": 10,
+                "relevant": true
+            },
+            {
+                "id": "PMFBY_P366",
+                "rrf_score": 0.029727,
+                "bm25_rank": 15,
+                "dense_rank": 1,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P202",
+                "rrf_score": 0.026182,
+                "bm25_rank": 3,
+                "dense_rank": 37,
+                "relevant": false
+            }
+        ],
+        "recall_at_3": 0.5,
+        "reciprocal_rank": 1.0
+    },
+    {
+        "query": "How can a farmer apply for PMFBY?",
+        "relevant_passages": [
+            "PMFBY_P136",
+            "PMFBY_P345",
+            "PMFBY_P139"
+        ],
+        "top_3_results": [
+            {
+                "id": "PMFBY_P139",
+                "rrf_score": 0.031025,
+                "bm25_rank": 3,
+                "dense_rank": 6,
+                "relevant": true
+            },
+            {
+                "id": "PMFBY_P136",
+                "rrf_score": 0.026511,
+                "bm25_rank": 34,
+                "dense_rank": 3,
+                "relevant": true
+            },
+            {
+                "id": "PMFBY_P374",
+                "rrf_score": 0.025726,
+                "bm25_rank": 4,
+                "dense_rank": 39,
+                "relevant": false
+            }
+        ],
+        "recall_at_3": 0.6666666666666666,
+        "reciprocal_rank": 1.0
+    },
+    {
+        "query": "How can farmers file complaints about PMFBY?",
+        "relevant_passages": [
+            "PMFBY_P300",
+            "PMFBY_P47",
+            "PMFBY_P303",
+            "PMFBY_P46"
+        ],
+        "top_3_results": [
+            {
+                "id": "PMFBY_P294",
+                "rrf_score": 0.032002,
+                "bm25_rank": 3,
+                "dense_rank": 2,
+                "relevant": false
+            },
+            {
+                "id": "PMFBY_P300",
+                "rrf_score": 0.029551,
+                "bm25_rank": 16,
+                "dense_rank": 1,
+                "relevant": true
+            },
+            {
+                "id": "PMFBY_P303",
+                "rrf_score": 0.029514,
+                "bm25_rank": 12,
+                "dense_rank": 4,
+                "relevant": true
+            }
+        ],
+        "recall_at_3": 0.5,
+        "reciprocal_rank": 0.5
+    }
+]

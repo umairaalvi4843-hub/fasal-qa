@@ -1,50 +1,91 @@
 [
-  {
-    "query": "How to get a KCC loan",
-    "relevant_passages": ["KCC_P5", "KCC_P12"]
-  },
-  {
-    "query": "Who is eligible for KCC?",
-    "relevant_passages": ["KCC_P5", "KCC_P8", "KCC_P9"]
-  },
-  {
-    "query": "What documents are required for KCC?",
-    "relevant_passages": ["KCC_P12", "KCC_P13"]
-  },
-  {
-    "query": "What is the KCC loan limit?",
-    "relevant_passages": ["KCC_P5", "KCC_P6", "KCC_P7", "KCC_P8"]
-  },
-  {
-    "query": "Is collateral required for KCC?",
-    "relevant_passages": ["KCC_P11", "KCC_P12"]
-  },
-  {
-    "query": "Who is eligible for PMFBY crop insurance?",
-    "relevant_passages": ["PMFBY_P20", "PMFBY_P24"]
-  },
-  {
-    "query": "What premium does a farmer have to pay for crop insurance?",
-    "relevant_passages": ["PMFBY_P94", "PMFBY_P95"]
-  },
-  {
-    "query": "Which crops are covered under PMFBY?",
-    "relevant_passages": ["PMFBY_P25"]
-  },
-  {
-    "query": "What types of crop damage are covered by PMFBY?",
-    "relevant_passages": ["PMFBY_P26"]
-  },
-  {
-    "query": "How is crop insurance compensation calculated?",
-    "relevant_passages": ["PMFBY_P193", "PMFBY_P194"]
-  },
-  {
-    "query": "How can a farmer apply for PMFBY?",
-    "relevant_passages": ["PMFBY_P136", "PMFBY_P139", "PMFBY_P345"]
-  },
-  {
-    "query": "How can farmers file complaints about PMFBY?",
-    "relevant_passages": ["PMFBY_P303", "PMFBY_P46", "PMFBY_P47"]
-  }
+    {
+        "query": "How to get a KCC loan",
+        "relevant_passages": [
+            "KCC_P5",
+            "KCC_P12"
+        ]
+    },
+    {
+        "query": "Who is eligible for KCC?",
+        "relevant_passages": [
+            "KCC_P5",
+            "KCC_P8",
+            "KCC_P9",
+            "KCC_P13"
+        ]
+    },
+    {
+        "query": "What documents are required for KCC?",
+        "relevant_passages": [
+            "KCC_P12",
+            "KCC_P13"
+        ]
+    },
+    {
+        "query": "What is the KCC loan limit?",
+        "relevant_passages": [
+            "KCC_P5",
+            "KCC_P6",
+            "KCC_P7",
+            "KCC_P8"
+        ]
+    },
+    {
+        "query": "Is collateral required for KCC?",
+        "relevant_passages": [
+            "KCC_P11",
+            "KCC_P12"
+        ]
+    },
+    {
+        "query": "Who is eligible for PMFBY crop insurance?",
+        "relevant_passages": [
+            "PMFBY_P20",
+            "PMFBY_P24"
+        ]
+    },
+    {
+        "query": "What premium does a farmer have to pay for crop insurance?",
+        "relevant_passages": [
+            "PMFBY_P94",
+            "PMFBY_P95"
+        ]
+    },
+    {
+        "query": "Which crops are covered under PMFBY?",
+        "relevant_passages": [
+            "PMFBY_P25"
+        ]
+    },
+    {
+        "query": "What types of crop damage are covered by PMFBY?",
+        "relevant_passages": [
+            "PMFBY_P26"
+        ]
+    },
+    {
+        "query": "How is crop insurance compensation calculated?",
+        "relevant_passages": [
+            "PMFBY_P193",
+            "PMFBY_P194"
+        ]
+    },
+    {
+        "query": "How can a farmer apply for PMFBY?",
+        "relevant_passages": [
+            "PMFBY_P136",
+            "PMFBY_P139",
+            "PMFBY_P345"
+        ]
+    },
+    {
+        "query": "How can farmers file complaints about PMFBY?",
+        "relevant_passages": [
+            "PMFBY_P303",
+            "PMFBY_P46",
+            "PMFBY_P47",
+            "PMFBY_P300"
+        ]
+    }
 ]
