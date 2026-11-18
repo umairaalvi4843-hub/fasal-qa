@@ -1,0 +1,6 @@
+{
+    "method": "Hybrid + Scheme Filtering",
+    "total_queries": 12,
+    "recall_at_3": 0.4583333333333333,
+    "mrr_at_3": 0.4861111111111111
+}

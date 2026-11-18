@@ -1,0 +1,32 @@
+{
+    "BM25": {
+        "method": "BM25",
+        "total_queries": 12,
+        "recall_at_3": 0.17777777777777778,
+        "mrr_at_3": 0.2916666666666667
+    },
+    "BM25 + Scheme Filtering": {
+        "method": "BM25 + Scheme Filtering",
+        "total_queries": 12,
+        "recall_at_3": 0.2652777777777778,
+        "mrr_at_3": 0.40277777777777773
+    },
+    "Dense E5": {
+        "method": "Dense E5",
+        "total_queries": 12,
+        "recall_at_3": 0.28750000000000003,
+        "mrr_at_3": 0.3611111111111111
+    },
+    "Hybrid": {
+        "method": "Hybrid",
+        "total_queries": 12,
+        "recall_at_3": 0.34027777777777773,
+        "mrr_at_3": 0.4861111111111111
+    },
+    "Hybrid + Scheme Filtering": {
+        "method": "Hybrid + Scheme Filtering",
+        "total_queries": 12,
+        "recall_at_3": 0.4583333333333333,
+        "mrr_at_3": 0.4861111111111111
+    }
+}
