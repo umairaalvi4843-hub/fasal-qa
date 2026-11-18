@@ -1,0 +1,992 @@
+[
+  {
+    "case_id": "HC01",
+    "language": "english",
+    "question": "A farmer's actual yield is 2,400 kg/ha and the threshold yield is 3,000 kg/ha. If the sum insured is ₹40,000, what is the yield-based claim under PMFBY?",
+    "status": "success",
+    "answer": "The yield‑based claim is calculated as  \n\n\\[\n\\text{Claim} = \\frac{\\text{Threshold Yield} - \\text{Actual Yield}}{\\text{Threshold Yield}} \\times \\text{Sum Insured}\n\\]\n\nHere:  \n\n- Threshold Yield = 3,000 kg/ha  \n- Actual Yield = 2,400 kg/ha → shortfall = 3,000 – 2,400 = 600 kg/ha  \n- Ratio = 600 / 3,000 = 0.20 (20 %)  \n- Sum Insured = ₹40,000  \n\n\\[\n\\text{Claim} = 0.20 \\times 40,000 = ₹8,000\n\\]\n\nSo the farmer would receive a yield‑based claim of **₹8,000** under PMFBY[PMFBY_SA2_P233].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P233",
+        "rrf_score": 0.032522
+      },
+      {
+        "id": "PMFBY_SA2_P487",
+        "rrf_score": 0.03101
+      },
+      {
+        "id": "PMFBY_SA2_P480",
+        "rrf_score": 0.030579
+      }
+    ]
+  },
+  {
+    "case_id": "HC01",
+    "language": "hindi",
+    "question": "एक किसान की वास्तविक उपज 2,400 किग्रा/हेक्टेयर और थ्रेशोल्ड यील्ड 3,000 किग्रा/हेक्टेयर है। यदि बीमित राशि ₹40,000 है, तो पीएमएफबीवाई के तहत उपज आधारित दावा कितना होगा?",
+    "status": "success",
+    "answer": "उपज‑आधारित दावा बीमा‑राशि का वह भाग होता है जो वास्तविक उपज / थ्रेशोल्ड उपज के अनुपात के बराबर होता है।  \n\nयहाँ  \n\n- वास्तविक उपज = 2 400 किग्रा/हेक्टेयर  \n- थ्रेशोल्ड उपज = 3 000 किग्रा/हेक्टेयर  \n- बीमित राशि = ₹40 000  \n\nउपज अनुपात = 2 400 ÷ 3 000 = 0.80 (अर्थात 80 %)  \n\nउपज‑आधारित दावा = 0.80 × ₹40 000 = **₹32 000**  \n\n(उदाहरण के तौर पर, दस्तावेज़ में 60 % और 40 % अनुपात के आधार पर क्रमशः ₹60 000 और ₹40 000 का दावा दिखाया गया है [PMFBY_SA2_P443], [PMFBY_SA2_P444]।)  \n\nइसलिए आपका उपज‑आधारित दावा **₹32 000** होगा।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P444",
+        "rrf_score": 0.062433
+      },
+      {
+        "id": "PMFBY_SA2_P443",
+        "rrf_score": 0.055526
+      },
+      {
+        "id": "PMFBY_SA2_P500",
+        "rrf_score": 0.05353
+      }
+    ]
+  },
+  {
+    "case_id": "HC01",
+    "language": "hinglish",
+    "question": "Ek farmer ki actual yield 2,400 kg/ha aur threshold yield 3,000 kg/ha hai. Agar sum insured ₹40,000 hai, toh PMFBY ke under yield-based claim kitna hoga?",
+    "status": "success",
+    "answer": "PMFBY ke under yield‑based claim ki calculation ka formula (Threshold Yield - Actual Yield) ÷ Threshold Yield × Sum Insured hai[PMFBY_SA2_P233].  \n\nYahan:  \n- Threshold Yield = 3,000 kg/ha  \n- Actual Yield = 2,400 kg/ha  \n- Sum Insured = ₹40,000  \n\nCalculation:  \n\n(3,000 - 2,400) / 3,000 × 40,000 = 600 / 3,000 × 40,000 = 0.20 × 40,000 = ₹8,000  \n\nIsliye yield‑based claim ₹8,000 hoga.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P233",
+        "rrf_score": 0.032258
+      },
+      {
+        "id": "PMFBY_SA2_P500",
+        "rrf_score": 0.029958
+      },
+      {
+        "id": "PMFBY_SA2_P487",
+        "rrf_score": 0.029437
+      }
+    ]
+  },
+  {
+    "case_id": "HC02",
+    "language": "english",
+    "question": "In the PMFBY threshold-yield example, what average yield is obtained after excluding the two lowest-yield years from the seven-year data?",
+    "status": "success",
+    "answer": "The seven‑year wheat yields given are 4500, 3750, 2000, 4250, 1800, 4300 and 1750 kg/ha.  \nThe two lowest‑yield years are 1800 kg/ha (2012‑13) and 1750 kg/ha (2014‑15) [PMFBY_SA2_P233].  \n\nExcluding those, the remaining five yields are 4500, 3750, 2000, 4250 and 4300 kg/ha.  \n\nAverage = (4500 + 3750 + 2000 + 4250 + 4300) ÷ 5 = 18 800 ÷ 5 = **3760 kg/ha**.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P233",
+        "rrf_score": 0.032002
+      },
+      {
+        "id": "PMFBY_SA2_P82",
+        "rrf_score": 0.031025
+      },
+      {
+        "id": "PMFBY_SA2_P80",
+        "rrf_score": 0.03101
+      }
+    ]
+  },
+  {
+    "case_id": "HC02",
+    "language": "hindi",
+    "question": "पीएमएफबीवाई के थ्रेशोल्ड यील्ड उदाहरण में सात वर्षों के आंकड़ों से सबसे कम उपज वाले दो वर्षों को हटाने के बाद औसत उपज कितनी प्राप्त होती है?",
+    "status": "success",
+    "answer": "सात वर्षों के कुल उपज = 22,350 kg/ha है। दो सबसे कम उपज वाले वर्षों (1,800 + 1,750 = 3,550 kg/ha) को हटाने पर शेष पाँच वर्षों की कुल उपज = 22,350 – 3,550 = 18,800 kg/ha होती है। इसका औसत (18,800 ÷ 5) = 3,760 kg/ha है। यह वही मान है जो उदाहरण में दिया गया है[PMFBY_SA2_P234]।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P233",
+        "rrf_score": 0.054772
+      },
+      {
+        "id": "PMFBY_SA2_P234",
+        "rrf_score": 0.053669
+      },
+      {
+        "id": "PMFBY_SA2_P82",
+        "rrf_score": 0.050633
+      }
+    ]
+  },
+  {
+    "case_id": "HC02",
+    "language": "hinglish",
+    "question": "PMFBY ke threshold-yield example mein seven-year data se two lowest-yield years remove karne ke baad average yield kitni aati hai?",
+    "status": "success",
+    "answer": "PMFBY ke example mein saat-saala data is prakar hai: 4500, 3750, 2000, 4250, 1800, 4300, 1750 kg/ha (PASSAGE PMFBY_SA2_P233).  \nSabse kam do upaj 1800 kg/ha (2012-13) aur 1750 kg/ha (2014-15) ko hataane par bachi paanch varsh ki upaj 4500 + 3750 + 2000 + 4250 + 4300 = 18800 kg/ha hoti hai.  \nAverage = 18800 ÷ 5 = 3760 kg/ha.  \n\nIsliye do sabse kam-upaj wale varsh hataane ke baad average upaj **3760 kg/ha** hoti hai.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P233",
+        "rrf_score": 0.031754
+      },
+      {
+        "id": "PMFBY_SA2_P82",
+        "rrf_score": 0.031054
+      },
+      {
+        "id": "PMFBY_SA2_P80",
+        "rrf_score": 0.030777
+      }
+    ]
+  },
+  {
+    "case_id": "HC03",
+    "language": "english",
+    "question": "Under PMFBY, what conditions must be met for prevented-sowing coverage when eligible risks affect more than 75% of the sown area?",
+    "status": "success",
+    "answer": "**Conditions for Prevented‑Sowing coverage under PMFBY**\n\n1. **State/UT notification** – The add‑on cover is available only if the State or Union Territory has formally notified the insurance unit (IU) for that crop. [PMFBY_SA2_P235]\n\n2. **Extent of unsown area** – The IU must have **more than 75 %** of the *crop‑wise normal sown area* unsown or suffering prevented sowing/germination failure during the sowing period, and this must be due to a widespread occurrence of the eligible risks.  \n   *Normal sown area* is calculated as the average actual sown area of the preceding three seasons. [PMFBY_SA2_P235]\n\n3. **Premium payment** – Only farmers whose premium has been **debited from their account before the peril occurrence** are eligible for the payout. Banks must ensure the premium is debited within 15 days of sanction/renewal of the KCC loan and before the cut‑off date for premium debiting. [PMFBY_SA2_P235]",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P235",
+        "rrf_score": 0.032018
+      },
+      {
+        "id": "PMFBY_SA2_P242",
+        "rrf_score": 0.031514
+      },
+      {
+        "id": "PMFBY_SA2_P299",
+        "rrf_score": 0.030679
+      }
+    ]
+  },
+  {
+    "case_id": "HC03",
+    "language": "hindi",
+    "question": "पीएमएफबीवाई के अंतर्गत बुवाई न हो पाने का कवर मिलने के लिए कौन-सी शर्तें पूरी होनी चाहिए, जब पात्र जोखिम बोए गए क्षेत्र के 75% से अधिक हिस्से को प्रभावित करते हैं?",
+    "status": "success",
+    "answer": "पीएमएफबीवाई में **बुवाई न हो पाने (Prevented Sowing)** का कवर तभी मिलता है जब नीचे दी गई शर्तें पूरी हों :\n\n1. **क्षेत्र‑स्तर पर 75 % से अधिक बोए गए क्षेत्र को मौसम‑संबंधी जोखिम (जैसे सूखा, बाढ़ आदि) के कारण बुवाई नहीं की जा सकी हो** – यह स्थिति “prevented sowing” प्रावधान को सक्रिय करती है [PMFBY_SA2_P242]।  \n2. **किसान ने बीमा‑प्रीमियम",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P299",
+        "rrf_score": 0.050136
+      },
+      {
+        "id": "PMFBY_SA2_P277",
+        "rrf_score": 0.048807
+      },
+      {
+        "id": "PMFBY_SA2_P242",
+        "rrf_score": 0.048652
+      }
+    ]
+  },
+  {
+    "case_id": "HC03",
+    "language": "hinglish",
+    "question": "PMFBY mein prevented-sowing cover ke liye kya conditions honi chahiye jab eligible risks sown area ke 75% se zyada hissa affect karte hain?",
+    "status": "success",
+    "answer": "PMFBY ke Prevented‑Sowing cover ke liye ye conditions poori honi chahiye:\n\n1. **State/UT dwara is cover ka notification (notice) jari hona chahiye** [PMFBY_SA2_P235].\n2. **Notified Insurance Unit (IU) me us crop ke normal sown area ke 75 % se zyada hissa unsown/prevented sowing/germination failure ka shikar hona chahiye**, jo ki State/UT dwara bataye gaye crop calendar ke sowing period (30 din tak) me widespread eligible risks ke karan ho [PMFBY_SA2_P235].\n3. Normal sown area **pichle teen seasons ke actual sown area ka average** hoga [PMFBY_SA2_P235].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P235",
+        "rrf_score": 0.032787
+      },
+      {
+        "id": "PMFBY_SA2_P242",
+        "rrf_score": 0.031754
+      },
+      {
+        "id": "PMFBY_SA2_P234",
+        "rrf_score": 0.030415
+      }
+    ]
+  },
+  {
+    "case_id": "HC04",
+    "language": "english",
+    "question": "What is the time window for a prevented-sowing event under PMFBY in relation to the start of sowing and the enrolment cut-off date?",
+    "status": "success",
+    "answer": "The prevented‑sowing provision can be used only within a limited period:\n\n* **From the start of sowing:** the claim must be invoked **no later than 30 days after the onset of the sowing period**.  \n* **From the enrolment cut‑off date:** it must be invoked **within 15 days after the enrolment cut‑off date** for that crop.  \n\nIf either of these time limits is passed, the provision cannot be applied[PMFBY_SA2_P238][PMFBY_SA2_P241].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P238",
+        "rrf_score": 0.032018
+      },
+      {
+        "id": "PMFBY_SA2_P127",
+        "rrf_score": 0.030798
+      },
+      {
+        "id": "PMFBY_SA2_P241",
+        "rrf_score": 0.030679
+      }
+    ]
+  },
+  {
+    "case_id": "HC04",
+    "language": "hindi",
+    "question": "पीएमएफबीवाई में बुवाई न हो पाने की घटना के लिए बुवाई शुरू होने और नामांकन की अंतिम तिथि के संबंध में समय-सीमा क्या है?",
+    "status": "success",
+    "answer": "पीएमएफबीवाई के तहत **बुवाई न हो पाने** (सॉविंग‑नॉट‑पॉसिबल) घटना के लिए दो मुख्य समय‑सीमा निर्धारित की गई हैं:\n\n1. **बुवाई की शुरुआत की तिथि** – यह राज्य/केंद्र शासित प्रदेश द्वारा निर्धारित **नामांकन (कट‑ऑफ़) तिथि** से पहले या उसी दिन होनी चाहिए। इस तिथि के बाद यह क्लॉज़ लागू नहीं की जा सकती[PMFBY_SA2_P241]।\n\n2. **नामांकन (कट‑ऑफ़) तिथि के बाद का दायरा** – यदि किसान ने कट‑ऑफ़ तिथि के बाद भी बुवाई नहीं की, तो वह **कट‑ऑफ़ तिथि के 15 दिन के भीतर** इस घटना को सूचित कर सकता है और दावा कर सकता है। इस 15‑दिन की सीमा के बाद क्लॉज़ को लागू नहीं किया जा सकेगा[PMFBY_SA2_P241]।\n\n**कट‑ऑफ़ तिथियों का सामान्य मानक** (जो प्रत्येक फसल के लिए अलग‑अलग निर्धारित किया जाता है) इस प्रकार है:\n\n- खरीफ़ फसलें – अधिकतम **15 जुलाई** तक  \n- रबी फसलें – अधिकतम **15 दिसंबर** तक  \n- ग्रीष्म/ज़ैद फसलें – अधिकतम **15 फरवरी** तक[PMFBY_SA2_P127]।\n\nइसलिए, बुवाई शुरू करने की तिथि को राज्य/केंद्र शासित प्रदेश द्वारा निर्धारित कट‑ऑफ़ तिथि से पहले रखना आवश्यक है, और यदि बुवाई नहीं हो पाती है तो कट‑ऑफ़ तिथि के **15 दिन** के भीतर ही इस घटना को रिपोर्ट करके दावा किया जा सकता है।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P161",
+        "rrf_score": 0.061373
+      },
+      {
+        "id": "PMFBY_SA2_P241",
+        "rrf_score": 0.055206
+      },
+      {
+        "id": "PMFBY_SA2_P127",
+        "rrf_score": 0.051413
+      }
+    ]
+  },
+  {
+    "case_id": "HC04",
+    "language": "hinglish",
+    "question": "PMFBY mein prevented-sowing event ke liye sowing start hone aur enrolment cut-off date ke relation mein time window kya hai?",
+    "status": "success",
+    "answer": "PMFBY ke prevented‑sowing event ke liye, sowing ki start date ke baad aur enrolment cut‑off date se kam se kam 15 din pehle tak ka samay window hona chahiye. Agar yeh samay seema paar ho jati hai, to yeh dhara lagu nahi hoti. [PMFBY_SA2_P241]",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P127",
+        "rrf_score": 0.031281
+      },
+      {
+        "id": "PMFBY_SA2_P130",
+        "rrf_score": 0.030777
+      },
+      {
+        "id": "PMFBY_SA2_P241",
+        "rrf_score": 0.029907
+      }
+    ]
+  },
+  {
+    "case_id": "HC05",
+    "language": "english",
+    "question": "For post-harvest coverage under PMFBY, what is the maximum coverage period and which specific perils are listed?",
+    "status": "success",
+    "answer": "The documents state that post‑harvest coverage under PMFBY is available **for up to 14 days after the crop is harvested**[PMFBY_SA2_P290].  \n\nThe perils that are explicitly mentioned for this post‑harvest add‑on cover are:\n\n* Damage that occurs **during the drying process** (e.g., “cut and spread” or small‑bundled conditions)[PMFBY_SA2_P290].  \n* **Unseasonal rains** that exceed 20 % of the long‑period average rainfall for the month in the relevant sub‑district/district[PMFBY_SA2_P289].  \n\nThe passages refer to “specified perils” in general, but only the above two perils are named in the provided text. No other specific perils are listed in the available documents.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P290",
+        "rrf_score": 0.032018
+      },
+      {
+        "id": "PMFBY_SA2_P309",
+        "rrf_score": 0.02753
+      },
+      {
+        "id": "PMFBY_SA2_P289",
+        "rrf_score": 0.027149
+      }
+    ]
+  },
+  {
+    "case_id": "HC05",
+    "language": "hindi",
+    "question": "पीएमएफबीवाई के अंतर्गत कटाई के बाद के नुकसान के लिए अधिकतम कवरेज अवधि कितनी है और किन विशिष्ट जोखिमों का उल्लेख किया गया है?",
+    "status": "success",
+    "answer": "पीएमएफबीवाई के तहत **कटाई‑के‑बाद के नुकसान** के लिए अधिकतम कवरेज अवधि **कटाई के बाद 14 दिन (दो हफ़्ते)** तक है [PMFBY_SA2_P290] [PMFBY_SA2_P283]।\n\n**उल्लेखित विशिष्ट जोखिम (perils)** :\n\n- सरकार द्वारा निर्धारित **निर्दिष्ट जोखिम** (specified perils) [PMFBY_SA2_P290]।  \n- इन जोखिमों की पुष्टि के लिए उपयोग किए जाने वाले **प्रॉक्सी‑इंडिकेटर्स** – जैसे WINDS नेटवर्क का मौसम डेटा, IMD की मौसम रिपोर्ट, टॉर्नेड/हेलस्टॉर्म जैसी घटनाएँ जो स्थानीय मीडिया या कृषि/राजस्व विभाग की रिपोर्टों से सिद्ध हों [PMFBY_SA2_P290]।  \n\nइन शर्तों के तहत, यदि फसल को कटाई के बाद अधिकतम 14 दिन तक खेत में सुखाने के लिए रखी गई है और वह पोस्ट‑हार्वेस्ट कवरेज के लिए सूचित है, तो वह नुकसान इन निर्दिष्ट जोखिमों के तहत कवरेज योग्य माना जाएगा [PMFBY_SA2_P283]।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P290",
+        "rrf_score": 0.049472
+      },
+      {
+        "id": "PMFBY_SA2_P283",
+        "rrf_score": 0.044695
+      },
+      {
+        "id": "PMFBY_SA2_P253",
+        "rrf_score": 0.042909
+      }
+    ]
+  },
+  {
+    "case_id": "HC05",
+    "language": "hinglish",
+    "question": "PMFBY ke post-harvest cover mein maximum coverage period kitna hai aur kaunse specific perils listed hain?",
+    "status": "success",
+    "answer": "PMFBY ke post‑harvest cover mein maximum coverage period **14 din** tak hai[PMFBY_SA2_P290].  \n\nIs cover mein jo “specified perils” listed hain, unki detail diye gaye documents mein clearly mention nahi hai, isliye available passages se yeh information establish nahi ho sakti.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P290",
+        "rrf_score": 0.032787
+      },
+      {
+        "id": "PMFBY_SA2_P268",
+        "rrf_score": 0.02967
+      },
+      {
+        "id": "PMFBY_SA2_P453",
+        "rrf_score": 0.027826
+      }
+    ]
+  },
+  {
+    "case_id": "HC06",
+    "language": "english",
+    "question": "Under PMFBY, why is individual farmer intimation essential for localized calamity and post-harvest losses but not essential for widespread calamity claims?",
+    "status": "success",
+    "answer": "Under PMFBY the way loss is assessed is different for localized versus widespread events.\n\n* **Localized calamity (or post‑harvest loss)** – When the loss‑intimation area in an Insurance Unit (IU) is **less than 25 %**, the rules require an **individual survey of each farmer’s parcel** so that the loss can be measured crop‑by‑crop for that farmer [PMFBY_SA2_P297].  \n  For post‑harvest losses the farmer must also submit an intimation (mobile, landline or social‑media) within 72 hours of the event, providing his bank details, so that the claim can be processed [PMFBY_SA2_P303]. Because the loss is limited to a few parcels, the scheme needs the farmer’s specific information to calculate the exact indemnity.\n\n* **Widespread (wide‑spread localized) calamity** – If **more than 25 %** of the insured area in the IU reports loss from the same weather event, the event is classified as a **wide‑spread localized calamity**. In this case a **sample loss survey** is done on 10 randomly selected parcels, and the **average loss percentage** derived from that sample is applied to **all** intimations in the IU [PMFBY_SA2_P276][PMFBY_SA2_P297]. Because the loss is presumed to be uniform across the unit, the scheme does not need an individual field survey for each farmer; the average figure is used to settle the claims for every eligible farmer who has submitted an intimation.\n\nHence, individual farmer intimation (and a parcel‑level survey) is essential when the loss is limited (localized or post‑harvest) to determine each farmer’s actual loss, but it is not required for loss assessment in a widespread calamity because the loss is treated as common to the whole unit and is settled on the basis of the sample‑derived average.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P297",
+        "rrf_score": 0.032258
+      },
+      {
+        "id": "PMFBY_SA2_P303",
+        "rrf_score": 0.031545
+      },
+      {
+        "id": "PMFBY_SA2_P276",
+        "rrf_score": 0.031498
+      }
+    ]
+  },
+  {
+    "case_id": "HC06",
+    "language": "hindi",
+    "question": "पीएमएफबीवाई में स्थानीय आपदा और कटाई के बाद के नुकसान के लिए किसान की व्यक्तिगत सूचना आवश्यक क्यों है, जबकि व्यापक आपदा के दावों के लिए यह आवश्यक नहीं है?",
+    "status": "success",
+    "answer": "पीएमएफबीवाई के नियमों के अनुसार, किसान के व्यक्तिगत विवरण (आधार नंबर, बैंक विवरण, पता, मोबाइल नंबर आदि) को **आवेदन प्रक्रिया और सत्यापन के लिये** एकत्र किया जाता है — यह जानकारी इलेक्ट्रॉनिक रूप से NCIP पर अपलोड की जाती है और बीमा कंपनियों को सत्यापित करनी होती है [PMFBY_SA2_P177]।  \n\nस्थानीय आपदा या कटाई‑के‑बाद के नुकसान के मामलों में, बीमा कंपनी को किसान से तुरंत सूचना (इंटिमेशन) प्राप्त करनी होती है, फिर नुकसान का आकलन करने के लिये एक मूल्यांकक नियुक्त किया जाता है — इस प्रक्रिया में व्यक्तिगत जानकारी की आवश्यकता होती है ताकि सही किसान, सही खेत और सही बीमा पॉलिसी की पहचान की जा सके [PMFBY_SA2_P283]।  \n\nदस्तावेज़ों में यह स्पष्ट नहीं किया गया है कि **व्यापक (विस्तृत) आपदा** के दावों के लिये व्यक्तिगत जानकारी अनिवार्य नहीं है। केवल यह कहा गया है कि व्यक्तिगत डेटा को सार्वजनिक रूप से नहीं दिखाया जाएगा, लेकिन व्यापक आपदा के दावों में इस डेटा की आवश्यकता या अनुपस्थिति के बारे में कोई उल्लेख नहीं है। इसलिए, उपलब्ध दस्तावेज़ों के आधार पर यह कहा नहीं जा सकता कि व्यापक आपदा के दावों में व्यक्तिगत सूचना अनिवार्य नहीं है।  \n\nसंक्षेप में:  \n- स्थानीय आपदा/कटाई‑के‑बाद के नुकसान में सही पहचान और त्वरित मूल्यांकन के लिये व्यक्तिगत जानकारी आवश्यक है [PMFBY_SA2_P177][PMFBY_SA2_P283]।  \n- व्यापक आपदा के दावों में व्यक्तिगत जानकारी की आवश्यकता के बारे में दस्तावेज़ में कोई जानकारी नहीं है, इसलिए इसे निश्चित रूप से नहीं कहा जा सकता।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P177",
+        "rrf_score": 0.050401
+      },
+      {
+        "id": "PMFBY_SA2_P283",
+        "rrf_score": 0.049186
+      },
+      {
+        "id": "PMFBY_SA2_P150",
+        "rrf_score": 0.048436
+      }
+    ]
+  },
+  {
+    "case_id": "HC06",
+    "language": "hinglish",
+    "question": "PMFBY mein localized calamity aur post-harvest losses ke liye individual farmer intimation zaroori kyun hai, lekin widespread calamity claims ke liye zaroori nahi hai?",
+    "status": "success",
+    "answer": "Localized calamity aur post‑harvest losses ke liye har farmer ko apni loss ki intimation (soochna) deni zaroori hoti hai kyunki in cases mein financial hisaab ke liye vyaktigat survey zaroori hota hai.\n\n- Post‑harvest losses mein farmer ko mobile, landline ya social media ke through intimation karna hota hai aur apna bank account number (loan account loanee farmer ke liye, savings account non‑loanee farmer ke liye) ya portal se generate hua application number dena hota hai [PMFBY_SA2_P303].\n- Agar Individual Unit (IU) mein loss percentage (IU) 25% se kam hai, to har farmer ki vyaktigat survey karni padti hai [PMFBY_SA2_P297].\n\nWide‑spread (vyaapak) calamity ke case mein jab total insured area ka 25% se adhik hissa affect hota hai, to sabhi farmers ke liye sample survey (10 random parcels) ke aadhar par average loss percentage nikala jata hai aur us average ke basis par claim payment hota hai. Isliye vyaktigat intimation ki zaroorat nahi rehti [PMFBY_SA2_P297].\n\nSankshipt mein, localized aur post‑harvest losses mein accurate vyaktigat data ki avashyakta hoti hai, jabki wide‑spread calamity mein sample survey se sabhi farmers ko ek saath payment kiya jata hai.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P303",
+        "rrf_score": 0.031281
+      },
+      {
+        "id": "PMFBY_SA2_P297",
+        "rrf_score": 0.030835
+      },
+      {
+        "id": "PMFBY_SA2_P309",
+        "rrf_score": 0.03009
+      }
+    ]
+  },
+  {
+    "case_id": "HC07",
+    "language": "english",
+    "question": "Which losses are explicitly excluded under the general exclusions of PMFBY, and how does the guideline describe preventable risks?",
+    "status": "success",
+    "answer": "The passages you provided do not give a detailed list of “general exclusions” for PMFBY. They only describe what **is covered** and note that the scheme does **not** cover losses caused by **preventable risks**.  \n\n- The basic cover is for “non‑preventable risks” such as drought, dry spells, flood, inundation, widespread pest and disease attack, landslides, natural fire due to lightning, storm, hailstorm and cyclone [PMFBY_SA2_P31].  \n- Because the guideline specifies coverage only for non‑preventable risks, any loss caused by **preventable** events (for example, damage that could have been avoided by normal farm management practices) is implicitly excluded, although the exact list of excluded losses is not stated in the supplied documents.  \n\nSo, the documents do not explicitly enumerate the excluded losses; they simply indicate that losses from preventable risks are not covered.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P31",
+        "rrf_score": 0.032258
+      },
+      {
+        "id": "PMFBY_SA2_P437",
+        "rrf_score": 0.027799
+      },
+      {
+        "id": "PMFBY_SA2_P372",
+        "rrf_score": 0.027047
+      }
+    ]
+  },
+  {
+    "case_id": "HC07",
+    "language": "hindi",
+    "question": "पीएमएफबीवाई के सामान्य अपवर्जन प्रावधानों के तहत किन नुकसानों को स्पष्ट रूप से बाहर रखा गया है और दिशानिर्देश रोकथाम योग्य जोखिमों का वर्णन कैसे करते हैं?",
+    "status": "success",
+    "answer": "पीएमएफबीवाई के सामान्य अपवर्जन प्रावधानों में दस्तावेज़ में **किसी विशेष नुकसान को स्पष्ट रूप से बाहर रखा गया** यह नहीं बताया गया है। उपलब्ध पासेज़ केवल यह बताता है कि **बेसिक कवर** उन **अ‑रोकथाम‑योग्य (non‑preventable) जोखिमों** के खिलाफ दिया जाता है, जैसे‑कि‑\n\n- सूखा, सूखी अवधि  \n- बाढ़, जलभराव  \n- व्यापक कीट‑और‑रोग का प्रकोप  \n- भूस्खलन, प्राकृतिक बिजली‑से‑जला आग  \n- तूफ़ान, ओले, चक्रवात  \n\n[PMFBY_SA2_P31]\n\nइसलिए, दस्तावेज़ के अनुसार **रोकथाम‑योग्य (preventable) जोखिम** – अर्थात् ऐसे नुकसान जो किसान उचित उपायों से बचा सकता है – बेसिक कवर में शामिल नहीं हैं, लेकिन इन्हें विशेष रूप से सूचीबद्ध नहीं किया गया है। यदि कोई नुकसान इन रोकथाम‑योग्य जोखिमों में आता है, तो वह सामान्य अपवर्जन के तहत नहीं कवर किया जाएगा।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P31",
+        "rrf_score": 0.051043
+      },
+      {
+        "id": "PMFBY_SA2_P437",
+        "rrf_score": 0.048678
+      },
+      {
+        "id": "PMFBY_SA2_P177",
+        "rrf_score": 0.044158
+      }
+    ]
+  },
+  {
+    "case_id": "HC07",
+    "language": "hinglish",
+    "question": "PMFBY ke general exclusions mein kaunse losses explicitly exclude kiye gaye hain aur guideline preventable risks ko kaise describe karti hai?",
+    "status": "success",
+    "answer": "मैं आपके प्रश्न का उत्तर उसी भाषा और लिपि में देना चाहिए जिसमें आपने पूछा था, यानी हिंदी में देवनागरी लिपि में। इसलिए मैं उत्तर को रोमन लिपि में नहीं बदल सकता। यदि आप चाहें तो मैं वही उत्तर देवनागरी में दोबारा प्रस्तुत कर सकता हूँ।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P31",
+        "rrf_score": 0.028787
+      },
+      {
+        "id": "PMFBY_SA2_P1",
+        "rrf_score": 0.026614
+      },
+      {
+        "id": "PMFBY_SA2_P363",
+        "rrf_score": 0.026546
+      }
+    ]
+  },
+  {
+    "case_id": "HC08",
+    "language": "english",
+    "question": "For Kharif food grain and oilseed crops, how is the farmer's payable premium determined when the actuarial rate is lower than 2% of the sum insured?",
+    "status": "success",
+    "answer": "For Kharif food‑grain and oilseed crops the farmer pays the lower of the two rates – 2 % of the Sum Insured **or** the actuarial premium rate.  \nSo, if the actuarial rate is lower than 2 % of the Sum Insured, the farmer’s payable premium is the actuarial rate itself[PMFBY_SA2_P116].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P116",
+        "rrf_score": 0.032787
+      },
+      {
+        "id": "PMFBY_SA2_P331",
+        "rrf_score": 0.031754
+      },
+      {
+        "id": "PMFBY_SA2_P366",
+        "rrf_score": 0.03101
+      }
+    ]
+  },
+  {
+    "case_id": "HC08",
+    "language": "hindi",
+    "question": "खरीफ खाद्यान्न और तिलहन फसलों के लिए यदि बीमांकिक दर बीमित राशि के 2% से कम है, तो किसान द्वारा देय प्रीमियम कैसे निर्धारित किया जाता है?",
+    "status": "success",
+    "answer": "खरीफ़ में खाद्यान्न और तिलहन फसलों के लिये किसान को जो प्रीमियम देना होता है, वह **बीमित राशि (Sum Insured) के 2 % या बीमांकिक दर (Actuarial Premium Rate), जिनमें से जो भी कम हो, वही लागू होता है** [PMFBY_SA2_P116]।  \n\nयदि बीमांकिक दर 2 % से कम है, तो किसान को वही कम दर (APR) के अनुसार प्रीमियम चुकाना पड़ेगा। गैर‑ऋणधारी किसानों के लिये यह राशि निकटतम रुपये तक गोल करके ली जाती है [PMFBY_SA2_P116]।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P116",
+        "rrf_score": 0.053491
+      },
+      {
+        "id": "PMFBY_SA2_P366",
+        "rrf_score": 0.050038
+      },
+      {
+        "id": "PMFBY_SA2_P381",
+        "rrf_score": 0.046962
+      }
+    ]
+  },
+  {
+    "case_id": "HC08",
+    "language": "hinglish",
+    "question": "Kharif food grain aur oilseed crops ke liye agar actuarial rate sum insured ke 2% se kam hai, toh farmer ka payable premium kaise decide hota hai?",
+    "status": "success",
+    "answer": "Kharif mein sabhi food grain aur oilseed crops ke liye farmer ko jitna premium payment karna hai, woh “Sum Insured ka 2% ya Actuarial Premium Rate mein se jo kam ho” uske aadhar par decide hota hai [PMFBY_SA2_P116]. Iska matlab hai ki agar Actuarial rate Sum Insured ke 2% se kam hai, to farmer ko wahi Actuarial rate ke proportion mein premium pay karna padega. Non‑loanee farmers ke premium ko sabse najdeek rupee tak round off bhi kiya jata hai [PMFBY_SA2_P116]. Is process se ensure hota hai ki farmer ko sirf sabse kam rate par premium dena pade.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P116",
+        "rrf_score": 0.032787
+      },
+      {
+        "id": "PMFBY_SA2_P331",
+        "rrf_score": 0.030777
+      },
+      {
+        "id": "PMFBY_SA2_P152",
+        "rrf_score": 0.030415
+      }
+    ]
+  },
+  {
+    "case_id": "HC09",
+    "language": "english",
+    "question": "A PMFBY grievance remains unresolved by the insurance company for 15 days. Which escalation mechanism is mentioned for such unresolved grievances?",
+    "status": "success",
+    "answer": "If a grievance is not settled within the 15‑day limit, the farmer may **appeal the decision to the lowest defined level of the stratified grievance‑redressal structure created by the State/UT Government**[PMFBY_SA2_P359].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P359",
+        "rrf_score": 0.032522
+      },
+      {
+        "id": "PMFBY_SA2_P360",
+        "rrf_score": 0.032266
+      },
+      {
+        "id": "PMFBY_SA2_P361",
+        "rrf_score": 0.032002
+      }
+    ]
+  },
+  {
+    "case_id": "HC09",
+    "language": "hindi",
+    "question": "यदि पीएमएफबीवाई की शिकायत का बीमा कंपनी द्वारा 15 दिनों तक समाधान नहीं किया जाता है, तो ऐसी अनसुलझी शिकायतों के लिए किस एस्केलेशन व्यवस्था का उल्लेख है?",
+    "status": "success",
+    "answer": "यदि बीमा कंपनी 15 दिनों के भीतर शिकायत का समाधान नहीं करती है, तो वह शिकायत **कई एस्केलेशन स्तरों** के माध्यम से ऊपर ले जाई जाती है। प्रत्येक स्टेकहोल्डर (बीमा कंपनी, बैंक, CSC‑e‑Gov आदि) के पास निचले से उच्चतम स्तर तक का एक स्तरीय grievance‑redressal ढाँचा होता है, और 15 दिन में समाधान न होने पर शिकायत अगले स्तर पर भेजी जाती है। किसी भी निर्णय के खिलाफ अपील **राज्य/UT द्वारा निर्धारित सबसे निचले स्तर** की स्तरीय grievance‑redressal संरचना में की जा सकती है[PMFBY_SA2_P359]।  \n\nइसके अतिरिक्त, बीमा कंपनी को सभी शिकायतों को 15 दिन के भीतर निपटाना अनिवार्य है[PMFBY_SA2_P361], और यदि यह नहीं होता तो ऊपर बताए गए एस्केलेशन प्रक्रिया के अनुसार grievance‑redressal प्रणाली में आगे बढ़ाया जाता है।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P360",
+        "rrf_score": 0.058962
+      },
+      {
+        "id": "PMFBY_SA2_P359",
+        "rrf_score": 0.057073
+      },
+      {
+        "id": "PMFBY_SA2_P361",
+        "rrf_score": 0.049982
+      }
+    ]
+  },
+  {
+    "case_id": "HC09",
+    "language": "hinglish",
+    "question": "Agar PMFBY grievance insurance company 15 days tak resolve nahi karti, toh unresolved grievance ke liye kaunsa escalation mechanism mention hai?",
+    "status": "success",
+    "answer": "Agar insurance company 15 din ke andar grievance resolve nahi karti, to grievance ko neeche diye gaye escalation mechanism ke through aage badhaya ja sakta hai:\n\n1. **Tehsil level** – Har tehsil me ek designated resource/employee grievance ko handle karta hai aur tehsil/taluka level grievance meetings me participate karta hai [PMFBY_SA2_P361].\n\n2. **Zila aur State level** – Senior resource officers district level (DGRC) aur state level (SGRC) ki meetings me shamil hote hain grievance ko solve karne ke liye [PMFBY_SA2_P361].\n\n3. **Stratified escalation** – Har stakeholder ke paas lowest se highest tak multiple escalation levels hote hain; agar lower level par solution nahi milta to grievance ko next higher level par appeal ki ja sakti hai [PMFBY_SA2_P359].\n\n4. **IRDAI ka “Bima Bharosa” platform** – Agar insurance company ke andar 15 din me grievance unresolved rahe, to ise IRDAI ke integrated grievance management system (Bima Bharosa) me escalate kiya jata hai, jo KRPH ke saath integrated hai [PMFBY_SA2_P360].\n\nIn steps ke through grievance ko higher authority tak le ja kar solution ensure kiya jata hai.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P361",
+        "rrf_score": 0.032522
+      },
+      {
+        "id": "PMFBY_SA2_P359",
+        "rrf_score": 0.032266
+      },
+      {
+        "id": "PMFBY_SA2_P360",
+        "rrf_score": 0.032002
+      }
+    ]
+  },
+  {
+    "case_id": "HC10",
+    "language": "english",
+    "question": "For a sharecropper or oral lessee seeking a KCC loan up to ₹50,000, when may a bank accept an affidavit instead of a certificate?",
+    "status": "success",
+    "answer": "A bank can accept an affidavit instead of a certificate **when it is difficult to obtain the required certification about the share‑cropper’s or oral lessee’s identity and occupational status**, and the loan amount is **up to ₹50,000**[KCC_SA2_P14].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "KCC_SA2_P14",
+        "rrf_score": 0.032787
+      },
+      {
+        "id": "PMFBY_SA2_P161",
+        "rrf_score": 0.031258
+      },
+      {
+        "id": "KCC_SA2_P8",
+        "rrf_score": 0.03125
+      }
+    ]
+  },
+  {
+    "case_id": "HC10",
+    "language": "hindi",
+    "question": "₹50,000 तक का केसीसी ऋण लेने वाले बटाईदार या मौखिक पट्टेदार के लिए बैंक प्रमाणपत्र के स्थान पर शपथपत्र कब स्वीकार कर सकता है?",
+    "status": "success",
+    "answer": "बटाईदार या मौखिक पट्टेदार के लिये, यदि उनकी पहचान और व्यावसायिक स्थिति का प्रमाणपत्र (स्थानीय प्रशासन/पंचायती राज संस्थान द्वारा जारी) प्राप्त करने में कठिनाई हो, तो बैंक ₹50,000 तक के केसीसी ऋण के लिये शपथपत्र (अफ़िडेविट) स्वीकार कर सकता है[KCC_SA2_P14].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "KCC_SA2_P14",
+        "rrf_score": 0.057655
+      },
+      {
+        "id": "KCC_SA2_P8",
+        "rrf_score": 0.054887
+      },
+      {
+        "id": "KCC_SA2_P1",
+        "rrf_score": 0.050352
+      }
+    ]
+  },
+  {
+    "case_id": "HC10",
+    "language": "hinglish",
+    "question": "₹50,000 tak ka KCC loan lene wale sharecropper ya oral lessee ke liye bank certificate ke badle affidavit kab accept kar sakta hai?",
+    "status": "success",
+    "answer": "Jab sharecropper ya oral lessee ki identity aur occupational status ka certificate local administration/panchayati raj se milna mushkil ho, tab bank unke dwara diya gaya affidavit (jisme wo apni tilled land aur ugayi crops ka detail deta hai) ko accept kar sakta hai, bas loan amount ₹50,000 tak hi ho [KCC_SA2_P14].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "KCC_SA2_P14",
+        "rrf_score": 0.032787
+      },
+      {
+        "id": "KCC_SA2_P16",
+        "rrf_score": 0.030077
+      },
+      {
+        "id": "KCC_SA2_P8",
+        "rrf_score": 0.029324
+      }
+    ]
+  },
+  {
+    "case_id": "HC11",
+    "language": "english",
+    "question": "Does a KCC holder's consent to pay an insurance premium through the KCC account differ from the explicit consent required for digital account operations? Explain what each consent applies to.",
+    "status": "success",
+    "answer": "The documents state that a KCC holder must give **explicit consent at the time of the insurance application** if the insurance premium is to be paid through the KCC account — this consent is only for the insurance‑premium transaction [KCC_SA2_P14].  \n\nThe passages provided do **not** contain any information about a separate or additional consent that is required for other digital account operations. Therefore, based on the available documents, we can confirm the purpose of the insurance‑premium consent, but we cannot describe any other digital‑account consent because it is not addressed in the supplied material.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "KCC_SA2_P14",
+        "rrf_score": 0.032018
+      },
+      {
+        "id": "PMFBY_SA2_P161",
+        "rrf_score": 0.030159
+      },
+      {
+        "id": "PMFBY_SA2_P145",
+        "rrf_score": 0.03009
+      }
+    ]
+  },
+  {
+    "case_id": "HC11",
+    "language": "hindi",
+    "question": "क्या केसीसी खाते से बीमा प्रीमियम चुकाने की सहमति और डिजिटल खाते के संचालन के लिए आवश्यक स्पष्ट सहमति अलग-अलग हैं? बताइए कि प्रत्येक सहमति किस पर लागू होती है।",
+    "status": "success",
+    "answer": "उपलब्ध दस्तावेज़ों में केसीसी खाते से बीमा प्रीमियम चुकाने की सहमति और डिजिटल खाते के संचालन के लिए आवश्यक स्पष्ट सहमति के बारे में कोई जानकारी नहीं दी गई है, इसलिए यह स्पष्ट नहीं है कि ये दो अलग‑अलग सहमतियाँ हैं या नहीं।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P170",
+        "rrf_score": 0.052513
+      },
+      {
+        "id": "PMFBY_SA2_P107",
+        "rrf_score": 0.049222
+      },
+      {
+        "id": "PMFBY_SA2_P173",
+        "rrf_score": 0.048387
+      }
+    ]
+  },
+  {
+    "case_id": "HC11",
+    "language": "hinglish",
+    "question": "Kya KCC account se insurance premium pay karne ki consent aur digital account operations ke liye required explicit consent alag hain? Dono consent kis cheez par apply hoti hain?",
+    "status": "success",
+    "answer": "Haan, ye do alag‑alag consent hain.\n\n1. **Insurance premium payment ke liye consent** – Jab farmer KCC account se insurance (crop, asset, personal accident ya health) ka premium pay karna chahta hai, to application ke samay usko explicit consent dena hota hai [KCC_SA2_P14].\n\n2. **Digital account operations ke liye consent** – KCC account ko UPI, debit card, mobile banking, internet banking, NEFT, RTGS, CBDC ya kisi bhi regulated digital channel se operate karne ke liye bank ko account holder ki explicit consent leni padti hai [KCC_SA2_P15].\n\nIsliye, pehla consent sirf insurance premium payment par lagu hota hai, jabki doosra consent poore KCC account ke digital transactions (payment, withdrawal, transfer) par lagu hota hai.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "KCC_SA2_P14",
+        "rrf_score": 0.032522
+      },
+      {
+        "id": "KCC_SA2_P15",
+        "rrf_score": 0.031099
+      },
+      {
+        "id": "PMFBY_SA2_P145",
+        "rrf_score": 0.0272
+      }
+    ]
+  },
+  {
+    "case_id": "HC12",
+    "language": "english",
+    "question": "When a bank disburses a loan against warehouse receipts, what must happen to any outstanding related short-term KCC loan?",
+    "status": "success",
+    "answer": "When the bank disburses a loan against your warehouse receipt, any outstanding amount of the related short‑term KCC loan is adjusted at the time the warehouse‑receipt loan is paid out[KCC_SA2_P16].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "KCC_SA2_P16",
+        "rrf_score": 0.032787
+      },
+      {
+        "id": "KCC_SA2_P8",
+        "rrf_score": 0.032002
+      },
+      {
+        "id": "KCC_SA2_P13",
+        "rrf_score": 0.032002
+      }
+    ]
+  },
+  {
+    "case_id": "HC12",
+    "language": "hindi",
+    "question": "जब बैंक वेयरहाउस रसीद के बदले ऋण वितरित करता है, तो उससे जुड़े किसी भी बकाया अल्पकालिक केसीसी ऋण का क्या किया जाना चाहिए?",
+    "status": "success",
+    "answer": "उपलब्ध दस्तावेज़ों में बैंक द्वारा वेयरहाउस रसीद के बदले ऋण वितरित करने पर बकाया अल्पकालिक केसीसी ऋण के निपटारे के बारे में कोई जानकारी नहीं है। इसलिए इस प्रश्न का उत्तर इन दस्तावेज़ों से स्थापित नहीं किया जा सकता।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P154",
+        "rrf_score": 0.054022
+      },
+      {
+        "id": "KCC_SA2_P1",
+        "rrf_score": 0.053716
+      },
+      {
+        "id": "PMFBY_SA2_P161",
+        "rrf_score": 0.052839
+      }
+    ]
+  },
+  {
+    "case_id": "HC12",
+    "language": "hinglish",
+    "question": "Jab bank warehouse receipt ke against loan disburse karta hai, toh related short-term KCC loan ka outstanding amount kaise handle hona chahiye?",
+    "status": "success",
+    "answer": "Jab kisaan apni produce ki warehouse receipt ke against loan ke liye apply karta hai, to bank us request ko established procedure aur guidelines ke mutabik dekhta hai. Is case mein diya gaya loan related short‑term KCC loan se link kiya jata hai, aur warehouse receipt se secured loan disburse karte waqt KCC loan ki outstanding amount ko adjust kar diya jata hai[KCC_SA2_P16].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "KCC_SA2_P16",
+        "rrf_score": 0.032787
+      },
+      {
+        "id": "KCC_SA2_P13",
+        "rrf_score": 0.032002
+      },
+      {
+        "id": "KCC_SA2_P8",
+        "rrf_score": 0.031514
+      }
+    ]
+  },
+  {
+    "case_id": "HC13",
+    "language": "english",
+    "question": "How frequently must banks submit KCC loan data, and within how many working days after the quarter ends must they submit it?",
+    "status": "success",
+    "answer": "Banks have to send KCC‑loan data every quarter, and they must do so within 15 working days after the quarter ends[KCC_SA2_P16].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "KCC_SA2_P16",
+        "rrf_score": 0.032787
+      },
+      {
+        "id": "PMFBY_SA2_P401",
+        "rrf_score": 0.031746
+      },
+      {
+        "id": "PMFBY_SA2_P170",
+        "rrf_score": 0.031514
+      }
+    ]
+  },
+  {
+    "case_id": "HC13",
+    "language": "hindi",
+    "question": "बैंकों को केसीसी ऋण डेटा कितनी बार जमा करना होता है और तिमाही समाप्त होने के कितने कार्यदिवसों के भीतर इसे जमा करना आवश्यक है?",
+    "status": "success",
+    "answer": "बैंकों को केसीसी ऋण डेटा कब और कितनी बार जमा करना है, इस बारे में उपलब्ध दस्तावेज़ों में स्पष्ट रूप से उल्लेख नहीं है।  \n\nहालाँकि, **PMFBY Operational Guidelines 2023** के अनुसार, जब डेटा अपलोड करने की कट‑ऑफ़ तिथि समाप्त हो जाती है, तो बैंक को किसानों के खाते में धनराशि वापस करने की प्रक्रिया को **कट‑ऑफ़ तिथि के 45 दिनों के भीतर** पूरा करना होता है[PMFBY_SA2_P170]।  \n\nइसलिए, तिमाही समाप्त होने के बाद डेटा जमा करने की नियत अवधि 45 कार्यदिवस (कट‑ऑफ़ के बाद) है, परंतु डेटा जमा करने की आवृत्ति (जैसे त्रैमासिक) दस्तावेज़ में नहीं बताई गई है।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P170",
+        "rrf_score": 0.063508
+      },
+      {
+        "id": "KCC_SA2_P1",
+        "rrf_score": 0.057587
+      },
+      {
+        "id": "PMFBY_SA2_P161",
+        "rrf_score": 0.056523
+      }
+    ]
+  },
+  {
+    "case_id": "HC13",
+    "language": "hinglish",
+    "question": "Banks ko KCC loan data kitni frequency se submit karna hota hai aur quarter end hone ke kitne working days ke andar submit karna hota hai?",
+    "status": "success",
+    "answer": "Banks ko KCC loan data quarterly basis par submit karna hota hai aur quarter end ke 15 working days ke andar submit karna hota hai[KCC_SA2_P16].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "KCC_SA2_P16",
+        "rrf_score": 0.032787
+      },
+      {
+        "id": "KCC_SA2_P13",
+        "rrf_score": 0.032258
+      },
+      {
+        "id": "PMFBY_SA2_P401",
+        "rrf_score": 0.03055
+      }
+    ]
+  },
+  {
+    "case_id": "HC14",
+    "language": "english",
+    "question": "A farmer is an oral lessee and belongs to a Joint Liability Group. Which KCC eligibility categories in the guideline are relevant to this farmer?",
+    "status": "success",
+    "answer": "The farmer falls under two of the KCC eligibility categories:\n\n1. **Tenant farmers, oral lessees, and sharecroppers** – because the farmer is an oral lessee.  \n2. **Self‑Help Groups (SHGs) and Joint Liability Groups (JLGs) of farmers/cultivators, including tenant farmers, oral lessees, and sharecroppers** – because the farmer is a member of a JLG.\n\nThese two categories are listed in the KCC guidelines [KCC_SA2_P6].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P161",
+        "rrf_score": 0.031778
+      },
+      {
+        "id": "KCC_SA2_P6",
+        "rrf_score": 0.031545
+      },
+      {
+        "id": "PMFBY_SA2_P178",
+        "rrf_score": 0.029418
+      }
+    ]
+  },
+  {
+    "case_id": "HC14",
+    "language": "hindi",
+    "question": "एक किसान मौखिक पट्टेदार है और संयुक्त देयता समूह का सदस्य भी है। दिशानिर्देशों में केसीसी पात्रता की कौन-सी श्रेणियां इस किसान पर लागू होती हैं?",
+    "status": "success",
+    "answer": "उपलब्ध दस्तावेज़ों में केसीसी (कृषि क्रेडिट कार्ड) पात्रता की विभिन्न श्रेणियों के बारे में कोई जानकारी नहीं है, इसलिए इस किसान पर कौन‑सी श्रेणियाँ लागू होती हैं, यह निर्धारित नहीं किया जा सकता।[PMFBY_SA2_P161][PMFBY_SA2_P164][PMFBY_SA2_P235]",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P161",
+        "rrf_score": 0.059239
+      },
+      {
+        "id": "PMFBY_SA2_P164",
+        "rrf_score": 0.048669
+      },
+      {
+        "id": "PMFBY_SA2_P235",
+        "rrf_score": 0.048248
+      }
+    ]
+  },
+  {
+    "case_id": "HC14",
+    "language": "hinglish",
+    "question": "Ek farmer oral lessee hai aur Joint Liability Group ka member bhi hai. Guideline ki kaunsi KCC eligibility categories us farmer par relevant hain?",
+    "status": "success",
+    "answer": "KCC ke tahat aapke liye do eligibility categories relevant hain:\n\n1. **Tenant farmer / oral lessee** – jo aapke case mein “oral lessee” ke roop mein aata hai.  \n2. **Joint Liability Group (JLG) ka member** – KCC mein SHG/JLG ko bhi ek alag eligibility category maana gaya hai, jisme tenant farmer, oral lessee aur sharecropper shamil ho sakte hain[KCC_SA2_P6].",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "KCC_SA2_P6",
+        "rrf_score": 0.032522
+      },
+      {
+        "id": "PMFBY_SA2_P161",
+        "rrf_score": 0.030415
+      },
+      {
+        "id": "PMKISAN_SA2_P2",
+        "rrf_score": 0.029762
+      }
+    ]
+  },
+  {
+    "case_id": "HC15",
+    "language": "english",
+    "question": "A farmer asks whether PMFBY automatically covers every type of wild-animal damage. What does the guideline establish about the nature and availability of this cover?",
+    "status": "success",
+    "answer": "PMFBY does **not** automatically cover every kind of damage caused by wild animals.  \n\n- The scheme provides an **add‑on cover** that is meant only for risks that are **substantial (at least equal to the normal PMFBY indemnity), identifiable and not frequent or regular**[PMFBY_SA2_P437].  \n- This cover is intended for isolated farms that may suffer occasional loss from raiding, grazing or movement of wild animals, and it is **offered initially on a pilot basis**[PMFBY_SA2_P437].  \n- Because actuarial pricing is not yet possible for all situations, states that have 10‑12 years of historic loss data can request a **separate premium rate** for the add‑on cover, while states without such data may not be able to offer it[PMFBY_SA2_P439].  \n- The add‑on cover is treated separately from the main PMFBY contract, with its own administrative fee and premium considerations[PMFBY_SA2_P440].  \n\nSo, the guideline makes clear that wild‑animal damage is covered only through a **limited, optional add‑on** that is subject to state approval, pilot testing, and separate pricing—not an automatic, universal coverage under the core PMFBY policy.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P437",
+        "rrf_score": 0.032266
+      },
+      {
+        "id": "PMFBY_SA2_P440",
+        "rrf_score": 0.032002
+      },
+      {
+        "id": "PMFBY_SA2_P439",
+        "rrf_score": 0.029911
+      }
+    ]
+  },
+  {
+    "case_id": "HC15",
+    "language": "hindi",
+    "question": "एक किसान पूछता है कि क्या पीएमएफबीवाई जंगली जानवरों से होने वाली हर प्रकार की क्षति को स्वतः कवर करती है। दिशानिर्देश इस कवर की प्रकृति और उपलब्धता के बारे में क्या बताते हैं?",
+    "status": "success",
+    "answer": "पीएमएफबीवाई में जंगली जानवरों द्वारा होने वाली सभी क्षति स्वतः कवर नहीं होती। दस्तावेज़ के अनुसार :\n\n* जंगली जानवरों के हमले के लिए एक **ऐड‑ऑन कवर** है, जो केवल उन क्षेत्रों में उपलब्ध कराया जाएगा जहाँ जोखिम “महत्वपूर्ण” (PMFBY के इंडेम्निटी स्तर के बराबर या अधिक) माना जाता है, वह पहचान योग्य हो और अक्सर न हो [PMFBY_SA2_P437]।  \n* यह कवर प्रारम्भ में **पायलट आधार** पर लागू होगा और इसके लिये अलग‑अलग **प्रशासनिक सेवा शुल्क** तथा **अलग प्रीमियम दर** तय की जाएगी; यह शुल्क और प्रीमियम मुख्य PMFBY बोली के मूल्यांकन में शामिल नहीं होते [PMFBY_SA2_P440]।  \n* ऐड‑ऑन कवर के लिए actuarial प्राइसिंग तभी संभव है जब राज्य के पास 10‑12 साल का ऐतिहासिक नुकसान डेटा हो; अन्यथा इस कवर को लागू करने के लिये अलग व्यवस्था करनी पड़ती है [PMFBY_SA2_P439]।  \n\nइसलिए, सामान्य PMFBY योजना में जंगली जानवरों से होने वाली हर प्रकार की क्षति स्वतः कवर नहीं होती; इसे प्राप्त करने के लिये राज्य‑स्तर पर अतिरिक्त प्रक्रिया, अनुमोदन और अलग प्रीमियम की आवश्यकता होती है।",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P437",
+        "rrf_score": 0.051373
+      },
+      {
+        "id": "PMFBY_SA2_P440",
+        "rrf_score": 0.049612
+      },
+      {
+        "id": "PMFBY_SA2_P439",
+        "rrf_score": 0.049608
+      }
+    ]
+  },
+  {
+    "case_id": "HC15",
+    "language": "hinglish",
+    "question": "Ek farmer poochta hai ki kya PMFBY wild animals se hone wale har type ke damage ko automatically cover karti hai. Guideline is cover ki nature aur availability ke baare mein kya kehti hai?",
+    "status": "success",
+    "answer": "PMFBY mein jangli jaanwaron se hone wale nuksan ko **automatic** tarike se cover nahi kiya jata. Iske liye ek **add‑on cover** banaya gaya hai, jiske shartein aur availability guideline mein spasht ki gayi hain.\n\n**Cover ki prakriti**  \n- Ye cover sirf un shetron mein lagu hota hai jahan risk “barabar ya adhik indemnity level” mana jata hai, risk pehchaan yogya ho aur baar‑baar na ho [PMFBY_SA2_P437].  \n- Jangli jaanwaron ki paribhasha MoEF&CC ya rajya/UT ke forest department dwara tay ki jati hai, aur unka list‑validation zaroori hai [PMFBY_SA2_P437].\n\n**Uplabdhata aur shartein**  \n- Ye cover sirf tab uplabdh hoga jab rajya sarkar/UT administration ise **notified** kare [PMFBY_SA2_P445].  \n- Beneficiary ko usi fasal ke liye normal PMFBY insurance hona chahiye, aur wahi farm‑parcel (parcel) par hona chahiye [PMFBY_SA2_P445].  \n- Kisan ko is add‑on cover ka premium **pehle** pay karna hoga; premium debit hone ke baad hi wo nuksan ke liye eligible rahega [PMFBY_SA2_P445].  \n- Sirf un faslon ko cover kiya jayega jo rajya/UT dwara jari notification mein “add‑on cover ke liye eligible” ghoshit ki gayi ho [PMFBY_SA2_P445].  \n- Agar jangli jaanwaron ke karan 100 % fasal nuksan ho jata hai, to kisan ko PMFBY ke tahat koi claim nahi milega; is situation mein sirf add‑on cover se differential claim mil sakta hai [PMFBY_SA2_P441].\n\nSankshipt mein, PMFBY mein jangli jaanwaron se hone wale sabhi tarah ke nuksan ka automatic cover nahi hai; iske liye rajya‑star par notified **add‑on cover** available hai, jiske liye premium payment aur anya shartein poori karni zaroori hain.",
+    "mode": "Groq-generated answer",
+    "retrieved_passages": [
+      {
+        "id": "PMFBY_SA2_P437",
+        "rrf_score": 0.032787
+      },
+      {
+        "id": "PMFBY_SA2_P445",
+        "rrf_score": 0.030622
+      },
+      {
+        "id": "PMFBY_SA2_P441",
+        "rrf_score": 0.02971
+      }
+    ]
+  }
+]
