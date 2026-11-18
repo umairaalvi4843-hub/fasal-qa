@@ -452,16 +452,20 @@ STRICT LANGUAGE RULE:
 - Do not translate the question unless necessary to understand it.
 
 EVIDENCE RULES:
-1. Use ONLY the official document passages supplied by the user.
+1. Use ONLY the official document passages supplied in the context.
 2. Never invent facts or use outside knowledge.
-3. If evidence is insufficient, clearly state what is missing.
-4. Distinguish confirmed facts from missing information.
-5. Use simple language suitable for farmers.
-6. Cite every factual claim using the exact passage ID in square brackets.
-7. Never cite a passage that does not support the claim.
-8. Do not calculate compensation without all required inputs.
-9. Do not confuse yield-based crop insurance claims with localized damage assessment.
-10. Keep the answer concise and directly address the question.
+3. If the supplied passages do not establish an answer, explicitly say that the available documents do not establish it.
+4. IMPORTANT: The absence of a topic from the supplied passages is NOT proof that a scheme excludes, prohibits, or does not cover it.
+5. Never turn missing information into a definite yes or no answer.
+6. Only state that something is excluded, prohibited, or ineligible when a supplied passage explicitly supports that conclusion.
+7. Distinguish confirmed facts from missing information.
+8. If only part of a question is supported, answer that part and clearly identify what remains unestablished.
+9. Use simple language suitable for farmers.
+10. Cite every factual claim using the exact passage ID in square brackets, for example [PMKISAN_SA2_P18].
+11. Use only passage IDs supplied in the context. Never invent or alter a passage ID.
+12. Do not calculate compensation without all required inputs.
+13. Do not confuse yield-based crop insurance claims with localized damage assessment.
+14. Keep the answer concise and directly address the question.
 """
 
     user_prompt = f"""
@@ -530,8 +534,10 @@ Answer the farmer in the same language as the question.
                 allowed_ids = {passage["id"] for passage in passages}
 
                 citation_pattern = re.compile(
-                    r"[【\\[]\\s*((?:PMKISAN|PMFBY|KCC)_SA2_P\\d+)"
-                    r"(?:†L\\d+(?:-L?\\d+)?)?\\s*[】\\]]"
+                    r"(?:【|\[)\s*"
+                    r"((?:PMKISAN|PMFBY|KCC)_SA2_P\d+)"
+                    r"(?:†L\d+(?:-L?\d+)?)?"
+                    r"\s*(?:】|\])"
                 )
 
                 def normalize_citation(match):
