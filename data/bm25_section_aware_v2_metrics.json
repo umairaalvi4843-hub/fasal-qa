@@ -1,0 +1,7 @@
+{
+    "experiment": "BM25 on section-aware v2 corpus",
+    "total_queries": 12,
+    "corpus_passages": 573,
+    "recall_at_3": 0.08333333333333333,
+    "mrr_at_3": 0.08333333333333333
+}

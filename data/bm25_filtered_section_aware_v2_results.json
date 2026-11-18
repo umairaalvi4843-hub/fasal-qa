@@ -1,0 +1,320 @@
+[
+    {
+        "query": "How to get a KCC loan",
+        "scheme": "KCC",
+        "relevant_passages": [
+            "KCC_SA2_P14",
+            "KCC_SA2_P6"
+        ],
+        "top_results": [
+            {
+                "id": "KCC_SA2_P8",
+                "score": 6.372130397523008,
+                "text": "loans extended shall be outside the KCC framework . However, efforts must be made to get the SoF of such crops notified by the SLTC / DLTC. (5) The KCC credit limit shall be rounded off to the nearest ₹1,000. (6) At the time of sanction, the maximum permissible limit (MPL) for the short-term crop loan shall be arrived at on a notional basis by adding 10 per cent to the limit of the previous crop season, from the second crop season onwards. In case the drawing limit exceeds the MPL in any crop season / year, the MPL shall be reassessed at the time of review. Note: Refer A (I), (II), (III) and (IV) of Illustrations 1 and 2 given in the Annex I. (7) Marginal farmers shall also be eligible for a flexible credit limit of ₹10,000 to ₹50,000 (as Flexi KCC) as per assessment of the bank without relating it to the value of the land. The credit limit shall be based on crops grown, post-harvest warehouse"
+            },
+            {
+                "id": "KCC_SA2_P10",
+                "score": 4.725031985065366,
+                "text": "(1) Banks shall fix the drawing limits for allied activities based on the SoF (as notified by SLTC / DLTC) for the respective activities and number of units (acre / unit / animal / bird, etc.) by adopting the method analogous to that of working capital loans for cultivation of crops as indicated at paragraph 13 above. (2) In respect of allied activities not covered in the SoF finalised by the SLTC / DLTC of the respective State, loans extended shall be outside the KCC framework. However, efforts must be made to get the SoF of such allied activities notified by the SLTC / DLTC. (3) In cases where a borrower avails credit for both crop cultivation and allied activities under the KCC framework, the additional component towards consumption requirements (10 per cent) shall be considered only once and shall not be reckoned separately for each activity. Note: Refer B (I), (II), (III) and (IV) of Illustrations 1 and 2 given in the Annex I. 8 (4) The drawing power for the working capital limit for allied activities shall be determined based on the SoF / latest valuation of stocks / receivables / cash flows as per terms of sanction. 17. Repayment Period"
+            },
+            {
+                "id": "KCC_SA2_P11",
+                "score": 3.672419690462243,
+                "text": "Banks shall fix the repayment period as per the cash flow / income generation pattern of the activity undertaken by the borrower. H. Investment Credit for Agriculture and Allied Activities 18. Eligibility Beneficiaries specified in paragraph 12 and 15 above shall be eligible to avail investment credit for purposes related to agriculture and allied activities, illustratively: (1) land development (2) minor irrigation (3) purchase of farm / fishing, etc., equipment (4) construction of animal / bird shed (5) purchase of livestock (6) purchase of equipment related to allied activities, and (7) similar other purposes 19. Fixation of Limit (1) The term loan limit shall be based on the proposed investment(s) during the tenure of the KCC facility and the bank's assessment of the repaying capacity of the borrower. Note: Refer C (I), (II) and (III) of Illustrations 1 and 2 given in the Annex I. (2) The draw down of instalments shall be allowed based on the nature of investment. 20. Repayment Period The term-loan component shall be repayable within a period of six years depending on the type of activity / investment, as per the bank’s credit policy applicable for investment credit. If the nature of investment involves a tenure longer than six years, the term loan may be treated as a separate facility outside the KCC framework. 9"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "Who is eligible for KCC?",
+        "scheme": "KCC",
+        "relevant_passages": [
+            "KCC_SA2_P6"
+        ],
+        "top_results": [
+            {
+                "id": "KCC_SA2_P6",
+                "score": 5.887538787791906,
+                "text": "The following shall be eligible to avail credit for working capital requirements for cultivation of crops: (1) Farmers (individual / joint borrowers), who are owner cultivators; (2) Tenant farmers, oral lessees, and sharecroppers; and (3) Self-Help Groups (SHGs) and Joint Liability Groups (JLGs) of farmers / cultivators including tenant farmers, oral lessees, and sharecroppers. 13. Fixation of Drawing Limit (1) The drawing limit for each crop season shall be the sum total of the following: (i) Scale of Finance (SoF) [as notified by State Level Technical Committee (SLTC) / District Level Technical Committee (DLTC)] for the respective crop/s for the current crop season multiplied by extent of area of cultivation 6"
+            },
+            {
+                "id": "KCC_SA2_P9",
+                "score": 3.6974939871225523,
+                "text": "7 storage related credit needs , other farm expenses, consumption need s and investment requirements for agriculture and allied activities. The composite KCC limit is to be fixed for a period of six years on this basis. Wherever higher limit is required due to change in cropping pattern and / or SoF, the limit may be arrived at as per the estimation indicated at paragraphs 13(1) to 13(6). 14. Repayment Period Banks shall fix the repayment period as per the crop season applicable. G. Working Capital for Allied Activities 15. Eligibility The following borrowers shall be eligible to avail credit for working capital requirements for allied activities. (1) Animal husbandry farmers, fishers, fish farmers and farmers (including tenant farmers and sharecroppers), undertaking allied activities as per para 8(2) as individual / joint borrowers; and (2) SHGs / JLGs of individuals as above. 16. Fixation of Drawing Limit"
+            },
+            {
+                "id": "KCC_SA2_P3",
+                "score": 3.3196580435425247,
+                "text": "requires, the terms herein shall bear the meanings assigned to them as given below: (1) “Crop season” means the period up to harvesting and marketing of the crops raised. (2) “Short duration crops” shall mean crops with anticipated duration from sowing to marketing up to twelve months. (3) “Long duration” crops mean crops which are not shor t duration crops. The crop season for long duration crops i.e., anticipated period from sowing to marketing is more than twelve months and up to eighteen months. (4) For the purpose of the KCC Scheme, crop seasons shall be standardized at twelve months for short duration crops and eighteen months for long duration crops. (5) “Marginal farmer” means a farmer with landholding of up to one hectare. (6) “Small farmer” means a farmer with landholding of more than one hectare and up to two hectares. 7. Words and expressions used herein and not defined in these Directions, but defined in the Reserve Bank of India Act, 1934, or the Banking Regulation Act, 1949, shall have the meanings assigned to them in those Acts. 4 Chapter II: Credit - Purpose, Tenure and Limit E. Purpose and Tenure 8. Under the KCC Scheme, banks shall extend credit to eligible borrowers for their"
+            }
+        ],
+        "recall_at_3": 1.0,
+        "reciprocal_rank": 1.0
+    },
+    {
+        "query": "What documents are required for KCC?",
+        "scheme": "KCC",
+        "relevant_passages": [
+            "KCC_SA2_P14"
+        ],
+        "top_results": [
+            {
+                "id": "KCC_SA2_P9",
+                "score": 5.209688921578245,
+                "text": "7 storage related credit needs , other farm expenses, consumption need s and investment requirements for agriculture and allied activities. The composite KCC limit is to be fixed for a period of six years on this basis. Wherever higher limit is required due to change in cropping pattern and / or SoF, the limit may be arrived at as per the estimation indicated at paragraphs 13(1) to 13(6). 14. Repayment Period Banks shall fix the repayment period as per the crop season applicable. G. Working Capital for Allied Activities 15. Eligibility The following borrowers shall be eligible to avail credit for working capital requirements for allied activities. (1) Animal husbandry farmers, fishers, fish farmers and farmers (including tenant farmers and sharecroppers), undertaking allied activities as per para 8(2) as individual / joint borrowers; and (2) SHGs / JLGs of individuals as above. 16. Fixation of Drawing Limit"
+            },
+            {
+                "id": "KCC_SA2_P3",
+                "score": 3.217977209038109,
+                "text": "requires, the terms herein shall bear the meanings assigned to them as given below: (1) “Crop season” means the period up to harvesting and marketing of the crops raised. (2) “Short duration crops” shall mean crops with anticipated duration from sowing to marketing up to twelve months. (3) “Long duration” crops mean crops which are not shor t duration crops. The crop season for long duration crops i.e., anticipated period from sowing to marketing is more than twelve months and up to eighteen months. (4) For the purpose of the KCC Scheme, crop seasons shall be standardized at twelve months for short duration crops and eighteen months for long duration crops. (5) “Marginal farmer” means a farmer with landholding of up to one hectare. (6) “Small farmer” means a farmer with landholding of more than one hectare and up to two hectares. 7. Words and expressions used herein and not defined in these Directions, but defined in the Reserve Bank of India Act, 1934, or the Banking Regulation Act, 1949, shall have the meanings assigned to them in those Acts. 4 Chapter II: Credit - Purpose, Tenure and Limit E. Purpose and Tenure 8. Under the KCC Scheme, banks shall extend credit to eligible borrowers for their"
+            },
+            {
+                "id": "KCC_SA2_P27",
+                "score": 3.1861132297608616,
+                "text": "ii Add: Towards post-production and consumption requirements* of farmer household (10 per cent of the total limit) ₹20,000 iii Add: Towards repairs and maintenance expenses for related assets, expenses for technological interventions as applicable and organic or such other relevant certification , if any (20 per cent of the total limit) ₹40,000 iv Add: Cost of insurance, if any# ₹4,500 Sub-total (B) ₹64,500 *If a borrower avails KCC loan for both agriculture and allied activities, consumption requirements shall be covered only in any one category and not both. #If a borrower avails KCC loan for both agriculture and allied activities, distinct forms of insurance coverage are to be reckoned only once each. III. Maximum Permissible Limit (for documentation purpose) Year Calculation Limit 1 Loan limit for 1st year ₹2,64,500 2 Add: 10% of the previous year limit towards cost escalation ₹2,90,950 3 Add: 10% of the previous year limit towards cost escalation ₹3,20,045 4 Add: 10% of the previous year limit towards cost escalation ₹3,52,050* 5 Add: 10% of the previous year limit towards cost escalation ₹3,87,255 6 Add: 10% of the previous year limit towards cost escalation ₹4,25,981* *amount rounded off Asset owned No. of units Scale of Finance per unit (acre) Eligible loan amount"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "What is the KCC loan limit?",
+        "scheme": "KCC",
+        "relevant_passages": [
+            "KCC_SA2_P5",
+            "KCC_SA2_P8"
+        ],
+        "top_results": [
+            {
+                "id": "KCC_SA2_P26",
+                "score": 4.755336052167435,
+                "text": "• The above assessment is an illustration. The assessment of the KCC limit for allied activities will vary depending on the type of activity undertaken. Banks shall refer to the Scale of Finance approved by the State Level Technical Committee for determining the KCC limit. Crop Season Calculation Loan limit 1 Crop Loan Limit – 1st Cropping Season [Sub-total (A) + (B)] ₹1,33,000 2 Add: 10% of the previous season’s limit towards cost escalation ₹1,46,300 3 Add: 10% of the previous season’s limit towards cost escalation ₹1,60,930 4 Add: 10% of the previous season’s limit towards cost escalation ₹1,77,023 Asset owned No. of units (acre) Scale of Finance per acre a b c Pond (1 acre) 1 acre ₹2,00,000 21 (ii) Scale of Finance notified by State Level Technical Committee per unit to cover recurring expenses illustratively seed, feed, labour, and maintenance etc. Year 1 2 3 4 5 6 SoF ₹2,00,000 ₹2,08,000 ₹2,20,000 ₹2,35,000 ₹2,50,000 ₹2,60,000 (iii) Cost of Insurance Year 1 2 3 4 5 6 Cost ₹4,500 ₹4,800 ₹5,200 ₹5,600 ₹6,100 ₹6,600 II. Assessment of drawing limit"
+            },
+            {
+                "id": "KCC_SA2_P27",
+                "score": 4.297052499246713,
+                "text": "ii Add: Towards post-production and consumption requirements* of farmer household (10 per cent of the total limit) ₹20,000 iii Add: Towards repairs and maintenance expenses for related assets, expenses for technological interventions as applicable and organic or such other relevant certification , if any (20 per cent of the total limit) ₹40,000 iv Add: Cost of insurance, if any# ₹4,500 Sub-total (B) ₹64,500 *If a borrower avails KCC loan for both agriculture and allied activities, consumption requirements shall be covered only in any one category and not both. #If a borrower avails KCC loan for both agriculture and allied activities, distinct forms of insurance coverage are to be reckoned only once each. III. Maximum Permissible Limit (for documentation purpose) Year Calculation Limit 1 Loan limit for 1st year ₹2,64,500 2 Add: 10% of the previous year limit towards cost escalation ₹2,90,950 3 Add: 10% of the previous year limit towards cost escalation ₹3,20,045 4 Add: 10% of the previous year limit towards cost escalation ₹3,52,050* 5 Add: 10% of the previous year limit towards cost escalation ₹3,87,255 6 Add: 10% of the previous year limit towards cost escalation ₹4,25,981* *amount rounded off Asset owned No. of units Scale of Finance per unit (acre) Eligible loan amount"
+            },
+            {
+                "id": "KCC_SA2_P22",
+                "score": 4.210739892178407,
+                "text": "(iii) Cost of insurance Year 1 2 3 4 5 6 Cost ₹400 ₹450 ₹500 ₹550 ₹600 ₹650 II. Assessment of drawing limit ii Add: Towards post-production and consumption requirements* of farmer household (10 per cent of the total limit) ₹1,400 iii Add: Towards repairs and maintenance expenses for related assets, expenses for technological interventions as applicable in and organic or such other relevant certification , if any (20 per cent of the total limit) ₹2,800 iv Add: Cost of insurance, if any# ₹400 Sub-total (B) ₹4,600 *If a borrower avails KCC loan for both agriculture and allied activities, consumption requirements shall be covered only in any one category and not both. #If a borrower avails KCC loan for both agriculture and allied activities, distinct forms of insurance coverage are to be reckoned only once each. III. Maximum Permissible Limit (for documentation purpose) Year Calculation Limit 1 Loan limit for 1st year ₹18,600 2 Add: 10% of the previous year limit towards cost escalation ₹20,460 3 Add: 10% of the previous year limit towards cost escalation ₹22,506 4 Add: 10% of the previous year limit towards cost escalation ₹24,757* 5 Add: 10% of the previous year limit towards cost escalation ₹27,233* 6 Add: 10% of the previous year limit towards cost escalation ₹29,956* *amount rounded off"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "Is collateral required for KCC?",
+        "scheme": "KCC",
+        "relevant_passages": [
+            "KCC_SA2_P12",
+            "KCC_SA2_P13"
+        ],
+        "top_results": [
+            {
+                "id": "KCC_SA2_P12",
+                "score": 6.6464593942335455,
+                "text": "Chapter III: General Instructions I. Rate of Interest 21. The rate of interest shall be as stipulated in Reserve Bank of India (Commercial Banks - Interest Rates on Advances) Directions, 2025 dated November 28, 2025, as amended from time to time and as per other relevant guidelines issued in respect of charging interest on agricultural advances. 22. Banks shall pay i nterest on the minimum credit balance in KCC cash credit accounts as stipulated in the Reserve Bank of India (Commercial Banks – Interest Rate on Deposits) Directions, 2025 (Updated as on June 17, 2026), as amended from time to time. J. Collateral Security and Margin 23. Banks shall waive collateral security and margin requirements for agricultural loans including loans for allied activities up to ₹2 lakh per borrower. However, voluntary pledge of gold and silver as collateral for agriculture loans up to the collateral-free limit will not be considered as a violation of the guidelines on collateral -free lending to the agriculture sector. Banks shall obtain and retain explicit declaration from the borrower in such ca ses. RBI guidelines on collateral free limit pertain only to secondary collateral and not primary security or assets financed by the loan. 24. Banks shall decide the collateral security and margin requirements for loans above"
+            },
+            {
+                "id": "KCC_SA2_P9",
+                "score": 6.179694799312774,
+                "text": "7 storage related credit needs , other farm expenses, consumption need s and investment requirements for agriculture and allied activities. The composite KCC limit is to be fixed for a period of six years on this basis. Wherever higher limit is required due to change in cropping pattern and / or SoF, the limit may be arrived at as per the estimation indicated at paragraphs 13(1) to 13(6). 14. Repayment Period Banks shall fix the repayment period as per the crop season applicable. G. Working Capital for Allied Activities 15. Eligibility The following borrowers shall be eligible to avail credit for working capital requirements for allied activities. (1) Animal husbandry farmers, fishers, fish farmers and farmers (including tenant farmers and sharecroppers), undertaking allied activities as per para 8(2) as individual / joint borrowers; and (2) SHGs / JLGs of individuals as above. 16. Fixation of Drawing Limit"
+            },
+            {
+                "id": "KCC_SA2_P13",
+                "score": 4.530010909227981,
+                "text": "₹2 lakh as per their credit policy and in adherence with RBI guidelines issued from time to time. 25. In case of KCC loans against hypothecation of crops / stock and involving tie-up arrangements for recovery, banks may waive collateral security for loans up to a limit of ₹3 lakh. K. Segregation of Limits 26. Considering the different interest rates and repayment schedules applicable to various types of credit provided under KCC, the facility may be divided into sub-limits for short-term cash credit limit- cum-savings accounts for crop cultivation and allied activities separately, and long -term loan for agriculture and allied activities. For 10 operational convenience, t hese sub- limits shall be maintained as separate loan accounts under the composite KCC facility. L. Monitoring of End Utilization 27. Banks shall ensure ongoing monitoring of the end use of the credit facility by the borrower as per the terms of sanction through f ield inspections and / or other means, as per their credit policy. M. Review and Renewal 28. Banks shall undertake review and renewal of the short -term limits for crop cultivation and allied activities as per their credit policy. N. Other instructions 29. Banks shall obtain a one-time documentation including land record / tenancy"
+            }
+        ],
+        "recall_at_3": 1.0,
+        "reciprocal_rank": 1.0
+    },
+    {
+        "query": "Who is eligible for PMFBY crop insurance?",
+        "scheme": "PMFBY",
+        "relevant_passages": [
+            "PMFBY_SA2_P25",
+            "PMFBY_SA2_P30"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P389",
+                "score": 13.976934159646026,
+                "text": "all non-loanee farmers desiring and eligible to take insurance cover under PMFBY. Such a service will include opening of saving bank account of non-loanee farmers, helping them to ﬁll up the requisite details on NCIP, accepting premium from them and maintaining records etc. 38.5.7 To ensure that the premium for both loanee and non-loanee farmers shall be remitted to the concerned Insurance Companies and the related data is uploaded on NCIP within the prescribed time. 38.5.8 Lead Bank/Administrative Ofﬁces of Banks should ensure that all farmers sanctioned crop loans/seasonal operational loans, i.e., KCC loan for notiﬁed crop(s) are necessarily insured (except for those farmers who have opted out) and strict adherence of all provisions stated in the Operational Guidelines of the Scheme. No eligible farmer should be deprived of insurance cover. Lead Banks/ Administrative Ofﬁces of Banks, therefore, should make all efforts and pursue their branches for enrolling all eligible loanee farmers and interested non-loanee farmers under crop insurance. In case, claims have arisen during crop season then respective defaulting bank and its branches would be responsible to make payment of the admissible claims to loanee farmers who were deprived of insurance cover. 38.5.9 To ensure digitization of insured farmer details on NCIP along with details of"
+            },
+            {
+                "id": "PMFBY_SA2_P278",
+                "score": 11.962588801966476,
+                "text": "in the notiﬁed insurance unit, the losses of eligible farmers would be assessed individually provided they have intimated and paid premium prior to occurrence of insurance peril. The intimation is a pre-condition to get beneﬁt for the localized claim. Intimations received during the survey would also be considered. 21.5.9.3 If the affected area under a notiﬁed crop is more than 25% of the total insured area in a notiﬁed insurance unit, all the eligible farmers who have taken insurance for the notiﬁed crop, which has been damaged, and informed about the occurrence of a calamity in the individual insured farm/land parcel within the stipulated time in the notiﬁed Insurance Unit (IU), would be deemed to have suffered localized loss and would be eligible for ﬁnancial support under localized calamity loss. The percentage of loss would be arrived at by Insurance Company through a requisite number of sample survey as deﬁned in the detailed protocol for the add-on cover. 21.5.9.4 The eligibility of claim settlement shall be decided based on the outcome of joint loss"
+            },
+            {
+                "id": "PMFBY_SA2_P445",
+                "score": 11.869137017764995,
+                "text": "3.9 State Governments/UT Administrations may provide requisite information related to historic crop losses by wild animals etc. to the Insurance Companies and also get concurrence in the SLCCCI meeting for implementation of add-on cover and mode to be adopted. 3.10 Eligibility Criteria: 3.10.1 This add-on cover will only be available if this cover is notiﬁed by the State Governments/UT Administrations. 3.10.2 Available to all those insured farmers, at land parcel level, affected by above mentioned perils in a Notiﬁed IU growing notiﬁed crops for which insurance under normal PMFBY has been availed. 3.10.3 Only those farmers would be eligible for ﬁnancial support under this cover who have paid the premium for the add-on cover. i.e. the premium has been debited from their account before the occurrence of the insured peril. 3.10.4 Available for all notiﬁed crops which has been declared eligible for the Add-on cover as per the notiﬁcation issued by the States/UTs and damaged by Wild Animal attack during when the crop is in standing condition up till harvesting. 3.10.5 Maximum liability is limited to the Sum Insured value arrived by multiplying indemnity"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "What premium does a farmer have to pay for crop insurance?",
+        "scheme": "PMFBY",
+        "relevant_passages": [
+            "PMFBY_SA2_P116"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P172",
+                "score": 17.020680178929666,
+                "text": "sowing or transplanting, based on advance crop planning, will also have the option to change the crop. For any reason if a farmer changes the crop planned earlier, they should intimate the change to Insurance Company, up to 2 working days before the cut-off-date for enrolment through their original enrolment channel such as bank branch/ insurance intermediary or directly as the case may be, and pay the difference in premium, if any, accompanied with revised sowing certiﬁcate issued by concerned village/ sub-district level ofﬁcial of the State/UT. In case the premium debited earlier was higher, concerned Bank branch or Insurance Company shall credit or refund the excess premium as the case may be to farmer's account. 17.10 Incomplete applications or applications with wrong farmer’s and land details or"
+            },
+            {
+                "id": "PMFBY_SA2_P421",
+                "score": 15.681072007204248,
+                "text": "WINDS (Weather Information Network & Data System) is a pioneering initiative of the country to set-up a network of Automatic Weather Stations & Rain Gauges at Taluk/Block and Gram Panchayat level to create a strong database of hyper-local weather data for the different Govt. and other entities to use for all farmer and farming oriented services. The hyper-local weather data so collected will be used for claim assessment under Parametric Crop insurance, Yield estimation through Technology, Crop-Region specific Agriculture Advisories to the Farmers, Disaster Risk Resilience & Mitigation needs. As of now the country has approx. 13,000 AWS and 20,000 ARGs installed for all institutions including IMD. Under WINDS, an additional 3,500 AWS and Approx. 1.6 lakh ARGs are proposed to be established across the country. IMD and DA&FW have collaborated for setting up this network to make it 5 times of what it is today. The data collected from AWS should be available in the WINDS portal designed and developed by DA&FW, GoI. This will also act as the single data pipeline for data related to Rainfall/Weather stations across the country. This data will be a Digital Public Good. The WINDS portal shall be maintained & hosted by DA&FW, GoI. The Ministry of Earth Sciences/IMD will be responsible for the supervision, regulation and ensuring quality standards as per WINDS framework to ensure accuracy of the data. In order to foster & leverage the value of information and data for welfare and betterment of farmers and citizens, the data shall be available to users and concerned stakeholders through standard APIs."
+            },
+            {
+                "id": "PMFBY_SA2_P168",
+                "score": 14.851054615590945,
+                "text": "through NCIP or Crop Insurance App. For this, a farmer can ﬁll up the online application form available on NCIP (www.pmfby.gov.in) or Crop Insurance App and pay the requisite premium electronically through the payment gateway. As soon as the application is submitted through the system, an acknowledgement receipt will be generated along with a unique application number. Additionally, intimation will also be sent through SMS on registered mobile number of the farmer. In this case, farmers themselves will upload all requisite and desired supporting documents on web-portal or mobile app while ﬁlling up the application form. Applications without requisite documents would not be considered for insurance coverage and farmers themselves shall be responsible for proper ﬁlling of application form to ensure that they are enrolled under the scheme to receive the intended benefits. 17.8.3 It is mandatory that Non-Loanee farmers, willing to enroll themselves under the"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "Which crops are covered under PMFBY?",
+        "scheme": "PMFBY",
+        "relevant_passages": [
+            "PMFBY_SA2_P31"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P25",
+                "score": 9.865638994520694,
+                "text": "the notiﬁed areas are eligible for coverage. However, farmers should have insurable interest on the insured crops and lands. Such farmers are required to submit necessary documentary evidence of land records prevailing in the State (Records of Right (RoR), Land Possession Certiﬁcate (LPC) etc.) and/or applicable contract/ agreement details/ other documents notiﬁed/ permitted by concerned State Governments/UT Administrations pertaining to sharecroppers/tenant farmers and the same should be deﬁned by the respective States/UTs in the notiﬁcation itself. Tribal farmers and forest dwellers having cultivation in forest land under FRA are also allowed to be insured under the scheme. The farmers cultivating community owned land especially as is practiced in NER states are also allowed to be covered under the scheme with certification from village head or revenue authorities. All such farmers are also required to essentially submit Aadhaar Number and declaration about the crop sown/ crops intended to be sown. 3.1.1 Farmers availing the Kisan Credit Card (KCC)/Crop Loan/Loanee Farmers 3.1.1.1 The scheme is optional for all farmers including farmers who have been sanctioned short-term Seasonal Agricultural Operations (SAO) loans though Kisan Credit Card (KCC) for the notiﬁed crops from deﬁned Financial Institutions (hereinafter referred to as Loanee farmers). Existing Loanee farmers who do not want to get covered www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 15"
+            },
+            {
+                "id": "PMFBY_SA2_P158",
+                "score": 8.92325934532298,
+                "text": "1.5% - - (% of SI) Premium to be debited from KCC 2,000 800 1,500 Total Farmer’s Premium (Loanee) 2,800 1,500 Insured Area through coverage 2 1 2 Balance Un-covered area (Ha)* 3 1 4 Additional premium (as non - loanee )* 3,000 800 - 3,000 Total Farmer’s Premium (as non - loanee )* 3,800 3,000 Total Premium of Farmers (both as loanee and non- loanee) 6,600 4,500 *Note: The Area which has been left out of coverage as loanee farmer for the notiﬁed crop can be insured by the farmer as a non-loanee farmer by depositing additional applicable premium along with required relevant documents. 17.6.7 Farmers having crop loans sanctioned through Kisan Credit Cards (KCC) are covered as loanee farmer and banks shall maintain all back up records and registers relating to compliance with the seasonality discipline for debiting and remittance of farmers premium on or before the respective cut-off-date and the cut-off dates for submission of coverage details on NCIP. Bank branch shall apportion coverage area among insurable crops, based on acreage mentioned in loan application or on the www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 63 basis of actual area sown as declared by the farmer subsequently but prior to the cut-off-date for debit of farmers premium and enrollment of farmers under the scheme."
+            },
+            {
+                "id": "PMFBY_SA2_P437",
+                "score": 8.102381207512972,
+                "text": "wherever the risk is perceived to be substantial (equivalent to or more than the indemnity level under PMFBY), is identiﬁable and is not frequent or regular shall be covered. It is intended for farmers whose crop ﬁelds are likely to be affected by raiding or grazing or by the impact of damage by movement of wild animals occasionally affecting the individual isolated farms. This cover is intended to provide protection against such incidences causing irreversible damage to the standing and insured crop. 1.2 The deﬁnition of wild animals will be as per the categorization of the MoEF&CC and/or Forest Department of respective State Govt./UT based on historic analysis of yield losses of crops occurred. Hence, the nodal department of the State Governments/UT Administrations implementing the scheme should obtain the consent and validation from MoEF&CC and/or State Govt. /UT forest department for list of area/IU wise prevalent Wild animals. 2. Risks Covered: 2.1 Initially this add-on cover would be available on a pilot basis. In the initial stages of"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "What types of crop damage are covered by PMFBY?",
+        "scheme": "PMFBY",
+        "relevant_passages": [
+            "PMFBY_SA2_P32",
+            "PMFBY_SA2_P34"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P309",
+                "score": 18.240504371201528,
+                "text": "season in an IU, or simultaneously during the crop harvesting window affecting same crop-land parcel or application, leading to complexities in damage assessment and claim calculation. Accordingly, the detailed modalities of claim assessment and settlement in case of multiple events being triggered under similar or different perils are described below. 21.7.2 The claim events under PMFBY (including RWBCIS) have been divided into three wider categories on the basis of approach and applicability of these events: A. Wide-Spread Events with Policy Termination feature --- Preventive Sowing/Failed Germination B. Individual Events — Localized Calamity and Post-Harvest losses C. Wide Spread Events — Mid Season Adversity and Yield Based losses 21.7.3 In the event that the Claims for a same crop-Land parcel or application are triggered under different types of coverages viz., Localized Calamities, Mid-season adversity, post-harvest losses and final yield based claim (Basic Cover), then the final claim assessment shall be done by either adjusting the claims in case of identical covers or by reducing the sum insured in case the claims are triggered under different types of covers. 21.7.4 In case multiple events affecting same crop-Land parcel or application are triggered under the identical covers, differential claim amount will be paid without reducing the www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 120"
+            },
+            {
+                "id": "PMFBY_SA2_P437",
+                "score": 17.129802169573804,
+                "text": "wherever the risk is perceived to be substantial (equivalent to or more than the indemnity level under PMFBY), is identiﬁable and is not frequent or regular shall be covered. It is intended for farmers whose crop ﬁelds are likely to be affected by raiding or grazing or by the impact of damage by movement of wild animals occasionally affecting the individual isolated farms. This cover is intended to provide protection against such incidences causing irreversible damage to the standing and insured crop. 1.2 The deﬁnition of wild animals will be as per the categorization of the MoEF&CC and/or Forest Department of respective State Govt./UT based on historic analysis of yield losses of crops occurred. Hence, the nodal department of the State Governments/UT Administrations implementing the scheme should obtain the consent and validation from MoEF&CC and/or State Govt. /UT forest department for list of area/IU wise prevalent Wild animals. 2. Risks Covered: 2.1 Initially this add-on cover would be available on a pilot basis. In the initial stages of"
+            },
+            {
+                "id": "PMFBY_SA2_P427",
+                "score": 13.562454893928455,
+                "text": "YES-TECH (Yield Estimation based on Technology) is a technology-based yield estimations mechanism which has been developed after 2 years of rigorous testing and pilot runs across 100 districts of the country. Crop Loss assessment and Yield estimation approaches assisted by data inputs from sources such as Remote Sensing indices, Weather indices WINDS and/or IMD, crop phenological information, soil types etc. using approved models have been finalized for adoption. www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 165"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "How is crop insurance compensation calculated?",
+        "scheme": "PMFBY",
+        "relevant_passages": [
+            "PMFBY_SA2_P233"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P156",
+                "score": 8.390974774687882,
+                "text": "season Adversity/ Localized Calamity shall be available to only those farmers who have paid the premium or the premium has been debited from their account before the peril occurrence notification by the State Governments/UT Administrations for invoking this provision for compensation. Hence, Banks must ensure that they debit farmers premium immediately after the cut-off date of opting out of loanee farmers, failing which banks will be liable to meet the claim liabilities of uncovered eligible farmers. 17.6.6 Detailed example for Calculation of crop-wise Sum Insured (SI) for the season for coverage of loanee farmers is given in Table 3 below: Crop 1 Crop 2 Crop 3 Crop 4 Crop 5 Crop 6 Total Land Ownership Ha) 8 Kharif Rabi Name of Crop Paddy Maize Cotton Wheat Potato Gram Actual Sown Area (Ha) under 5 2 1 6 1 1 www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 62"
+            },
+            {
+                "id": "PMFBY_SA2_P235",
+                "score": 7.269450703483172,
+                "text": "21.3.2.1 This add-on cover will only be available if this cover is notiﬁed by the State/UT. 21.3.2.2 Notiﬁed IUs will be eligible for \"Prevented Sowing/ Planting\" pay-out only if more than 75% of Crop-wise, normal sown area for notiﬁed crop in the IU experienced unsown/prevented sowing/germination failure during the sowing period (as per the crop calendar notiﬁed by the State/UTs) due to occurrence of widespread incidence of eligible risks. Normal sown area of the crops will be the average of actual sown area of the preceding three seasons. 21.3.2.3 Only those farmers are eligible for ﬁnancial support under this cover who have paid the premium i.e. the premium amount has been debited from their account before the peril occurrence notification was issued by the State/UT Government for invoking this provision for compensation. Banks must ensure that the farmers’ premium is debited within 15 days from the sanction or renewal of KCC loan of all eligible loanee farmers and before the cut-off date for debiting the premium. 21.3.2.4 The provision could be invoked for a speciﬁc crop or a group of crops in notiﬁed IU,"
+            },
+            {
+                "id": "PMFBY_SA2_P82",
+                "score": 7.087527328923873,
+                "text": "immediate last 7 years crop yield data and notiﬁed indemnity level, will remain unchanged for the entire contract period. The premium rates quoted by Insurance Companies will remain unchanged for the entire contract period. It is described in the Illustration 1 below: Illustration 1: Fixed Threshold Yield Assumption: If past 7 years yield at Insurance unit level are as below: Year 2013 2014 2015 2016 2017 2018 2019 Yield 1,500 1,700 1,600 1,900 1,850 1,400 2,000 Threshold Yield: Threshold Yield calculated as per formula below: Formula = [(Ʃ Best 5-year Yield) X Notiﬁed Indemnity level] ÷ 5 Under this method the Threshold Yield calculated in year 1 will remain constant across IUs during the entire contract period as illustrated in the table below: Year 2020 2021 2022 Indemnity Level 70% 70% 70% Threshold Yield 1,267 1,267 1,267 Premium Rate: Under this method Premium rate quoted by The Insurance Company in ﬁrst year will remain same throughout the tender period. For example, if the premium rate quoted by www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 36"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "How can a farmer apply for PMFBY?",
+        "scheme": "PMFBY",
+        "relevant_passages": [
+            "PMFBY_SA2_P106",
+            "PMFBY_SA2_P165"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P334",
+                "score": 8.973739988531165,
+                "text": "www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 128 Land Parcel Identification Number (ULPIN) and real-time reconciliation remains in abeyance for development, the GoI will be allowed to apply the ACF only on those major crops for which sown area at Block/Taluka level is available as per the prescribed Standard Operating Procedure as deﬁned below. 25.7 If the difference between insured area and sown area (maximum of preceding last three years) is greater than 30% at the Block/Tehsil/Taluka level, the matter should be compulsorily brought to the notice of the MoA&FW, GoI in the prescribed format. The GoI will examine these cases. If required, the CPMU and/or MNCFC will also be asked to validate and provide crop sown area data for the same. The concerned Insurance Company is required to provide requisite ground level data (at-least covering 20 locations per block) collected using the Mobile App specially developed for CROPIC initiative for Crop Health Monitoring by the GoI to generate crop signatures for accurate enumeration of area sown data at Block/Tehsil level. The data of the revised insured area for the application of ACF, if any shall be uploaded on NCIP as well. 25.8 Accordingly, after scrutiny, excess insured area, if any shall be treated as un-insured"
+            },
+            {
+                "id": "PMFBY_SA2_P168",
+                "score": 8.747177730383271,
+                "text": "through NCIP or Crop Insurance App. For this, a farmer can ﬁll up the online application form available on NCIP (www.pmfby.gov.in) or Crop Insurance App and pay the requisite premium electronically through the payment gateway. As soon as the application is submitted through the system, an acknowledgement receipt will be generated along with a unique application number. Additionally, intimation will also be sent through SMS on registered mobile number of the farmer. In this case, farmers themselves will upload all requisite and desired supporting documents on web-portal or mobile app while ﬁlling up the application form. Applications without requisite documents would not be considered for insurance coverage and farmers themselves shall be responsible for proper ﬁlling of application form to ensure that they are enrolled under the scheme to receive the intended benefits. 17.8.3 It is mandatory that Non-Loanee farmers, willing to enroll themselves under the"
+            },
+            {
+                "id": "PMFBY_SA2_P84",
+                "score": 8.694712115670605,
+                "text": "over immediately preceding 7 years is negative then ﬁxed TY mentioned as in Para 7.3.3.1, above shall apply. Otherwise, immediately preceding 7 years district level average growth rate in yield will be used to ﬁx the Threshold Yield for each of the subsequent two seasons of all concerned IUs for these seasons within the contract period and same shall be pre-notiﬁed at the time of tender itself. Insurance Company shall quote one rate of the premium for all the seasons accordingly. Lowest bid shall be determined considering last year's insured area as detailed in Para 7.2. To ensure clarity in the understanding, two illustrations 2 & 3 have been provided below: *Note - District level average yield is a crop speciﬁc simple average of yields across the IUs in a district. This exercise is to be performed for each crop notiﬁed in a district. Illustration 2: Laddered TY- Negative growth rate in last 7 years yield Assumptions If last 7-year district level average yield of a crops notiﬁed is as: Year 2013 2014 2015 2016 2017 2018 2019 Yield 1,000 1,000 1,600 1,900 1,850 1,400 400 Indemnity Level-70% Threshold Yield: Here, average yield growth rate in last 7 years = - 3.27% as calculated below: (1,000/1,000-1) + (1,600/1,000-1) + (1,900/1,600-1) + (1,850/1,900-1) + (1,400/1,850-1) + (400/1,400)-1)]/6 In this case since"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "How can farmers file complaints about PMFBY?",
+        "scheme": "PMFBY",
+        "relevant_passages": [
+            "PMFBY_SA2_P358"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P197",
+                "score": 9.521974887109463,
+                "text": "vis the general crop condition the Insurance Companies in consultation with State/UT Government can make use of various technology solutions (e.g. Satellite based vegetation or other indices, weather parameters, etc.) or other technologies (including statistical analysis, crop models etc.) to conﬁrm the yield estimates. If the Insurance Company witnesses any anomaly or deﬁciency in the mid-season yield assessment and/or CCE based actual yield data (partial /consolidated) received from the State/UT Government, the same shall be brought into the notice of concerned State/UT department within 7 days from date of receipt of yield data with speciﬁc observations/remarks providing intimation to the GoI and anomaly, if any, may be resolved in the next 7 days by the Head of the Nodal Department for State/UT Government. If the dispute is not resolved, the aggrieved party may file an appeal with the State Level Technical Advisory Committee (STAC) for dispute resolution (Constitution of STAC is deﬁned in Para 19.5) to pass a speaking order. A suggestive checklist for STAC to mandatorily follow while deciding on the crop yield disputes is annexed at Annexure-IV of these guidelines. In case the matter stands unresolved even after examination by STAC, the aggrieved party may file an appeal with the Central Technical Advisory Committee (TAC) of GoI, in the prescribed format, along with all relevant data & documents,"
+            },
+            {
+                "id": "PMFBY_SA2_P336",
+                "score": 6.500278695972096,
+                "text": "through awareness drives, campaigns, trainings and handholding support are the focus areas under revamped PMFBY. It is imperative to create awareness about PMFBY amongst farmers and bridge knowledge gaps among various implementing stakeholders. As Insurance Companies are being allocated continuity of business for long term i.e., for three years, they will have adequate time for awareness generation and building capacities of the different stakeholders. Therefore, systematic management of IEC and training activities is essential for a scheme like PMFBY, where multiple stakeholders are involved at various stages of scheme implementation. The primary target groups for conducting IEC and training and capacity building activities are farmers, State level and district level ofﬁcials of the State Governments/UT Administrations, Banks, Primary Agriculture Co-operative societies (PACS), Common Service Centers (CSCs)-VLEs, Insurance Intermediaries, ﬁeld functionaries and primary workers of different departments and implementing Insurance Companies. 26.2 Major challenge in creating well informed ecosystem is the multiple layers of hierarchy within each stakeholder and their different levels of understanding about scheme implementation aspects. Thus, IEC and training needs of the stakeholders are not uniform but vary in its functional areas. Since, different stakeholders represent PMFBY to the farmers, any deﬁciency in the knowledge or services greatly www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 129"
+            },
+            {
+                "id": "PMFBY_SA2_P58",
+                "score": 6.48621430634553,
+                "text": "and capacity building of stakeholders about the Scheme. The detailed planning for the same should be submitted to the Centre and State/UT Government in advance i.e., before the start of each season as prescribed in these Operational Guidelines. 6.2.5 Creation of a grievance redressal mechanism at the ground level covering the Sub- district, District, State and National level, putting in place a robust and effective method for grievance registration, handling, resolution, disposal and reporting etc., as referred in Para 30 of these Operational Guidelines. 6.2.6 Settlement of claims to the eligible farmers under the Basic Cover and all insured add-on covers as per the prescribed timelines as deﬁned in the seasonality discipline and State/UT Notification. 6.2.7 Timely payment of service charge to Banks (4% of farmer's premium) and requisite service charges to Common Service Centre - Special Purpose Vehicle (CSC-SPV) & other Insurance Intermediaries through NCIP. 6.2.8 An SOP/Manual for carrying out different activities of awareness generation and capacity building shall be as shared by the GoI separately. 6.2.9 Grievance redressal and resolution of complaints and queries of farmers raised through any of the mode including Krishi Rakshak Portal & Helpline within timelines outlined in the SOP/Manual of Grievance Redressal which shall be issued by the GOI separately. 6.3 Banks and Other Enrolment Channels"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    }
+]
