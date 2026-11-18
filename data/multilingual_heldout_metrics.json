@@ -1,0 +1,27 @@
+{
+    "experiment": "Held-out multilingual hybrid retrieval",
+    "model": "intfloat/multilingual-e5-small",
+    "fusion": "Reciprocal Rank Fusion",
+    "rrf_k": 60,
+    "corpus_passages": 573,
+    "total_queries": 12,
+    "recall_at_3": 0.625,
+    "mrr_at_3": 0.4861111111111111,
+    "language_metrics": {
+        "English": {
+            "total_queries": 4,
+            "recall_at_3": 0.75,
+            "mrr_at_3": 0.4583333333333333
+        },
+        "Hindi": {
+            "total_queries": 4,
+            "recall_at_3": 0.25,
+            "mrr_at_3": 0.25
+        },
+        "Hinglish": {
+            "total_queries": 4,
+            "recall_at_3": 0.875,
+            "mrr_at_3": 0.75
+        }
+    }
+}

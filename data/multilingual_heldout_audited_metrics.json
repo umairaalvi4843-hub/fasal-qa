@@ -1,0 +1,24 @@
+{
+    "experiment": "Audited held-out multilingual hybrid retrieval",
+    "total_queries": 12,
+    "recall_at_3": 0.6666666666666666,
+    "mrr_at_3": 0.5138888888888888,
+    "language_metrics": {
+        "English": {
+            "total_queries": 4,
+            "recall_at_3": 0.875,
+            "mrr_at_3": 0.5416666666666666
+        },
+        "Hindi": {
+            "total_queries": 4,
+            "recall_at_3": 0.25,
+            "mrr_at_3": 0.25
+        },
+        "Hinglish": {
+            "total_queries": 4,
+            "recall_at_3": 0.875,
+            "mrr_at_3": 0.75
+        }
+    },
+    "label_change": "Added PMKISAN_SA2_P18 as relevant to both PM-KISAN annual assistance queries."
+}

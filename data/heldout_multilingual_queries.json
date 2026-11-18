@@ -1,0 +1,62 @@
+[
+    {
+        "query": "How much financial assistance does PM-KISAN provide annually?",
+        "language": "English",
+        "relevant_passages": ["PMKISAN_SA2_P1"]
+    },
+    {
+        "query": "Can tenant farmers and sharecroppers obtain a Kisan Credit Card?",
+        "language": "English",
+        "relevant_passages": ["KCC_SA2_P6"]
+    },
+    {
+        "query": "How can a farmer submit a PMFBY insurance application online?",
+        "language": "English",
+        "relevant_passages": ["PMFBY_SA2_P168", "PMFBY_SA2_P164"]
+    },
+    {
+        "query": "What is the grievance resolution timeline under PMFBY?",
+        "language": "English",
+        "relevant_passages": ["PMFBY_SA2_P360"]
+    },
+    {
+        "query": "पीएम-किसान योजना के तहत एक वर्ष में किसान को कितनी सहायता मिलती है?",
+        "language": "Hindi",
+        "relevant_passages": ["PMKISAN_SA2_P1"]
+    },
+    {
+        "query": "क्या बटाईदार और किरायेदार किसान किसान क्रेडिट कार्ड बनवा सकते हैं?",
+        "language": "Hindi",
+        "relevant_passages": ["KCC_SA2_P6"]
+    },
+    {
+        "query": "पीएमएफबीवाई के लिए किसान ऑनलाइन आवेदन कैसे कर सकता है?",
+        "language": "Hindi",
+        "relevant_passages": ["PMFBY_SA2_P168", "PMFBY_SA2_P164"]
+    },
+    {
+        "query": "फसल बीमा योजना में शिकायत का समाधान कितने दिनों में होना चाहिए?",
+        "language": "Hindi",
+        "relevant_passages": ["PMFBY_SA2_P360"]
+    },
+    {
+        "query": "PM Kisan scheme mein farmer ko saal bhar mein total kitni financial help milti hai?",
+        "language": "Hinglish",
+        "relevant_passages": ["PMKISAN_SA2_P1"]
+    },
+    {
+        "query": "Tenant ya sharecropper farmer KCC ke liye eligible hai kya?",
+        "language": "Hinglish",
+        "relevant_passages": ["KCC_SA2_P6"]
+    },
+    {
+        "query": "PMFBY crop insurance ke liye online registration kaise kar sakte hain?",
+        "language": "Hinglish",
+        "relevant_passages": ["PMFBY_SA2_P168", "PMFBY_SA2_P164"]
+    },
+    {
+        "query": "Fasal bima ki complaint raise karne ke baad resolution ka timeline kya hai?",
+        "language": "Hinglish",
+        "relevant_passages": ["PMFBY_SA2_P360"]
+    }
+]

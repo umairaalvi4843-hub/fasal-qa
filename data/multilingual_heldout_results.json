@@ -1,0 +1,317 @@
+[
+    {
+        "query": "How much financial assistance does PM-KISAN provide annually?",
+        "language": "English",
+        "relevant_passages": [
+            "PMKISAN_SA2_P1"
+        ],
+        "top_results": [
+            {
+                "id": "PMKISAN_SA2_P16",
+                "rrf_score": 0.03278688524590164,
+                "text": "9.2 The PM-Kisan Portal has been created with the following objectives - i) To provide verified and single source of truth on farmers’ details at the portal. ii) Timely assistance to the farmers in farm operation iii) A unified e-platform for transferring of cash benefits into farmer’s bank account through Public Financial Management System (PFMS) integration. iv) Location wise availability of benefited farmers’ list. v) Ease of monitoring across the country on fund transaction details. 9.3 PM-Kisan Portal : The following farmer attributes need to be entered in the Portal: Farmer Attributes: (Essential): State, District, Sub-District/Block, Village, Farmer Name, Type of Identity – Aadhaar Number and in case Aadhaar not available, Aadhaar enrollment number with any other ID proof like Voter ID etc, Gender, Category, IFSC Code, Bank Account Number. Farmer Attributes (Optional): Father name, Address, Mobile Number, Date of Birth/Age, Farm-Size in Hectare, Survey Number, Khasra Number Optional attributes such as Mobile number can be utilized for SMS alerts. Other optional attributes may be used for purpose of future requirement. However, these attributes are not essential for purpose of transfer of money. These attributes are illustrated on PM-KISAN Portal http://pmkisan.gov.in as follows 9 9.4 There are 3 ways through which a State / UT can onboard on the PM Kisan"
+            },
+            {
+                "id": "PMKISAN_SA2_P8",
+                "rrf_score": 0.031746031746031744,
+                "text": "iv) In case of transfer of cultivable land for reasons other than death after 01.02.2019, the officials have to reassess the eligibility of the transferor and decide whether the benefits have to be stopped or not and intimate the authorities so that the PM-KISAN portal can be updated. Transferees are not entitled for any benefits under PM-KISAN in such cases. 5.4 The beneficiaries, whose names are uploaded on PM-Kisan Portal by the State / UT Government in a particular 4-month period / trimester, shall be entitled to receive benefit for that trimester and for further installments pertaining to the subsequent trimesters for that financial year. 5.5 In some of the North Eastern States, the land ownership rights are community based and it might not be possible to assess the quantum of land holder farmers. In such States an alternate implementation mechanism for eligibility of the farmers will be developed and approved by the Committee of Union Ministers of Ministry of Development of North East Region (DoNER), the Ministry of Rural Development (Department of Land Resources), the Union Agriculture Minister and the concerned State Chief Ministers or their Ministerial representatives, based on the proposal by the concerned North Eastern States. 5.5.1 For identification of bona fide beneficiary under PM-Kisan Scheme in Manipur, the"
+            },
+            {
+                "id": "PMKISAN_SA2_P18",
+                "rrf_score": 0.031009615384615385,
+                "text": "2. Farmers list as available on the portal shall be available at Block / Tehsil / Taluka level official’s login. 3. Search facility will also be available to get details on Farmers by Name, Aadhaar Number or Mobile Number in case PM-KISAN Portal data is being used. Facility to add new farmers’ details shall be available, if details are not found in the list. 4. The verified list shall be e-signed by the District level or block / tehsil / taluka level officials as the case may be. The exclusion categories specified in scheme guidelines also need to be taken care before e-signing the verified farmers list. 5. The States Nodal Officer shall submit a district wise e-Signed list of farmers to the Program Division of DAC&FW through PM-Kisan Portal. 10 Modalities for transfer of benefit 10.1 The financial benefit of Rs.6000/- per year is to be released to the eligible farmers in three installments of Rs.2000/- each every 4-month / trimester, i.e. April-July, August-November and December-March. 10.2 The Scheme is being implemented through an Aadhaar linked electronic data"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "Can tenant farmers and sharecroppers obtain a Kisan Credit Card?",
+        "language": "English",
+        "relevant_passages": [
+            "KCC_SA2_P6"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P25",
+                "rrf_score": 0.03278688524590164,
+                "text": "the notiﬁed areas are eligible for coverage. However, farmers should have insurable interest on the insured crops and lands. Such farmers are required to submit necessary documentary evidence of land records prevailing in the State (Records of Right (RoR), Land Possession Certiﬁcate (LPC) etc.) and/or applicable contract/ agreement details/ other documents notiﬁed/ permitted by concerned State Governments/UT Administrations pertaining to sharecroppers/tenant farmers and the same should be deﬁned by the respective States/UTs in the notiﬁcation itself. Tribal farmers and forest dwellers having cultivation in forest land under FRA are also allowed to be insured under the scheme. The farmers cultivating community owned land especially as is practiced in NER states are also allowed to be covered under the scheme with certification from village head or revenue authorities. All such farmers are also required to essentially submit Aadhaar Number and declaration about the crop sown/ crops intended to be sown. 3.1.1 Farmers availing the Kisan Credit Card (KCC)/Crop Loan/Loanee Farmers 3.1.1.1 The scheme is optional for all farmers including farmers who have been sanctioned short-term Seasonal Agricultural Operations (SAO) loans though Kisan Credit Card (KCC) for the notiﬁed crops from deﬁned Financial Institutions (hereinafter referred to as Loanee farmers). Existing Loanee farmers who do not want to get covered www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 15"
+            },
+            {
+                "id": "KCC_SA2_P6",
+                "rrf_score": 0.0315136476426799,
+                "text": "The following shall be eligible to avail credit for working capital requirements for cultivation of crops: (1) Farmers (individual / joint borrowers), who are owner cultivators; (2) Tenant farmers, oral lessees, and sharecroppers; and (3) Self-Help Groups (SHGs) and Joint Liability Groups (JLGs) of farmers / cultivators including tenant farmers, oral lessees, and sharecroppers. 13. Fixation of Drawing Limit (1) The drawing limit for each crop season shall be the sum total of the following: (i) Scale of Finance (SoF) [as notified by State Level Technical Committee (SLTC) / District Level Technical Committee (DLTC)] for the respective crop/s for the current crop season multiplied by extent of area of cultivation 6"
+            },
+            {
+                "id": "PMFBY_SA2_P61",
+                "rrf_score": 0.030834914611005692,
+                "text": "enrolment number as per the notiﬁcation under the Aadhaar Act before the enrollment or sanction of crop loan under Kisan Credit Card. Hence the coverage of Loanee farmers without Aadhaar shall not be allowed and such accounts need to be reviewed and updated by the concerned bank branch regularly. 6.5 Agreement/Memorandum of Understanding (MoU) between States and Insurance Companies 6.5.1 State/UTs and Insurance Companies will enter into an agreement before the commencement of the ﬁrst crop season as per the model agreement shared by the www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 29 GoI and as available on NCIP. The roles and responsibilities of the State/UTs (Para 38.2) and Insurance Companies (Para 38.4) and provision of performance evaluation matrix and applicable penalties (Para 33) shall be a part of the Agreement/MoU document necessarily. 7. Tendering and Notiﬁcation 7.1 Procedure for Issuance of Tender by the States/UTs 7.1.1 Operational Guidelines of PMFBY provides for compulsory tender by the States/UTs"
+            }
+        ],
+        "recall_at_3": 1.0,
+        "reciprocal_rank": 0.5
+    },
+    {
+        "query": "How can a farmer submit a PMFBY insurance application online?",
+        "language": "English",
+        "relevant_passages": [
+            "PMFBY_SA2_P164",
+            "PMFBY_SA2_P168"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P168",
+                "rrf_score": 0.03278688524590164,
+                "text": "through NCIP or Crop Insurance App. For this, a farmer can ﬁll up the online application form available on NCIP (www.pmfby.gov.in) or Crop Insurance App and pay the requisite premium electronically through the payment gateway. As soon as the application is submitted through the system, an acknowledgement receipt will be generated along with a unique application number. Additionally, intimation will also be sent through SMS on registered mobile number of the farmer. In this case, farmers themselves will upload all requisite and desired supporting documents on web-portal or mobile app while ﬁlling up the application form. Applications without requisite documents would not be considered for insurance coverage and farmers themselves shall be responsible for proper ﬁlling of application form to ensure that they are enrolled under the scheme to receive the intended benefits. 17.8.3 It is mandatory that Non-Loanee farmers, willing to enroll themselves under the"
+            },
+            {
+                "id": "PMFBY_SA2_P164",
+                "rrf_score": 0.0315136476426799,
+                "text": "the farmer using their biometric authentication using Aadhaar services made available by UIDAI for ﬁlling up the online application. Having a bank account is essential for such cases. In this case, CSC-VLE will upload all requisite and desired supporting documents on NCIP while ﬁlling up the application form on behalf of the farmer. Applications without requisite documents would not be considered for insurance coverage and CSC-VLE themselves shall be responsible for proper ﬁlling www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 65 of application form to ensure the farmer is enrolled under the scheme to receive the intended benefits. 17.7.5 CSC/Bank Branch/PACS/designated BCs ofﬁcials will assist the farmers in"
+            },
+            {
+                "id": "PMFBY_SA2_P167",
+                "rrf_score": 0.031054405392392875,
+                "text": "17.7.8 In cases where the farmer's application has been rejected by the Insurance Company as per the provisions of Operational Guidelines, farmer's remittance for such applications must be refunded back to the farmer's bank account by the concerned Insurance Company within 45 days of closure of cut-off date for uploading of data by Banks, PACS etc., failing which the Insurance Company will be constrained to accept the application and pay claims as per normal process. 17.7.9 All rejected applications may be re-opened for review & verification purpose if the State/UT Government and/or GoI decides to do so. 17.7.10 For farmers buying crop insurance through CSC-VLEs or online, OTP/Aadhaar enabled veriﬁcation shall be construed as consent and signature of the applicant for availing coverage under the scheme. www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 66 17.8 Non-Loanee Farmers - Directly to Insurance Companies or through Web Portal 17.8.1 Non-Loanee farmer may contact the Insurance Company and submit the requisite and desired supporting documents and applicable premium through conventional method or through electronic mode. 17.8.2 Non-loanee farmer can also submit application forms for getting insurance coverage"
+            }
+        ],
+        "recall_at_3": 1.0,
+        "reciprocal_rank": 1.0
+    },
+    {
+        "query": "What is the grievance resolution timeline under PMFBY?",
+        "language": "English",
+        "relevant_passages": [
+            "PMFBY_SA2_P360"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P361",
+                "rrf_score": 0.03200204813108039,
+                "text": "in case the concerned farmer is not satisfied with the resolution. 30.7 Grievance Redressal Mechanism by Insurance Company 30.7.1 Each implementing Insurance Company will put in place an effective and resilient Grievance Redressal Mechanism for resolution and disposal of all grievances received through multiple channels viz. Krishi Rakshak Portal & Helpline, their own Toll-Free Call Centres, Social Media, Tehsil Level Grievance Cell, DGRC, SGRC, IRDAI, Insurance Ombudsmen, Banks, SLBC, Centralized Public Grievance Redressal and Monitoring System (CPGRAMS), respective State Grievance Redressal and Monitoring System (GRAMS) and similar entities and directly through farmer in the form of application/complaint letter. A designated resource/manpower at each tehsil level shall be equipped to handle and resolve grievances of farmers at local level and he/she should be able to participate in Tehsil/Taluk level grievance meetings and dispose-off the grievances. 30.7.2 Similarly, senior resource persons at the District and State level should be equipped to participate in DGRC and SGRC meeting to resolve such grievances. www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 138 30.7.3 Insurance Company shall ensure that details of the grievance redressal ofﬁcers along with the name, address and contact number and email id is publicized widely among farmers. Insurance Companies will have to dispose the grievance within 15 days’ time of receipt of each and every grievance/complaint."
+            },
+            {
+                "id": "PMFBY_SA2_P359",
+                "rrf_score": 0.0315136476426799,
+                "text": "Insurance Company, banks, CSC e-Gov, State, Districts or Bank users etc., for resolution within a definite turn-around-time. At each stakeholder, the query or grievance shall have multiple escalation levels from lowest to highest and shall have maximum 15 days to dispose the same. Any appeal against the decision of the stakeholder shall be at the lowest defined level of the stratified grievance redressal www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 137 structure created by the State/UT Government. The State/UT Government shall have access to the entire process and this portal shall act as a platform for the State/UTs for grievance redressal and their monitoring. There will be landlord-tenant framework where the platform shall be provided by the GoI and the State Governments/UT Administrations will be completely responsible for day to day functioning of effective grievance redressal mechanism for their own State/UT. GoI shall only act as the facilitator and the responsibility of redressal and closure of grievances shall vest with the Insurance Companies, Banks, CSC e-Gov and the State Governments/UT Administrations. 30.6.4 The system shall not only take the grievances/queries through calls but will also"
+            },
+            {
+                "id": "PMFBY_SA2_P360",
+                "rrf_score": 0.031009615384615385,
+                "text": "facilitate those grievances from the farmers which are received through other sources like mobile app, Chatbot, social media, email, handwritten applications, walk-in grievances lodged by the farmers at local State, District or Taluka Agriculture Office or Insurance Company. 30.6.5 Every grievance shall be taken to a logical conclusion to the satisfaction of the farmer. Every grievance will have a Ticket ID with ticket closure responsibility lying with the Insurance Company, State/UT and Bank respectively as per the type of grievance. The turnaround time for the grievances and queries on the grievance portal shall be 15 days. Grievances which are tagged to State/UT officials will be dealt with exclusively by the State/UT. 30.6.6 IRDAI already has an Integrated Grievance Management System named as Bima Bharosa, a platform for complaint registration and grievance redressal, which shall also be integrated with KRPH for real-time information sharing and escalation of grievances which stands unresolved with the Insurance Company within the given period of 15 days. Further, similar integrations shall also be done with respective grievance redressal portals of RBI, States/UTs specific grievance redressal portals and Central Govt. portal i.e. CPGRMS etc. comprehensive visibility and quick resolution of all types of grievances and complaints related to multiple stakeholders under PMFBY. 30.6.7 Any grievance resolved by the respective stakeholders shall be liable for re-opening"
+            }
+        ],
+        "recall_at_3": 1.0,
+        "reciprocal_rank": 0.3333333333333333
+    },
+    {
+        "query": "पीएम-किसान योजना के तहत एक वर्ष में किसान को कितनी सहायता मिलती है?",
+        "language": "Hindi",
+        "relevant_passages": [
+            "PMKISAN_SA2_P1"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P164",
+                "rrf_score": 0.02736726874657909,
+                "text": "the farmer using their biometric authentication using Aadhaar services made available by UIDAI for ﬁlling up the online application. Having a bank account is essential for such cases. In this case, CSC-VLE will upload all requisite and desired supporting documents on NCIP while ﬁlling up the application form on behalf of the farmer. Applications without requisite documents would not be considered for insurance coverage and CSC-VLE themselves shall be responsible for proper ﬁlling www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 65 of application form to ensure the farmer is enrolled under the scheme to receive the intended benefits. 17.7.5 CSC/Bank Branch/PACS/designated BCs ofﬁcials will assist the farmers in"
+            },
+            {
+                "id": "PMFBY_SA2_P158",
+                "rrf_score": 0.027046783625730993,
+                "text": "1.5% - - (% of SI) Premium to be debited from KCC 2,000 800 1,500 Total Farmer’s Premium (Loanee) 2,800 1,500 Insured Area through coverage 2 1 2 Balance Un-covered area (Ha)* 3 1 4 Additional premium (as non - loanee )* 3,000 800 - 3,000 Total Farmer’s Premium (as non - loanee )* 3,800 3,000 Total Premium of Farmers (both as loanee and non- loanee) 6,600 4,500 *Note: The Area which has been left out of coverage as loanee farmer for the notiﬁed crop can be insured by the farmer as a non-loanee farmer by depositing additional applicable premium along with required relevant documents. 17.6.7 Farmers having crop loans sanctioned through Kisan Credit Cards (KCC) are covered as loanee farmer and banks shall maintain all back up records and registers relating to compliance with the seasonality discipline for debiting and remittance of farmers premium on or before the respective cut-off-date and the cut-off dates for submission of coverage details on NCIP. Bank branch shall apportion coverage area among insurable crops, based on acreage mentioned in loan application or on the www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 63 basis of actual area sown as declared by the farmer subsequently but prior to the cut-off-date for debit of farmers premium and enrollment of farmers under the scheme."
+            },
+            {
+                "id": "PMFBY_SA2_P161",
+                "rrf_score": 0.026356857985087564,
+                "text": "17.6.13 In case the farmer has submitted a declaration for opting-out from the scheme for a season earlier in previous year he will be enrolled automatically for the current season by the bank branch as a normal process without any requirement for the farmer to submit written or oral consent for the purpose unless the farmer himself has submitted opt-out form for the current season as well. 17.6.14 Declaration for \"Opting-out\" will have to be submitted by the farmer in the same bank branch where they have their KCC Loan account. Formats for \"Opting-out\" are already circulated to relevant stakeholders and is annexed at Annexure-VI of these www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 64 guidelines for reference. 17.6.15 Banks shall ensure mandatory enrolment of all those loanee farmers who have indicated their willingness to enroll by not submitted declarations for Opting-out up to 7 days before the cut-off date, for enrolment and debiting of farmers premium. In case of failure of entry of data of eligible and willing farmers leading to farmers being left without insurance cover, the liability for all such applications and farmers shall rest with the concerned bank branches and accordingly they shall make the eligible claim payment to the concerned farmers. 17.6.16 In cases where the farmer's application has been rejected by the Insurance"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "क्या बटाईदार और किरायेदार किसान किसान क्रेडिट कार्ड बनवा सकते हैं?",
+        "language": "Hindi",
+        "relevant_passages": [
+            "KCC_SA2_P6"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P155",
+                "rrf_score": 0.027071520029266508,
+                "text": "and fully operational bank account details of farmers viz. complete bank account number, Indian Financial System Code (IFSC) to enable direct transfer of claims into the farmers account. The bank account should be able to receive credit directly through electronic remittance. The non-computerized and non-CBS PACS who maintain a non-compliant serialized loan identification number of borrowers shall mandatorily enter Saving Bank Account of the loan account holder maintained at the concerned District Central Cooperative Bank for the purpose. In absence of correct and operational account number on NCIP, the claims for the eligible farmers shall be initiated through Aadhaar Based Payment System (AEPS) into Aadhaar ceded bank account number. The concerned banks shall not raise any objection to the process in case of their failure to provide the correct and DBT compliant bank account number. 17.6.4 Any reporting of excess acreages under insurance in comparison to the sown acreage will be liable for initiation of documentary and physical inspection/verification/validation by the GoI/State/UT or agencies designated by them and lead to administrative action if gross negligence and malpractice in reporting of insurance acreage is found at farmer's or enrolment channel's end. 17.6.5 Beneﬁt of add on products viz., Prevented sowing/ On-Account Payment for Mid-"
+            },
+            {
+                "id": "PMFBY_SA2_P164",
+                "rrf_score": 0.025676937441643323,
+                "text": "the farmer using their biometric authentication using Aadhaar services made available by UIDAI for ﬁlling up the online application. Having a bank account is essential for such cases. In this case, CSC-VLE will upload all requisite and desired supporting documents on NCIP while ﬁlling up the application form on behalf of the farmer. Applications without requisite documents would not be considered for insurance coverage and CSC-VLE themselves shall be responsible for proper ﬁlling www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 65 of application form to ensure the farmer is enrolled under the scheme to receive the intended benefits. 17.7.5 CSC/Bank Branch/PACS/designated BCs ofﬁcials will assist the farmers in"
+            },
+            {
+                "id": "PMFBY_SA2_P172",
+                "rrf_score": 0.025158227848101268,
+                "text": "sowing or transplanting, based on advance crop planning, will also have the option to change the crop. For any reason if a farmer changes the crop planned earlier, they should intimate the change to Insurance Company, up to 2 working days before the cut-off-date for enrolment through their original enrolment channel such as bank branch/ insurance intermediary or directly as the case may be, and pay the difference in premium, if any, accompanied with revised sowing certiﬁcate issued by concerned village/ sub-district level ofﬁcial of the State/UT. In case the premium debited earlier was higher, concerned Bank branch or Insurance Company shall credit or refund the excess premium as the case may be to farmer's account. 17.10 Incomplete applications or applications with wrong farmer’s and land details or"
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "पीएमएफबीवाई के लिए किसान ऑनलाइन आवेदन कैसे कर सकता है?",
+        "language": "Hindi",
+        "relevant_passages": [
+            "PMFBY_SA2_P164",
+            "PMFBY_SA2_P168"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P164",
+                "rrf_score": 0.032266458495966696,
+                "text": "the farmer using their biometric authentication using Aadhaar services made available by UIDAI for ﬁlling up the online application. Having a bank account is essential for such cases. In this case, CSC-VLE will upload all requisite and desired supporting documents on NCIP while ﬁlling up the application form on behalf of the farmer. Applications without requisite documents would not be considered for insurance coverage and CSC-VLE themselves shall be responsible for proper ﬁlling www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 65 of application form to ensure the farmer is enrolled under the scheme to receive the intended benefits. 17.7.5 CSC/Bank Branch/PACS/designated BCs ofﬁcials will assist the farmers in"
+            },
+            {
+                "id": "PMFBY_SA2_P168",
+                "rrf_score": 0.031024531024531024,
+                "text": "through NCIP or Crop Insurance App. For this, a farmer can ﬁll up the online application form available on NCIP (www.pmfby.gov.in) or Crop Insurance App and pay the requisite premium electronically through the payment gateway. As soon as the application is submitted through the system, an acknowledgement receipt will be generated along with a unique application number. Additionally, intimation will also be sent through SMS on registered mobile number of the farmer. In this case, farmers themselves will upload all requisite and desired supporting documents on web-portal or mobile app while ﬁlling up the application form. Applications without requisite documents would not be considered for insurance coverage and farmers themselves shall be responsible for proper ﬁlling of application form to ensure that they are enrolled under the scheme to receive the intended benefits. 17.8.3 It is mandatory that Non-Loanee farmers, willing to enroll themselves under the"
+            },
+            {
+                "id": "PMFBY_SA2_P167",
+                "rrf_score": 0.028258706467661692,
+                "text": "17.7.8 In cases where the farmer's application has been rejected by the Insurance Company as per the provisions of Operational Guidelines, farmer's remittance for such applications must be refunded back to the farmer's bank account by the concerned Insurance Company within 45 days of closure of cut-off date for uploading of data by Banks, PACS etc., failing which the Insurance Company will be constrained to accept the application and pay claims as per normal process. 17.7.9 All rejected applications may be re-opened for review & verification purpose if the State/UT Government and/or GoI decides to do so. 17.7.10 For farmers buying crop insurance through CSC-VLEs or online, OTP/Aadhaar enabled veriﬁcation shall be construed as consent and signature of the applicant for availing coverage under the scheme. www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 66 17.8 Non-Loanee Farmers - Directly to Insurance Companies or through Web Portal 17.8.1 Non-Loanee farmer may contact the Insurance Company and submit the requisite and desired supporting documents and applicable premium through conventional method or through electronic mode. 17.8.2 Non-loanee farmer can also submit application forms for getting insurance coverage"
+            }
+        ],
+        "recall_at_3": 1.0,
+        "reciprocal_rank": 1.0
+    },
+    {
+        "query": "फसल बीमा योजना में शिकायत का समाधान कितने दिनों में होना चाहिए?",
+        "language": "Hindi",
+        "relevant_passages": [
+            "PMFBY_SA2_P360"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P167",
+                "rrf_score": 0.027271052146674038,
+                "text": "17.7.8 In cases where the farmer's application has been rejected by the Insurance Company as per the provisions of Operational Guidelines, farmer's remittance for such applications must be refunded back to the farmer's bank account by the concerned Insurance Company within 45 days of closure of cut-off date for uploading of data by Banks, PACS etc., failing which the Insurance Company will be constrained to accept the application and pay claims as per normal process. 17.7.9 All rejected applications may be re-opened for review & verification purpose if the State/UT Government and/or GoI decides to do so. 17.7.10 For farmers buying crop insurance through CSC-VLEs or online, OTP/Aadhaar enabled veriﬁcation shall be construed as consent and signature of the applicant for availing coverage under the scheme. www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 66 17.8 Non-Loanee Farmers - Directly to Insurance Companies or through Web Portal 17.8.1 Non-Loanee farmer may contact the Insurance Company and submit the requisite and desired supporting documents and applicable premium through conventional method or through electronic mode. 17.8.2 Non-loanee farmer can also submit application forms for getting insurance coverage"
+            },
+            {
+                "id": "PMFBY_SA2_P170",
+                "rrf_score": 0.024396929824561403,
+                "text": "Company as per the provisions of Operational Guidelines, farmer's remittance for such applications must be refunded back to the farmer's bank account within 45 days of closure of cut-off date for uploading of data by Banks, PACS, CSC-VLEs, other authorized agencies/entities, BCs, Insurance Intermediaries etc., failing which the Insurance Company will be constrained to accept the application and pay claims as per normal process. 17.8.6 All rejected applications may be re-opened for review & verification purpose if the State Governments/UTs and/or GoI decides to do so. 17.9 Option for change of crop name by the Farmer 17.9.1 All loanee farmers can change the name of the insured crop from the original crop indicated in the KCC loan application but such change should be submitted in writing www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 67"
+            },
+            {
+                "id": "PMFBY_SA2_P133",
+                "rrf_score": 0.023985497141263423,
+                "text": "Within 7 days from the date of submission of correction/ updation by the Bank/ CSCs/Intermediary BCs. Insurance Companies 17 Submission of report of over insurance or any potential moral hazard etc. to the Government in the prescribed proforma. At least 15 days before date prescribed for auto-approval, i.e. latest by 31st August of current year for Kharif and 31st January of next year for Rabi season. Insurance Companies 18 Cut-off date for final processing of applications by Insurance Companies and auto-approval of application of insured farmers on NCIP and closure of enrollment data for the season. 60 days from the cut-off date for enrolment/debit of premium from farmers i.e., 15th September of current year for Kharif and 15th February of next year for Rabi season."
+            }
+        ],
+        "recall_at_3": 0.0,
+        "reciprocal_rank": 0.0
+    },
+    {
+        "query": "PM Kisan scheme mein farmer ko saal bhar mein total kitni financial help milti hai?",
+        "language": "Hinglish",
+        "relevant_passages": [
+            "PMKISAN_SA2_P1"
+        ],
+        "top_results": [
+            {
+                "id": "PMKISAN_SA2_P1",
+                "rrf_score": 0.03278688524590164,
+                "text": "1 PRADHAN MANTRI KISAN SAMMAN NIDHI SCHEME (PM-KISAN SCHEME) OPERATIONAL GUIDELINES (REVISED AS ON 29.03.2020) MINISTRY OF AGRICULTURE & FARMERS’ WELFARE DEPARTMENT OF AGRICULTURE, COOPERATION & FARMERS’ WELFARE (DAC&FW) 2 PRADHAN MANTRI KISAN SAMMAN NIDHI (PM-KISAN) SCHEME OPERATIONAL GUIDELINES 1. Scheme With a view to provide income support to all landholding farmers’ families in the country, having cultivable land, the Central Government has implemented a Central Sector Scheme, namely, “Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)”. 2. Objective and Benefits The scheme aims to supplement the financial needs of all landholding farmers’ families in procuring various inputs to ensure proper crop health and appropriate yields, commensurate with the anticipated farm income as well as for domestic needs. Under the Scheme an amount of Rs.6000/- per year is released by the Central Government online directly into the bank accounts of the eligible farmers under Direct Benefit Transfer mode, subject to certain exclusions. 3. Definition of farmer’s family A landholder farmer’s family is defined as “a family comprising of husband, wife and minor children who owns cultivable land as per land records of the concerned State/UT”. The existing land-ownership system will be used for identification of beneficiaries for calculation of benefit. 4 Exclusions 4.1 The following categories of beneficiaries of higher economic status shall not be eligible for benefit under the scheme:"
+            },
+            {
+                "id": "PMKISAN_SA2_P18",
+                "rrf_score": 0.03125763125763126,
+                "text": "2. Farmers list as available on the portal shall be available at Block / Tehsil / Taluka level official’s login. 3. Search facility will also be available to get details on Farmers by Name, Aadhaar Number or Mobile Number in case PM-KISAN Portal data is being used. Facility to add new farmers’ details shall be available, if details are not found in the list. 4. The verified list shall be e-signed by the District level or block / tehsil / taluka level officials as the case may be. The exclusion categories specified in scheme guidelines also need to be taken care before e-signing the verified farmers list. 5. The States Nodal Officer shall submit a district wise e-Signed list of farmers to the Program Division of DAC&FW through PM-Kisan Portal. 10 Modalities for transfer of benefit 10.1 The financial benefit of Rs.6000/- per year is to be released to the eligible farmers in three installments of Rs.2000/- each every 4-month / trimester, i.e. April-July, August-November and December-March. 10.2 The Scheme is being implemented through an Aadhaar linked electronic data"
+            },
+            {
+                "id": "PMFBY_SA2_P21",
+                "rrf_score": 0.031054405392392875,
+                "text": "Kisan Rin Portal (KRP), having details of all the farmers availing subsidized short term agriculture loans through Kisan Credit Card under Modified Interest Subvention Scheme (MISS) of the GoI & PM KISAN database having pre-identified farmers receiving benefits under PM Kisan Samman Nidhi scheme of GoI. The www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 13 data/information of both the Schemes shall be auto synchronized to enable real-time sharing of information and better program monitoring. 2.13 With a view to keep pace with the massive innovations happening for making agriculture financially resilient and to achieve the objective of meeting Sustainable Development Goals, the scheme envisages to foster the innovation and development of effective technology solutions under PMFBY ecosystem to make the scheme more effective and farmers more resilient & protected. Implementing Insurance Companies may contribute funds in order to promote innovation and research & collaborate with the technical institutions, start-ups/Fin-tech/Insure-tech & Agri-tech entities of the country & across the globe. The potential technologies solutions shall be first evaluated and recommended by GoI for pilot-rollout. The pilots shall be carried out by the implementing Insurance Companies collectively and/or individually for strengthening the technology models and solutions for PMFBY. Further, the GoI shall review and examine the results of such pilots/research for final adoption within scheme ecosystem. Remote Sensing & Other Technologies"
+            }
+        ],
+        "recall_at_3": 1.0,
+        "reciprocal_rank": 1.0
+    },
+    {
+        "query": "Tenant ya sharecropper farmer KCC ke liye eligible hai kya?",
+        "language": "Hinglish",
+        "relevant_passages": [
+            "KCC_SA2_P6"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P25",
+                "rrf_score": 0.031754032258064516,
+                "text": "the notiﬁed areas are eligible for coverage. However, farmers should have insurable interest on the insured crops and lands. Such farmers are required to submit necessary documentary evidence of land records prevailing in the State (Records of Right (RoR), Land Possession Certiﬁcate (LPC) etc.) and/or applicable contract/ agreement details/ other documents notiﬁed/ permitted by concerned State Governments/UT Administrations pertaining to sharecroppers/tenant farmers and the same should be deﬁned by the respective States/UTs in the notiﬁcation itself. Tribal farmers and forest dwellers having cultivation in forest land under FRA are also allowed to be insured under the scheme. The farmers cultivating community owned land especially as is practiced in NER states are also allowed to be covered under the scheme with certification from village head or revenue authorities. All such farmers are also required to essentially submit Aadhaar Number and declaration about the crop sown/ crops intended to be sown. 3.1.1 Farmers availing the Kisan Credit Card (KCC)/Crop Loan/Loanee Farmers 3.1.1.1 The scheme is optional for all farmers including farmers who have been sanctioned short-term Seasonal Agricultural Operations (SAO) loans though Kisan Credit Card (KCC) for the notiﬁed crops from deﬁned Financial Institutions (hereinafter referred to as Loanee farmers). Existing Loanee farmers who do not want to get covered www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 15"
+            },
+            {
+                "id": "KCC_SA2_P6",
+                "rrf_score": 0.03125763125763126,
+                "text": "The following shall be eligible to avail credit for working capital requirements for cultivation of crops: (1) Farmers (individual / joint borrowers), who are owner cultivators; (2) Tenant farmers, oral lessees, and sharecroppers; and (3) Self-Help Groups (SHGs) and Joint Liability Groups (JLGs) of farmers / cultivators including tenant farmers, oral lessees, and sharecroppers. 13. Fixation of Drawing Limit (1) The drawing limit for each crop season shall be the sum total of the following: (i) Scale of Finance (SoF) [as notified by State Level Technical Committee (SLTC) / District Level Technical Committee (DLTC)] for the respective crop/s for the current crop season multiplied by extent of area of cultivation 6"
+            },
+            {
+                "id": "KCC_SA2_P9",
+                "rrf_score": 0.031054405392392875,
+                "text": "7 storage related credit needs , other farm expenses, consumption need s and investment requirements for agriculture and allied activities. The composite KCC limit is to be fixed for a period of six years on this basis. Wherever higher limit is required due to change in cropping pattern and / or SoF, the limit may be arrived at as per the estimation indicated at paragraphs 13(1) to 13(6). 14. Repayment Period Banks shall fix the repayment period as per the crop season applicable. G. Working Capital for Allied Activities 15. Eligibility The following borrowers shall be eligible to avail credit for working capital requirements for allied activities. (1) Animal husbandry farmers, fishers, fish farmers and farmers (including tenant farmers and sharecroppers), undertaking allied activities as per para 8(2) as individual / joint borrowers; and (2) SHGs / JLGs of individuals as above. 16. Fixation of Drawing Limit"
+            }
+        ],
+        "recall_at_3": 1.0,
+        "reciprocal_rank": 0.5
+    },
+    {
+        "query": "PMFBY crop insurance ke liye online registration kaise kar sakte hain?",
+        "language": "Hinglish",
+        "relevant_passages": [
+            "PMFBY_SA2_P164",
+            "PMFBY_SA2_P168"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P168",
+                "rrf_score": 0.0315136476426799,
+                "text": "through NCIP or Crop Insurance App. For this, a farmer can ﬁll up the online application form available on NCIP (www.pmfby.gov.in) or Crop Insurance App and pay the requisite premium electronically through the payment gateway. As soon as the application is submitted through the system, an acknowledgement receipt will be generated along with a unique application number. Additionally, intimation will also be sent through SMS on registered mobile number of the farmer. In this case, farmers themselves will upload all requisite and desired supporting documents on web-portal or mobile app while ﬁlling up the application form. Applications without requisite documents would not be considered for insurance coverage and farmers themselves shall be responsible for proper ﬁlling of application form to ensure that they are enrolled under the scheme to receive the intended benefits. 17.8.3 It is mandatory that Non-Loanee farmers, willing to enroll themselves under the"
+            },
+            {
+                "id": "PMFBY_SA2_P520",
+                "rrf_score": 0.030834914611005692,
+                "text": "Disclaimer: In case, if the farmer to Partial Opt In for some of the crops under the scheme he/she needs to get himself/herself enrol under the scheme through other channels of enrolment like Common Service Centre, Agents of Insurance Companies, Online facility on PMFBY Portal or android based Crop Insurance App. For office use: The above declaration is recorded in the bank documents for appropriate action as on date. Branch Manager (signature) with date www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 213 Department of Agriculture and Farmers Welfare Ministry of Agriculture & Farmers Welfare Government of India www.pmfby.gov.in"
+            },
+            {
+                "id": "PMFBY_SA2_P422",
+                "rrf_score": 0.028850145288501453,
+                "text": "39.4.16 AIDE App for Enrollment through Intermediaries www.pmfby.gov.in Operational Guidelines 2023 of PMFBY 163 In addition to the existing channels of enrolment for non-loanee farmers viz. CSC, Banks, Post Offices etc., a smart-phone App also has been designed and rolled out in Kharif 2023 for enrolment of farmers at their doorsteps through a large network of Insurance Intermediaries. This App has been designed to streamline the process of enrolment and offer a completely paper-less and cash-less experience to a farmer to get enrolled by leveraging the digital technology for registration, documentation and premium payment. As of now the option is enabled for the insurance company for which the cluster is allocated i.e. L1 insurance company as per bidding process. As per the guidelines, other empaneled Insurance Companies which have participated in the bidding and are keen for enrolment of non-loanee farmers in the cluster may also be allowed to enroll non-loanee farmers at L1 premium rate. The interested companies have to inform their willingness in writing within seven days of ﬁnalization of tender/issuance of work order to L1. The AIDE App shall be enabled for such interested Insurance Companies to also do the enrollment of farmers under PMFBY. 39.4.17 SARTHI for Risk Resilience though Insurance"
+            }
+        ],
+        "recall_at_3": 0.5,
+        "reciprocal_rank": 1.0
+    },
+    {
+        "query": "Fasal bima ki complaint raise karne ke baad resolution ka timeline kya hai?",
+        "language": "Hinglish",
+        "relevant_passages": [
+            "PMFBY_SA2_P360"
+        ],
+        "top_results": [
+            {
+                "id": "PMFBY_SA2_P358",
+                "rrf_score": 0.03278688524590164,
+                "text": "& Helpline (KRPH) has been set-up for query resolution and grievance redressal of farmers. Any query or complaint of the farmer will be registered on the NCIP against a unique ticket number. The ticket number will be shared with the farmer through SMS or Chatbot indicating the tentative resolution timeline. Simple queries or complaints shall be resolved by the concerned agent handling the call whereas the serious complaints and grievances which the agents are not able to resolve shall be further forwarded to the concerned Stakeholder viz. Insurance Company, Banks, CSC e-Gov or nodal departments of the States/UTs. The concerned Stakeholder shall provide the resolution electronically within given timelines defined by GoI. The solution or redressal shall be intimated to the farmer through a feedback telephonic call and also through NCIP, Chatbot & Mobile App basis the information given by the concerned stakeholder on NCIP and/or KRPH. 30.6.2 The Krishi Rakshak Portal shall be the centralized system equipped with the necessary features viz., Complaint/Query capturing through multiple modes (electronic, telephonic and conventional or physical mode), farmer authentication & online ticket creation and forwarding to the concerned stakeholders, online escalation as per escalation matrix, updating of resolution details, MIS & Dashboards for data analysis and visualization. 30.6.3 The farmers’ grievances would be registered and transmitted to the concerned"
+            },
+            {
+                "id": "PMFBY_SA2_P360",
+                "rrf_score": 0.03149801587301587,
+                "text": "facilitate those grievances from the farmers which are received through other sources like mobile app, Chatbot, social media, email, handwritten applications, walk-in grievances lodged by the farmers at local State, District or Taluka Agriculture Office or Insurance Company. 30.6.5 Every grievance shall be taken to a logical conclusion to the satisfaction of the farmer. Every grievance will have a Ticket ID with ticket closure responsibility lying with the Insurance Company, State/UT and Bank respectively as per the type of grievance. The turnaround time for the grievances and queries on the grievance portal shall be 15 days. Grievances which are tagged to State/UT officials will be dealt with exclusively by the State/UT. 30.6.6 IRDAI already has an Integrated Grievance Management System named as Bima Bharosa, a platform for complaint registration and grievance redressal, which shall also be integrated with KRPH for real-time information sharing and escalation of grievances which stands unresolved with the Insurance Company within the given period of 15 days. Further, similar integrations shall also be done with respective grievance redressal portals of RBI, States/UTs specific grievance redressal portals and Central Govt. portal i.e. CPGRMS etc. comprehensive visibility and quick resolution of all types of grievances and complaints related to multiple stakeholders under PMFBY. 30.6.7 Any grievance resolved by the respective stakeholders shall be liable for re-opening"
+            },
+            {
+                "id": "PMFBY_SA2_P13",
+                "rrf_score": 0.030798389007344232,
+                "text": "Pradhan Mantri Fasal Bima Yojana Pradhan Mantri Fasal Bima Yojana (PMFBY) was launched from Kharif 2016 with aim to support production in agriculture by providing an affordable crop insurance product to ensure comprehensive risk cover for crops of farmers against all non- preventable natural risks from pre-sowing to post-harvest stage. The Scheme has completed 16 crop seasons and is being implemented across States/Union Territories (UTs). After the commencement of the Scheme, The Ministry of Agriculture and Farmers Welfare (MoA&FW), Government of India (GoI) has endeavored to make the Scheme more effective, transparent and auto-administration driven with the intention to minimize manual interventions and eliminate usage of variable methodologies for implementation and execution on the ground. This was facilitated by a detailed set of Operational Guidelines (OGs) and by leveraging efﬁcient and cutting-edge technological solutions. Based on the past experiences of implementing the scheme (between 2016-2020), study reports of various research institutions and feedback received from stakeholders, the scheme was reviewed, and the revised OGs were brought into effect from 01st October 2018 addressing major challenges. Also, the Revamped Operational Guidelines effective from Kharif 2020, addressed the issues related to long-term tendering, optional coverage to all farmers, increase in the scope of risk cover and the addition of add-on covers. During the implementation of the scheme between 2020 & 2022, many"
+            }
+        ],
+        "recall_at_3": 1.0,
+        "reciprocal_rank": 0.5
+    }
+]
