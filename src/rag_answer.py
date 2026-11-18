@@ -1,15 +1,15 @@
 import os
-import re
 import json
+import re
 import time
-import numpy as np
-
+import urllib.request
+import urllib.error
 from pathlib import Path
+
+import numpy as np
 from dotenv import load_dotenv
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
-from google import genai
-from google.genai import types
 
 
 # ==================================================
@@ -22,32 +22,30 @@ load_dotenv(ROOT / ".env")
 CORPUS_PATH = ROOT / "data" / "corpus_section_aware_v2.json"
 
 EMBEDDING_MODEL = "intfloat/multilingual-e5-small"
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
+
+GROQ_MODEL = os.getenv(
+    "GROQ_MODEL",
+    "openai/gpt-oss-120b"
+)
+
+GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 TOP_K = 3
 RRF_K = 60
 MAX_RETRIES = 2
+REQUEST_TIMEOUT = 20
 
 
 # ==================================================
-# GEMINI CLIENT
+# GROQ CONFIGURATION
 # ==================================================
 
-api_key = os.getenv("GEMINI_API_KEY")
-
-client = None
+api_key = os.getenv("GROQ_API_KEY")
 
 if api_key:
-    try:
-        client = genai.Client(
-            api_key=api_key,
-            http_options=types.HttpOptions(timeout=30000)
-        )
-        print("Gemini client configured.", flush=True)
-    except Exception as error:
-        print(f"Gemini initialization failed: {error}", flush=True)
+    print(f"Groq configured with model: {GROQ_MODEL}", flush=True)
 else:
-    print("Gemini key not found. Evidence-only mode enabled.", flush=True)
+    print("Groq key not found. Evidence-only mode enabled.", flush=True)
 
 
 # ==================================================
@@ -100,35 +98,77 @@ print("\nFASAL QA READY.", flush=True)
 
 def retrieve_passages(query):
 
-    query_tokens = tokenize(query)
+    search_queries = [query]
 
-    bm25_scores = bm25.get_scores(query_tokens)
-
-    bm25_ranking = np.argsort(bm25_scores)[::-1]
-
-    query_embedding = embedding_model.encode(
-        ["query: " + query],
-        normalize_embeddings=True
-    )[0]
-
-    dense_scores = np.dot(
-        document_embeddings,
-        query_embedding
+    # Expand general PMFBY crop-loss and claim calculation questions
+    # using terminology from the official yield-based claim formula.
+    calculation_terms = (
+        "crop loss",
+        "crop losses",
+        "claim calculation",
+        "calculate claim",
+        "insurance claim",
+        "compensation",
+        "payout",
+        "indemnity",
+        "how much claim",
+        "loss calculation"
     )
 
-    dense_ranking = np.argsort(dense_scores)[::-1]
+    query_lower = query.lower()
+
+    is_pmfby_calculation = (
+        any(term in query_lower for term in calculation_terms)
+        and any(
+            term in query_lower
+            for term in (
+                "pmfby",
+                "pradhan mantri fasal",
+                "crop insurance",
+                "crop loss",
+                "crop losses"
+            )
+        )
+    )
+
+    if is_pmfby_calculation:
+        search_queries.append(
+            "PMFBY yield based claim formula "
+            "Threshold Yield Actual Yield Sum Insured "
+            "average yield best five years indemnity level"
+        )
 
     rrf_scores = {}
 
-    for rank, index in enumerate(bm25_ranking, start=1):
-        rrf_scores[index] = rrf_scores.get(index, 0) + (
-            1 / (RRF_K + rank)
+    for search_query in search_queries:
+
+        query_tokens = tokenize(search_query)
+
+        bm25_scores = bm25.get_scores(query_tokens)
+
+        bm25_ranking = np.argsort(bm25_scores)[::-1]
+
+        query_embedding = embedding_model.encode(
+            ["query: " + search_query],
+            normalize_embeddings=True
+        )[0]
+
+        dense_scores = np.dot(
+            document_embeddings,
+            query_embedding
         )
 
-    for rank, index in enumerate(dense_ranking, start=1):
-        rrf_scores[index] = rrf_scores.get(index, 0) + (
-            1 / (RRF_K + rank)
-        )
+        dense_ranking = np.argsort(dense_scores)[::-1]
+
+        for rank, index in enumerate(bm25_ranking, start=1):
+            rrf_scores[index] = rrf_scores.get(index, 0) + (
+                1 / (RRF_K + rank)
+            )
+
+        for rank, index in enumerate(dense_ranking, start=1):
+            rrf_scores[index] = rrf_scores.get(index, 0) + (
+                1 / (RRF_K + rank)
+            )
 
     ranking = sorted(
         rrf_scores,
@@ -152,25 +192,37 @@ def retrieve_passages(query):
 
 def evidence_only_answer(question, passages):
 
-    import re
-
     question_lower = question.lower()
 
     concept_groups = {
-        "amount": ["amount", "money", "benefit", "financial", "rupees",
-                   "receive", "payment", "income", "instalment", "installment"],
-        "eligibility": ["eligible", "eligibility", "farmer", "tenant",
-                        "sharecropper", "land", "qualify"],
-        "application": ["apply", "application", "register", "registration",
-                        "documents", "portal", "submit"],
-        "deadline": ["deadline", "date", "last date", "when", "period",
-                     "days", "months", "years"],
-        "claim": ["claim", "compensation", "loss", "insurance", "yield",
-                  "premium"],
-        "loan": ["loan", "credit", "kcc", "interest", "collateral",
-                 "repayment", "limit"],
-        "grievance": ["complaint", "grievance", "resolve",
-                      "resolution", "helpline", "ticket"]
+        "amount": [
+            "amount", "money", "benefit", "financial", "rupees",
+            "receive", "payment", "income", "instalment", "installment"
+        ],
+        "eligibility": [
+            "eligible", "eligibility", "farmer", "tenant",
+            "sharecropper", "land", "qualify"
+        ],
+        "application": [
+            "apply", "application", "register", "registration",
+            "documents", "portal", "submit"
+        ],
+        "deadline": [
+            "deadline", "date", "last date", "when", "period",
+            "days", "months", "years"
+        ],
+        "claim": [
+            "claim", "compensation", "loss", "insurance", "yield",
+            "premium"
+        ],
+        "loan": [
+            "loan", "credit", "kcc", "interest", "collateral",
+            "repayment", "limit"
+        ],
+        "grievance": [
+            "complaint", "grievance", "resolve",
+            "resolution", "helpline", "ticket"
+        ]
     }
 
     relevant_concepts = [
@@ -178,7 +230,9 @@ def evidence_only_answer(question, passages):
         if any(word in question_lower for word in words)
     ]
 
-    question_words = set(re.findall(r"[a-z0-9]+", question_lower))
+    question_words = set(
+        re.findall(r"[a-z0-9]+", question_lower)
+    )
 
     stopwords = {
         "the", "a", "an", "is", "are", "was", "were", "do", "does",
@@ -191,39 +245,52 @@ def evidence_only_answer(question, passages):
     candidates = []
 
     for passage in passages:
+
         text = passage["text"].strip()
-        # Protect common abbreviations from being treated as sentence endings.
+
         protected_text = re.sub(
-            r"\\bi\\.e\\.",
+            r"\bi\.e\.",
             "i.e<ABBREVIATION>",
             text,
             flags=re.IGNORECASE
         )
-        sentences = re.split(r"(?<=[.!?])\\s+", protected_text)
+
+        sentences = re.split(
+            r"(?<=[.!?])\s+",
+            protected_text
+        )
+
         sentences = [
             sentence.replace("<ABBREVIATION>", ".")
             for sentence in sentences
         ]
 
         for sentence in sentences:
+
             sentence = sentence.strip()
 
             if len(sentence) < 25:
                 continue
 
             sentence_lower = sentence.lower()
-            sentence_words = set(re.findall(r"[a-z0-9]+", sentence_lower))
+
+            sentence_words = set(
+                re.findall(r"[a-z0-9]+", sentence_lower)
+            )
 
             score = len(question_words & sentence_words)
 
             for concept in relevant_concepts:
-                if any(word in sentence_lower
-                       for word in concept_groups[concept]):
+                if any(
+                    word in sentence_lower
+                    for word in concept_groups[concept]
+                ):
                     score += 3
 
             has_amount = bool(
                 re.search(
-                    r"(?:₹|rs\.?\s*)\s*[\d,]+|[\d,]+\s*(?:per year|annually)",
+                    r"(?:₹|rs\.?\s*)\s*[\d,]+|"
+                    r"[\d,]+\s*(?:per year|annually)",
                     sentence_lower
                 )
             )
@@ -243,11 +310,13 @@ def evidence_only_answer(question, passages):
         reverse=True
     )
 
-    # For amount questions, prefer evidence that actually states an amount.
     if "amount" in relevant_concepts:
+
         amount_candidates = [
-            item for item in candidates if item["has_amount"]
+            item for item in candidates
+            if item["has_amount"]
         ]
+
         if amount_candidates:
             candidates = amount_candidates
 
@@ -255,7 +324,9 @@ def evidence_only_answer(question, passages):
     seen = set()
 
     for item in candidates:
+
         sentence = item["sentence"]
+
         if sentence not in seen and item["score"] > 0:
             selected.append(item)
             seen.add(sentence)
@@ -271,7 +342,7 @@ def evidence_only_answer(question, passages):
         )
 
     parts = [
-        "Gemini was unavailable. The following are the most relevant "
+        "Groq was unavailable. The following are the most relevant "
         "statements extracted directly from the official documents:"
     ]
 
@@ -290,36 +361,46 @@ def evidence_only_answer(question, passages):
 
 
 # ==================================================
-# GEMINI ANSWER GENERATION
+# GROQ ANSWER GENERATION
 # ==================================================
 
-def generate_with_gemini(question, passages):
+def generate_with_groq(question, passages):
 
-    if client is None:
-        raise RuntimeError("Gemini client is unavailable.")
+    current_key = os.getenv("GROQ_API_KEY")
 
-    context = "\n\n".join(
-        f"PASSAGE ID: {p['id']}\nCONTENT: {p['text']}"
+    if not current_key:
+        raise RuntimeError("GROQ_API_KEY is missing.")
+
+    context = "\\n\\n".join(
+        f"PASSAGE ID: {p['id']}\\nCONTENT: {p['text']}"
         for p in passages
     )
 
-    prompt = f"""
-You are Fasal QA, a question-answering assistant for
-Indian agricultural government schemes.
+    system_prompt = """
+You are Fasal QA, an assistant for Indian agricultural government schemes.
 
-Answer using ONLY the official document passages below.
+STRICT LANGUAGE RULE:
+- If the farmer asks in English, answer entirely in English.
+- If the farmer asks in Hindi, answer entirely in Hindi.
+- If the farmer asks in Hinglish, answer naturally in Hinglish.
+- Determine the language from the farmer's question, NOT from the document passages.
+- Never switch languages merely because a retrieved passage is written in another language.
+- Do not translate the question unless necessary to understand it.
 
-Rules:
-1. Never invent facts or use outside knowledge.
-2. If the evidence is insufficient, say so clearly.
-3. Distinguish confirmed facts from missing information.
-4. Use simple language suitable for farmers.
-5. Respond in the same language as the question.
-6. Respond naturally in Hinglish if the question is Hinglish.
-7. Cite supporting passage IDs in square brackets.
-8. Never cite a passage that does not support your claim.
-9. Do not calculate compensation without all required inputs.
+EVIDENCE RULES:
+1. Use ONLY the official document passages supplied by the user.
+2. Never invent facts or use outside knowledge.
+3. If evidence is insufficient, clearly state what is missing.
+4. Distinguish confirmed facts from missing information.
+5. Use simple language suitable for farmers.
+6. Cite every factual claim using the exact passage ID in square brackets.
+7. Never cite a passage that does not support the claim.
+8. Do not calculate compensation without all required inputs.
+9. Do not confuse yield-based crop insurance claims with localized damage assessment.
+10. Keep the answer concise and directly address the question.
+"""
 
+    user_prompt = f"""
 OFFICIAL DOCUMENT PASSAGES:
 
 {context}
@@ -328,40 +409,117 @@ FARMER QUESTION:
 
 {question}
 
-Give a concise, accurate answer with citations.
+Answer the farmer in the same language as the question.
 """
+
+    payload = {
+        "model": GROQ_MODEL,
+        "messages": [
+            {
+                "role": "system",
+                "content": system_prompt
+            },
+            {
+                "role": "user",
+                "content": user_prompt
+            }
+        ],
+        "temperature": 0,
+        "max_completion_tokens": 1000
+    }
+
+    request = urllib.request.Request(
+        GROQ_API_URL,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {current_key}",
+            "User-Agent": "FasalQA/1.0"
+        },
+        method="POST"
+    )
 
     for attempt in range(1, MAX_RETRIES + 1):
 
         try:
             print(
-                f"Contacting Gemini (attempt {attempt}/{MAX_RETRIES})...",
+                f"Contacting Groq (attempt {attempt}/{MAX_RETRIES})...",
                 flush=True
             )
 
-            response = client.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=prompt
+            with urllib.request.urlopen(
+                request,
+                timeout=REQUEST_TIMEOUT
+            ) as response:
+
+                result = json.loads(
+                    response.read().decode("utf-8")
+                )
+
+            answer = result["choices"][0]["message"]["content"]
+
+            if answer and answer.strip():
+                answer = answer.strip()
+
+                # Normalize citations and reject IDs not present
+                # in the retrieved passages.
+                allowed_ids = {passage["id"] for passage in passages}
+
+                citation_pattern = re.compile(
+                    r"[【\\[]\\s*((?:PMKISAN|PMFBY|KCC)_SA2_P\\d+)"
+                    r"(?:†L\\d+(?:-L?\\d+)?)?\\s*[】\\]]"
+                )
+
+                def normalize_citation(match):
+                    passage_id = match.group(1)
+
+                    if passage_id in allowed_ids:
+                        return f"[{passage_id}]"
+
+                    return ""
+
+                answer = citation_pattern.sub(
+                    normalize_citation,
+                    answer
+                )
+
+                return answer.strip()
+
+            raise RuntimeError("Groq returned an empty response.")
+
+        except urllib.error.HTTPError as error:
+
+            error_body = error.read().decode(
+                "utf-8",
+                errors="replace"
             )
 
-            if response.text:
-                return response.text
+            message = f"Groq HTTP {error.code}: {error_body}"
 
-            raise RuntimeError("Gemini returned an empty response.")
+            print(message, flush=True)
+
+            if error.code not in (500, 502, 503, 504):
+                raise RuntimeError(message) from error
+
+            if attempt == MAX_RETRIES:
+                raise RuntimeError(message) from error
 
         except Exception as error:
 
             print(
-                f"Gemini request failed: {type(error).__name__}: {error}",
+                f"Groq request failed: {type(error).__name__}: {error}",
                 flush=True
             )
 
-            if attempt < MAX_RETRIES:
-                delay = 2 ** attempt
-                print(f"Retrying in {delay} seconds...", flush=True)
-                time.sleep(delay)
+            if attempt == MAX_RETRIES:
+                raise
 
-    raise RuntimeError("Gemini unavailable after retries.")
+        delay = 2 ** (attempt - 1)
+
+        print(f"Retrying in {delay} seconds...", flush=True)
+        time.sleep(delay)
+
+    raise RuntimeError("Groq unavailable after retries.")
 
 
 # ==================================================
@@ -377,10 +535,11 @@ def generate_answer(question):
     print("Evidence retrieved.", flush=True)
 
     try:
-        answer = generate_with_gemini(question, passages)
-        mode = "Gemini-generated answer"
+        answer = generate_with_groq(question, passages)
+        mode = "Groq-generated answer"
 
     except Exception as error:
+
         print(
             f"\nUsing evidence-only fallback: {error}",
             flush=True
