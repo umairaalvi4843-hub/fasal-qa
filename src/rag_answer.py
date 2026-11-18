@@ -187,6 +187,70 @@ def retrieve_passages(query):
 
 
 # ==================================================
+# BASIC ANSWERABILITY CHECK
+# ==================================================
+
+def check_answerability(question, passages):
+
+    question_lower = question.lower()
+
+    # These topics require live or external information that
+    # is not provided by the official scheme-document corpus.
+    external_topics = (
+        "today's mandi price",
+        "today mandi price",
+        "current mandi price",
+        "today's market price",
+        "current market price",
+        "weather today",
+        "today's weather",
+        "live market price",
+        "stock price"
+    )
+
+    if any(topic in question_lower for topic in external_topics):
+        return False, (
+            "This question requires current or external information "
+            "that is not available in the official scheme documents."
+        )
+
+    question_tokens = {
+        token for token in tokenize(question)
+        if len(token) > 2
+    }
+
+    # Ignore common words that do not indicate the topic.
+    stop_words = {
+        "what", "when", "where", "which", "who", "whom",
+        "does", "do", "did", "can", "could", "would",
+        "should", "how", "much", "many", "under", "about",
+        "from", "with", "have", "has", "the", "and",
+        "for", "are", "was", "were", "this", "that",
+        "hai", "hain", "kya", "kaise", "kitna", "kitne",
+        "mein", "ke", "ki", "ka", "ko", "par", "se"
+    }
+
+    question_tokens -= stop_words
+
+    evidence_tokens = set()
+
+    for passage in passages:
+        evidence_tokens.update(tokenize(passage["text"]))
+
+    overlap = question_tokens.intersection(evidence_tokens)
+
+    # Conservative first-pass threshold. This is a heuristic,
+    # not proof that the evidence is sufficient.
+    if len(overlap) < 2:
+        return False, (
+            "The retrieved official passages do not contain enough "
+            "matching information to answer this question reliably."
+        )
+
+    return True, "Relevant terms were found in retrieved evidence."
+
+
+# ==================================================
 # EVIDENCE-ONLY FALLBACK
 # ==================================================
 
@@ -533,6 +597,22 @@ def generate_answer(question):
     passages = retrieve_passages(question)
 
     print("Evidence retrieved.", flush=True)
+
+    answerable, reason = check_answerability(question, passages)
+
+    if not answerable:
+        return {
+            "question": question,
+            "answer": reason,
+            "mode": "Insufficient evidence",
+            "retrieved_passages": [
+                {
+                    "id": p["id"],
+                    "rrf_score": p["rrf_score"]
+                }
+                for p in passages
+            ]
+        }
 
     try:
         answer = generate_with_groq(question, passages)
