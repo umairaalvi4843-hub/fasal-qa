@@ -1,0 +1,10 @@
+{
+    "experiment": "Scheme-filtered hybrid BM25 + multilingual E5 using RRF on section-aware v2 corpus",
+    "model": "intfloat/multilingual-e5-small",
+    "fusion": "Reciprocal Rank Fusion",
+    "rrf_k": 60,
+    "total_queries": 12,
+    "corpus_passages": 573,
+    "recall_at_3": 0.3333333333333333,
+    "mrr_at_3": 0.23611111111111108
+}
