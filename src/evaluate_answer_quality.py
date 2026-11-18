@@ -31,6 +31,36 @@ def contains_phrase(answer, phrase):
     return normalized_phrase in normalize(answer)
 
 
+
+def language_check(answer, expected_language):
+    if not expected_language:
+        return True
+
+    devanagari_count = len(
+        re.findall(r"[\u0900-\u097F]", answer)
+    )
+
+    if expected_language == "hindi":
+        return devanagari_count >= 5
+
+    if expected_language == "hinglish":
+        if devanagari_count > 2:
+            return False
+
+        markers = [
+            "ke tahat", "har saal", "ke liye",
+            "kar sakte", "kisan", "hai", "hain",
+            "milta", "milti", "apply"
+        ]
+        lowered = answer.lower()
+        return any(
+            re.search(r"\b" + re.escape(marker) + r"\b", lowered)
+            for marker in markers
+        )
+
+    return True
+
+
 tests = json.loads(TEST_PATH.read_text(encoding="utf-8"))
 results = []
 
@@ -56,6 +86,9 @@ for test in tests:
 
         checks = {
             "mode": output["mode"] == test["expected_mode"],
+            "language": language_check(
+                answer, test.get("expected_language")
+            ),
             "required_facts": (
                 any(
                     contains_phrase(answer, phrase)

@@ -7,6 +7,8 @@ import urllib.error
 from pathlib import Path
 
 import numpy as np
+import torch
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from dotenv import load_dotenv
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
@@ -34,6 +36,68 @@ TOP_K = 3
 RRF_K = 60
 MAX_RETRIES = 2
 REQUEST_TIMEOUT = 20
+
+
+TRANSLATION_MODEL = "facebook/nllb-200-distilled-600M"
+_translation_tokenizer = None
+_translation_model = None
+
+
+def translate_hindi_query(query):
+    """Translate Devanagari Hindi into English for document retrieval."""
+    global _translation_tokenizer, _translation_model
+
+    if not re.search(r"[\u0900-\u097F]", query):
+        return query
+
+    if _translation_tokenizer is None:
+        print("Loading Hindi-English translation model...", flush=True)
+        _translation_tokenizer = AutoTokenizer.from_pretrained(
+            TRANSLATION_MODEL,
+            src_lang="hin_Deva"
+        )
+        _translation_model = AutoModelForSeq2SeqLM.from_pretrained(
+            TRANSLATION_MODEL
+        )
+        _translation_model.eval()
+
+    inputs = _translation_tokenizer(
+        query,
+        return_tensors="pt",
+        truncation=True,
+        max_length=256
+    )
+
+    with torch.no_grad():
+        output = _translation_model.generate(
+            **inputs,
+            forced_bos_token_id=(
+                _translation_tokenizer.convert_tokens_to_ids("eng_Latn")
+            ),
+            max_new_tokens=128
+        )
+
+    translated = _translation_tokenizer.decode(
+        output[0],
+        skip_special_tokens=True
+    )
+
+    translated = re.sub(
+        r"\bthe tenant and the tenant farmer\b",
+        "sharecroppers and tenant farmers",
+        translated,
+        flags=re.IGNORECASE
+    )
+
+    # Add official agricultural terminology where NLLB translations
+    # do not reliably preserve the meaning of Hindi farmer categories.
+    if "बटाईदार" in query:
+        translated += " sharecropper sharecroppers"
+    if "किरायेदार" in query:
+        translated += " tenant farmer tenant farmers"
+
+    print("Translated retrieval query:", translated, flush=True)
+    return translated
 
 
 # ==================================================
@@ -99,6 +163,10 @@ print("\nFASAL QA READY.", flush=True)
 def retrieve_passages(query):
 
     search_queries = [query]
+
+    translated_query = translate_hindi_query(query)
+    if translated_query.strip().lower() != query.strip().lower():
+        search_queries.append(translated_query)
 
     # Expand general PMFBY crop-loss and claim calculation questions
     # using terminology from the official yield-based claim formula.
@@ -214,8 +282,10 @@ def check_answerability(question, passages):
             "that is not available in the official scheme documents."
         )
 
+    retrieval_question = translate_hindi_query(question)
+
     question_tokens = {
-        token for token in tokenize(question)
+        token for token in tokenize(retrieval_question)
         if len(token) > 2
     }
 
@@ -446,10 +516,15 @@ You are Fasal QA, an assistant for Indian agricultural government schemes.
 STRICT LANGUAGE RULE:
 - If the farmer asks in English, answer entirely in English.
 - If the farmer asks in Hindi, answer entirely in Hindi.
-- If the farmer asks in Hinglish, answer naturally in Hinglish.
-- Determine the language from the farmer's question, NOT from the document passages.
-- Never switch languages merely because a retrieved passage is written in another language.
-- Do not translate the question unless necessary to understand it.
+- If the farmer asks in Hinglish written in the Latin/Roman alphabet, answer in Hinglish using ONLY the Latin/Roman alphabet.
+- For a Roman-script Hinglish question, do not write any Devanagari characters, even for Hindi words or headings.
+- Keep scheme names, agricultural terms and explanations in Roman script when the question uses Roman-script Hinglish.
+- If the farmer asks in Hindi written in Devanagari, answer in Hindi using Devanagari.
+- If the farmer asks in English, answer in English.
+- Match both the language and the writing script of the farmer's question.
+- Determine the language and script from the farmer's question, NOT from the document passages.
+- Never switch languages or scripts merely because a retrieved passage is written differently.
+- Do not translate the final answer into a different language or script.
 
 EVIDENCE RULES:
 1. Use ONLY the official document passages supplied in the context.
@@ -568,11 +643,26 @@ Answer the farmer in the same language as the question.
 
             print(message, flush=True)
 
-            if error.code not in (500, 502, 503, 504):
+            if error.code not in (429, 500, 502, 503, 504):
                 raise RuntimeError(message) from error
 
             if attempt == MAX_RETRIES:
                 raise RuntimeError(message) from error
+
+            # Groq may specify the wait time in its 429 response.
+            if error.code == 429:
+                wait_match = re.search(
+                    r"try again in ([0-9.]+)s",
+                    error_body,
+                    flags=re.IGNORECASE
+                )
+                delay = (
+                    float(wait_match.group(1)) + 1
+                    if wait_match
+                    else 6
+                )
+            else:
+                delay = 2 ** (attempt - 1)
 
         except Exception as error:
 

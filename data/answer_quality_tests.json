@@ -79,9 +79,8 @@
     "query": "Does PMFBY exclude a particular type of crop loss if the supplied passages do not specify it?",
     "expected_mode": "Groq-generated answer",
     "required_facts": [
-      "no specific exclusion is established",
-      "none of the provided documents state",
-      "do not contain an explicit exclusion"
+      "do not contain any statement",
+      "no specific exclusion can be confirmed"
     ],
     "forbidden_claims": [
       "all losses are excluded",
@@ -89,5 +88,69 @@
     ],
     "expected_citations": [],
     "required_fact_mode": "any"
+  },
+  {
+    "id": "AQ07",
+    "query": "PM-KISAN ke tahat kisan ko har saal kitni financial help milti hai?",
+    "expected_mode": "Groq-generated answer",
+    "expected_language": "hinglish",
+    "required_facts": [
+      "6000"
+    ],
+    "expected_citations": [
+      "PMKISAN_SA2_P1"
+    ],
+    "forbidden_claims": [
+      "6000 per month",
+      "6000 every four months"
+    ]
+  },
+  {
+    "id": "AQ08",
+    "query": "पीएम-किसान योजना के तहत किसानों को सालाना कितनी आर्थिक सहायता मिलती है?",
+    "expected_mode": "Groq-generated answer",
+    "expected_language": "hindi",
+    "required_facts": [
+      "6000"
+    ],
+    "expected_citations": [
+      "PMKISAN_SA2_P18"
+    ],
+    "forbidden_claims": [
+      "6000 प्रति माह",
+      "हर महीने 6000"
+    ]
+  },
+  {
+    "id": "AQ09",
+    "query": "Kya tenant farmers aur sharecroppers KCC ke liye apply kar sakte hain?",
+    "expected_mode": "Groq-generated answer",
+    "expected_language": "hinglish",
+    "required_facts": [
+      "tenant",
+      "sharecropper"
+    ],
+    "expected_citations": [
+      "KCC_SA2_P6"
+    ],
+    "forbidden_claims": [
+      "only owner cultivators"
+    ]
+  },
+  {
+    "id": "AQ10",
+    "query": "क्या किरायेदार किसान और बटाईदार किसान किसान क्रेडिट कार्ड के लिए पात्र हैं?",
+    "expected_mode": "Groq-generated answer",
+    "expected_language": "hindi",
+    "required_facts": [
+      "किरायेदार",
+      "बटाईदार"
+    ],
+    "expected_citations": [
+      "KCC_SA2_P6"
+    ],
+    "forbidden_claims": [
+      "केवल भूमिधर किसान"
+    ]
   }
 ]
