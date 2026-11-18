@@ -1,0 +1,581 @@
+[
+    {
+        "bm25_weight": 1,
+        "dense_weight": 1,
+        "recall_at_3": 0.3680555555555555,
+        "mrr": 0.5277777777777778,
+        "details": [
+            {
+                "query": "How to get a KCC loan",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P10",
+                    "KCC_P12",
+                    "KCC_P7"
+                ],
+                "relevant_passages": [
+                    "KCC_P12",
+                    "KCC_P5"
+                ],
+                "recall_at_3": 0.5,
+                "reciprocal_rank": 0.5
+            },
+            {
+                "query": "Who is eligible for KCC?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P5",
+                    "KCC_P13",
+                    "KCC_P7"
+                ],
+                "relevant_passages": [
+                    "KCC_P9",
+                    "KCC_P13",
+                    "KCC_P8",
+                    "KCC_P5"
+                ],
+                "recall_at_3": 0.5,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "What documents are required for KCC?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P27",
+                    "KCC_P7",
+                    "KCC_P12"
+                ],
+                "relevant_passages": [
+                    "KCC_P13",
+                    "KCC_P12"
+                ],
+                "recall_at_3": 0.5,
+                "reciprocal_rank": 0.3333333333333333
+            },
+            {
+                "query": "What is the KCC loan limit?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P7",
+                    "KCC_P20",
+                    "KCC_P11"
+                ],
+                "relevant_passages": [
+                    "KCC_P6",
+                    "KCC_P8",
+                    "KCC_P7",
+                    "KCC_P5"
+                ],
+                "recall_at_3": 0.25,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "Is collateral required for KCC?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P11",
+                    "KCC_P7",
+                    "KCC_P12"
+                ],
+                "relevant_passages": [
+                    "KCC_P11",
+                    "KCC_P12"
+                ],
+                "recall_at_3": 1.0,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "Who is eligible for PMFBY crop insurance?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P202",
+                    "PMFBY_P378",
+                    "PMFBY_P376"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P24",
+                    "PMFBY_P20"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "What premium does a farmer have to pay for crop insurance?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P355",
+                    "PMFBY_P242",
+                    "PMFBY_P100"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P95",
+                    "PMFBY_P94"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "Which crops are covered under PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P371",
+                    "PMFBY_P370",
+                    "PMFBY_P35"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P25"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "What types of crop damage are covered by PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P371",
+                    "PMFBY_P222",
+                    "PMFBY_P372"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P26"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "How is crop insurance compensation calculated?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P193",
+                    "PMFBY_P366",
+                    "PMFBY_P202"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P194",
+                    "PMFBY_P193"
+                ],
+                "recall_at_3": 0.5,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "How can a farmer apply for PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P139",
+                    "PMFBY_P136",
+                    "PMFBY_P374"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P139",
+                    "PMFBY_P345",
+                    "PMFBY_P136"
+                ],
+                "recall_at_3": 0.6666666666666666,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "How can farmers file complaints about PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P294",
+                    "PMFBY_P300",
+                    "PMFBY_P303"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P303",
+                    "PMFBY_P47",
+                    "PMFBY_P300",
+                    "PMFBY_P46"
+                ],
+                "recall_at_3": 0.5,
+                "reciprocal_rank": 0.5
+            }
+        ]
+    },
+    {
+        "bm25_weight": 1,
+        "dense_weight": 2,
+        "recall_at_3": 0.3680555555555555,
+        "mrr": 0.4583333333333333,
+        "details": [
+            {
+                "query": "How to get a KCC loan",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P10",
+                    "KCC_P14",
+                    "KCC_P20"
+                ],
+                "relevant_passages": [
+                    "KCC_P12",
+                    "KCC_P5"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "Who is eligible for KCC?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P13",
+                    "KCC_P5",
+                    "KCC_P3"
+                ],
+                "relevant_passages": [
+                    "KCC_P9",
+                    "KCC_P13",
+                    "KCC_P8",
+                    "KCC_P5"
+                ],
+                "recall_at_3": 0.5,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "What documents are required for KCC?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P13",
+                    "KCC_P12",
+                    "KCC_P1"
+                ],
+                "relevant_passages": [
+                    "KCC_P13",
+                    "KCC_P12"
+                ],
+                "recall_at_3": 1.0,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "What is the KCC loan limit?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P20",
+                    "KCC_P7",
+                    "KCC_P11"
+                ],
+                "relevant_passages": [
+                    "KCC_P6",
+                    "KCC_P8",
+                    "KCC_P7",
+                    "KCC_P5"
+                ],
+                "recall_at_3": 0.25,
+                "reciprocal_rank": 0.5
+            },
+            {
+                "query": "Is collateral required for KCC?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P11",
+                    "KCC_P7",
+                    "KCC_P12"
+                ],
+                "relevant_passages": [
+                    "KCC_P11",
+                    "KCC_P12"
+                ],
+                "recall_at_3": 1.0,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "Who is eligible for PMFBY crop insurance?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P376",
+                    "PMFBY_P202",
+                    "PMFBY_P378"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P24",
+                    "PMFBY_P20"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "What premium does a farmer have to pay for crop insurance?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P355",
+                    "PMFBY_P242",
+                    "PMFBY_P330"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P95",
+                    "PMFBY_P94"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "Which crops are covered under PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P35",
+                    "PMFBY_P370",
+                    "PMFBY_P371"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P25"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "What types of crop damage are covered by PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P371",
+                    "PMFBY_P222",
+                    "PMFBY_P372"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P26"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "How is crop insurance compensation calculated?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P366",
+                    "PMFBY_P193",
+                    "PMFBY_P382"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P194",
+                    "PMFBY_P193"
+                ],
+                "recall_at_3": 0.5,
+                "reciprocal_rank": 0.5
+            },
+            {
+                "query": "How can a farmer apply for PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P139",
+                    "PMFBY_P136",
+                    "PMFBY_P448"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P139",
+                    "PMFBY_P345",
+                    "PMFBY_P136"
+                ],
+                "recall_at_3": 0.6666666666666666,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "How can farmers file complaints about PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P294",
+                    "PMFBY_P300",
+                    "PMFBY_P303"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P303",
+                    "PMFBY_P47",
+                    "PMFBY_P300",
+                    "PMFBY_P46"
+                ],
+                "recall_at_3": 0.5,
+                "reciprocal_rank": 0.5
+            }
+        ]
+    },
+    {
+        "bm25_weight": 1,
+        "dense_weight": 3,
+        "recall_at_3": 0.3680555555555555,
+        "mrr": 0.4583333333333333,
+        "details": [
+            {
+                "query": "How to get a KCC loan",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P10",
+                    "KCC_P1",
+                    "KCC_P14"
+                ],
+                "relevant_passages": [
+                    "KCC_P12",
+                    "KCC_P5"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "Who is eligible for KCC?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P13",
+                    "KCC_P1",
+                    "KCC_P5"
+                ],
+                "relevant_passages": [
+                    "KCC_P9",
+                    "KCC_P13",
+                    "KCC_P8",
+                    "KCC_P5"
+                ],
+                "recall_at_3": 0.5,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "What documents are required for KCC?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P13",
+                    "KCC_P1",
+                    "KCC_P12"
+                ],
+                "relevant_passages": [
+                    "KCC_P13",
+                    "KCC_P12"
+                ],
+                "recall_at_3": 1.0,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "What is the KCC loan limit?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P20",
+                    "KCC_P7",
+                    "KCC_P11"
+                ],
+                "relevant_passages": [
+                    "KCC_P6",
+                    "KCC_P8",
+                    "KCC_P7",
+                    "KCC_P5"
+                ],
+                "recall_at_3": 0.25,
+                "reciprocal_rank": 0.5
+            },
+            {
+                "query": "Is collateral required for KCC?",
+                "scheme": "KCC",
+                "top_3": [
+                    "KCC_P11",
+                    "KCC_P7",
+                    "KCC_P12"
+                ],
+                "relevant_passages": [
+                    "KCC_P11",
+                    "KCC_P12"
+                ],
+                "recall_at_3": 1.0,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "Who is eligible for PMFBY crop insurance?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P376",
+                    "PMFBY_P202",
+                    "PMFBY_P346"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P24",
+                    "PMFBY_P20"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "What premium does a farmer have to pay for crop insurance?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P355",
+                    "PMFBY_P242",
+                    "PMFBY_P330"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P95",
+                    "PMFBY_P94"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "Which crops are covered under PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P35",
+                    "PMFBY_P370",
+                    "PMFBY_P371"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P25"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "What types of crop damage are covered by PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P371",
+                    "PMFBY_P222",
+                    "PMFBY_P372"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P26"
+                ],
+                "recall_at_3": 0.0,
+                "reciprocal_rank": 0
+            },
+            {
+                "query": "How is crop insurance compensation calculated?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P366",
+                    "PMFBY_P193",
+                    "PMFBY_P292"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P194",
+                    "PMFBY_P193"
+                ],
+                "recall_at_3": 0.5,
+                "reciprocal_rank": 0.5
+            },
+            {
+                "query": "How can a farmer apply for PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P139",
+                    "PMFBY_P136",
+                    "PMFBY_P448"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P139",
+                    "PMFBY_P345",
+                    "PMFBY_P136"
+                ],
+                "recall_at_3": 0.6666666666666666,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "query": "How can farmers file complaints about PMFBY?",
+                "scheme": "PMFBY",
+                "top_3": [
+                    "PMFBY_P294",
+                    "PMFBY_P300",
+                    "PMFBY_P303"
+                ],
+                "relevant_passages": [
+                    "PMFBY_P303",
+                    "PMFBY_P47",
+                    "PMFBY_P300",
+                    "PMFBY_P46"
+                ],
+                "recall_at_3": 0.5,
+                "reciprocal_rank": 0.5
+            }
+        ]
+    }
+]
