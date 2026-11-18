@@ -160,43 +160,86 @@ print("\nFASAL QA READY.", flush=True)
 # HYBRID RETRIEVAL
 # ==================================================
 
+
+def detect_scheme(query):
+    """Identify an explicitly mentioned agricultural scheme."""
+    text = query.lower()
+
+    if any(term in text for term in (
+        "pm-kisan", "pmkisan", "pm kisan",
+        "प्रधानमंत्री किसान", "पीएम-किसान", "पीएम किसान"
+    )):
+        return "PMKISAN"
+
+    if any(term in text for term in (
+        "pmfby", "pm fby", "fasal bima",
+        "फसल बीमा", "प्रधानमंत्री फसल बीमा"
+    )):
+        return "PMFBY"
+
+    if any(term in text for term in (
+        "kcc", "kisan credit card", "किसान क्रेडिट कार्ड"
+    )):
+        return "KCC"
+
+    return None
+
+
 def retrieve_passages(query):
 
     search_queries = [query]
 
     translated_query = translate_hindi_query(query)
+
     if translated_query.strip().lower() != query.strip().lower():
         search_queries.append(translated_query)
 
-    # Expand general PMFBY crop-loss and claim calculation questions
-    # using terminology from the official yield-based claim formula.
-    calculation_terms = (
-        "crop loss",
-        "crop losses",
-        "claim calculation",
-        "calculate claim",
-        "insurance claim",
-        "compensation",
-        "payout",
-        "indemnity",
-        "how much claim",
-        "loss calculation"
-    )
+    scheme = detect_scheme(query)
+
+    candidate_indices = [
+        index
+        for index, passage_id in enumerate(document_ids)
+        if scheme is None or passage_id.startswith(scheme + "_")
+    ]
 
     query_lower = query.lower()
+    translated_lower = translated_query.lower()
+
+    schedule_terms = (
+        "installment", "instalment", "installments", "instalments",
+        "kisht", "kishten", "किस्त", "किस्तें",
+        "bank account", "deposit", "credited", "release",
+        "payment", "when", "kab", "month", "mahine"
+    )
+
+    is_pm_kisan_schedule = (
+        scheme == "PMKISAN"
+        and (
+            any(term in query_lower for term in schedule_terms)
+            or any(term in translated_lower for term in (
+                "installment", "instalment", "bank account",
+                "deposit", "payment", "release", "when"
+            ))
+        )
+    )
+
+    if is_pm_kisan_schedule:
+        search_queries.append(
+            "PM-KISAN modalities for transfer of benefit "
+            "Rs 6000 per year three installments Rs 2000 each "
+            "every 4-month trimester April-July "
+            "August-November December-March"
+        )
+
+    calculation_terms = (
+        "crop loss", "crop losses", "claim calculation",
+        "calculate claim", "insurance claim", "compensation",
+        "payout", "indemnity", "how much claim", "loss calculation"
+    )
 
     is_pmfby_calculation = (
-        any(term in query_lower for term in calculation_terms)
-        and any(
-            term in query_lower
-            for term in (
-                "pmfby",
-                "pradhan mantri fasal",
-                "crop insurance",
-                "crop loss",
-                "crop losses"
-            )
-        )
+        scheme == "PMFBY"
+        and any(term in query_lower for term in calculation_terms)
     )
 
     if is_pmfby_calculation:
@@ -211,22 +254,26 @@ def retrieve_passages(query):
     for search_query in search_queries:
 
         query_tokens = tokenize(search_query)
-
         bm25_scores = bm25.get_scores(query_tokens)
 
-        bm25_ranking = np.argsort(bm25_scores)[::-1]
+        bm25_ranking = sorted(
+            candidate_indices,
+            key=lambda index: bm25_scores[index],
+            reverse=True
+        )
 
         query_embedding = embedding_model.encode(
             ["query: " + search_query],
             normalize_embeddings=True
         )[0]
 
-        dense_scores = np.dot(
-            document_embeddings,
-            query_embedding
-        )
+        dense_scores = np.dot(document_embeddings, query_embedding)
 
-        dense_ranking = np.argsort(dense_scores)[::-1]
+        dense_ranking = sorted(
+            candidate_indices,
+            key=lambda index: dense_scores[index],
+            reverse=True
+        )
 
         for rank, index in enumerate(bm25_ranking, start=1):
             rrf_scores[index] = rrf_scores.get(index, 0) + (
@@ -605,12 +652,19 @@ Answer the farmer in the same language as the question.
                 answer = answer.strip()
 
                 # Enforce Roman script for Roman-script Hinglish questions.
+                hinglish_markers = {
+                    "ke", "ki", "ka", "hai", "hain", "kya",
+                    "kitna", "kitni", "kar", "sakte", "liye",
+                    "mein", "milti", "milta", "kab", "kaise",
+                    "hota", "hoti", "hoga", "kisan", "fasal",
+                    "kisht", "paisa", "account"
+                }
+
+                question_words = set(tokenize(question))
+
                 is_roman_hinglish = (
                     not re.search(r"[\u0900-\u097F]", question)
-                    and re.search(
-                        r"\b(ke|ki|ka|hai|hain|kya|kitna|kitni|kar|sakte|liye|mein|milti|tahath)\b",
-                        question.lower()
-                    )
+                    and len(question_words.intersection(hinglish_markers)) >= 2
                 )
 
                 contains_devanagari = bool(
@@ -618,6 +672,7 @@ Answer the farmer in the same language as the question.
                 )
 
                 if is_roman_hinglish and contains_devanagari:
+
                     print(
                         "Roman-script check failed. Requesting one corrected answer...",
                         flush=True
@@ -632,11 +687,11 @@ Answer the farmer in the same language as the question.
                         {
                             "role": "user",
                             "content": (
-                                "Your previous answer used Devanagari script. "
-                                "Rewrite the entire answer in Roman-script Hinglish. "
-                                "Use ONLY Latin/Roman characters. Do not use any "
-                                "Devanagari characters. Preserve the factual meaning "
-                                "and valid passage citations. Return only the corrected answer."
+                                "Rewrite your entire previous answer in Roman-script "
+                                "Hinglish. Use only the Latin alphabet. Do not use "
+                                "Devanagari characters anywhere. Preserve the factual "
+                                "meaning and valid passage citations. Return only "
+                                "the corrected answer."
                             )
                         }
                     ]
@@ -656,6 +711,7 @@ Answer the farmer in the same language as the question.
                         retry_request,
                         timeout=REQUEST_TIMEOUT
                     ) as retry_response:
+
                         retry_result = json.loads(
                             retry_response.read().decode("utf-8")
                         )
@@ -664,8 +720,15 @@ Answer the farmer in the same language as the question.
                         retry_result["choices"][0]["message"]["content"]
                     ).strip()
 
-                    if corrected_answer:
+                    if (
+                        corrected_answer
+                        and not re.search(r"[\u0900-\u097F]", corrected_answer)
+                    ):
                         answer = corrected_answer
+                    else:
+                        raise RuntimeError(
+                            "Groq did not produce a valid Roman-script Hinglish answer."
+                        )
 
                 # Normalize citations and reject IDs not present
                 # in the retrieved passages.
