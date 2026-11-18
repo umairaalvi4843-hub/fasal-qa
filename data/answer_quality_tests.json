@@ -1,0 +1,93 @@
+[
+  {
+    "id": "AQ01",
+    "query": "How much money does a farmer receive under PM-KISAN every year?",
+    "expected_mode": "Groq-generated answer",
+    "required_facts": [
+      "6000",
+      "2000",
+      "three"
+    ],
+    "forbidden_claims": [
+      "6000 per month",
+      "12000 per year"
+    ],
+    "expected_citations": [
+      "PMKISAN_SA2_P18"
+    ]
+  },
+  {
+    "id": "AQ02",
+    "query": "Does PM-KISAN cover private school fees?",
+    "expected_mode": "Insufficient evidence",
+    "required_facts": [
+      "not contain enough matching information"
+    ],
+    "forbidden_claims": [
+      "school fees are covered",
+      "school fees are excluded",
+      "not eligible"
+    ],
+    "expected_citations": []
+  },
+  {
+    "id": "AQ03",
+    "query": "What is today's mandi price of wheat in Faridabad?",
+    "expected_mode": "Insufficient evidence",
+    "required_facts": [
+      "current",
+      "external"
+    ],
+    "forbidden_claims": [
+      "₹"
+    ],
+    "expected_citations": []
+  },
+  {
+    "id": "AQ04",
+    "query": "Can tenant farmers and sharecroppers obtain a Kisan Credit Card?",
+    "expected_mode": "Groq-generated answer",
+    "required_facts": [
+      "tenant farmers",
+      "sharecroppers"
+    ],
+    "forbidden_claims": [
+      "only landowners"
+    ],
+    "expected_citations": [
+      "KCC_SA2_P6"
+    ]
+  },
+  {
+    "id": "AQ05",
+    "query": "What is the PMFBY yield-based crop insurance claim formula?",
+    "expected_mode": "Groq-generated answer",
+    "required_facts": [
+      "threshold yield",
+      "actual yield",
+      "sum insured"
+    ],
+    "forbidden_claims": [
+      "claim equals total sum insured in every case"
+    ],
+    "expected_citations": [
+      "PMFBY_SA2_P233"
+    ]
+  },
+  {
+    "id": "AQ06",
+    "query": "Does PMFBY exclude a particular type of crop loss if the supplied passages do not specify it?",
+    "expected_mode": "Groq-generated answer",
+    "required_facts": [
+      "no specific exclusion is established",
+      "none of the provided documents state",
+      "do not contain an explicit exclusion"
+    ],
+    "forbidden_claims": [
+      "all losses are excluded",
+      "no losses are excluded"
+    ],
+    "expected_citations": [],
+    "required_fact_mode": "any"
+  }
+]

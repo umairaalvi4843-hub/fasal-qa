@@ -1,0 +1,155 @@
+{
+  "total_tests": 6,
+  "passed": 6,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "results": [
+    {
+      "id": "AQ01",
+      "query": "How much money does a farmer receive under PM-KISAN every year?",
+      "mode": "Groq-generated answer",
+      "answer": "A farmer who is eligible for the PM‑Kisan scheme receives a total cash benefit of **₹ 6,000 per year**. This amount is paid in three equal installments of **₹ 2,000 each** (one every four months)[PMKISAN_SA2_P18].",
+      "retrieved_passages": [
+        "PMKISAN_SA2_P8",
+        "PMKISAN_SA2_P18",
+        "PMKISAN_SA2_P16"
+      ],
+      "citations": [
+        "PMKISAN_SA2_P18"
+      ],
+      "checks": {
+        "mode": true,
+        "required_facts": true,
+        "forbidden_claims": true,
+        "citation_format": true,
+        "citation_grounding": true,
+        "expected_citation": true,
+        "citation_exists_in_corpus": true,
+        "citation_is_retrieved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "AQ02",
+      "query": "Does PM-KISAN cover private school fees?",
+      "mode": "Insufficient evidence",
+      "answer": "The retrieved official passages do not contain enough matching information to answer this question reliably.",
+      "retrieved_passages": [
+        "PMKISAN_SA2_P8",
+        "PMKISAN_SA2_P16",
+        "PMKISAN_SA2_P7"
+      ],
+      "citations": [],
+      "checks": {
+        "mode": true,
+        "required_facts": true,
+        "forbidden_claims": true,
+        "citation_format": true,
+        "citation_grounding": true,
+        "expected_citation": true,
+        "citation_exists_in_corpus": true,
+        "citation_is_retrieved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "AQ03",
+      "query": "What is today's mandi price of wheat in Faridabad?",
+      "mode": "Insufficient evidence",
+      "answer": "This question requires current or external information that is not available in the official scheme documents.",
+      "retrieved_passages": [
+        "PMFBY_SA2_P219",
+        "KCC_SA2_P19",
+        "PMFBY_SA2_P9"
+      ],
+      "citations": [],
+      "checks": {
+        "mode": true,
+        "required_facts": true,
+        "forbidden_claims": true,
+        "citation_format": true,
+        "citation_grounding": true,
+        "expected_citation": true,
+        "citation_exists_in_corpus": true,
+        "citation_is_retrieved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "AQ04",
+      "query": "Can tenant farmers and sharecroppers obtain a Kisan Credit Card?",
+      "mode": "Groq-generated answer",
+      "answer": "Yes. Tenant farmers and sharecroppers are listed among the categories that are eligible to obtain a Kisan Credit Card for working‑capital needs [KCC_SA2_P6].",
+      "retrieved_passages": [
+        "PMFBY_SA2_P25",
+        "PMFBY_SA2_P61",
+        "KCC_SA2_P6"
+      ],
+      "citations": [
+        "KCC_SA2_P6"
+      ],
+      "checks": {
+        "mode": true,
+        "required_facts": true,
+        "forbidden_claims": true,
+        "citation_format": true,
+        "citation_grounding": true,
+        "expected_citation": true,
+        "citation_exists_in_corpus": true,
+        "citation_is_retrieved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "AQ05",
+      "query": "What is the PMFBY yield-based crop insurance claim formula?",
+      "mode": "Groq-generated answer",
+      "answer": "The PMFBY claim is calculated at the Insurance‑Unit level using the formula  \n\n**Claim = (Threshold Yield – Actual Yield) ÷ Threshold Yield × Sum Insured**  \n\nwhere **Threshold Yield** is the average of the best 5 years out of the past 7 years, multiplied by the notified indemnity level for that crop and season[PMFBY_SA2_P233].",
+      "retrieved_passages": [
+        "PMFBY_SA2_P232",
+        "PMFBY_SA2_P233",
+        "PMFBY_SA2_P82"
+      ],
+      "citations": [
+        "PMFBY_SA2_P233"
+      ],
+      "checks": {
+        "mode": true,
+        "required_facts": true,
+        "forbidden_claims": true,
+        "citation_format": true,
+        "citation_grounding": true,
+        "expected_citation": true,
+        "citation_exists_in_corpus": true,
+        "citation_is_retrieved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "AQ06",
+      "query": "Does PMFBY exclude a particular type of crop loss if the supplied passages do not specify it?",
+      "mode": "Groq-generated answer",
+      "answer": "The passages you have shared describe how PMFBY handles different loss types – such as localized claims, mid‑term loss, yield loss and post‑harvest loss – and how the sum insured is adjusted for them[PMFBY_SA2_P497].  \nHowever, none of the provided documents state that PMFBY excludes any particular type of crop loss. Because the passages do not contain an explicit exclusion, we cannot say that the scheme excludes a loss type that is not mentioned.  \n\nSo, based on the available documents, no specific exclusion is established.",
+      "retrieved_passages": [
+        "PMFBY_SA2_P484",
+        "PMFBY_SA2_P497",
+        "PMFBY_SA2_P233"
+      ],
+      "citations": [
+        "PMFBY_SA2_P497"
+      ],
+      "checks": {
+        "mode": true,
+        "required_facts": true,
+        "forbidden_claims": true,
+        "citation_format": true,
+        "citation_grounding": true,
+        "expected_citation": true,
+        "citation_exists_in_corpus": true,
+        "citation_is_retrieved": true,
+        "exclusion_limitation": true
+      },
+      "passed": true
+    }
+  ]
+}
