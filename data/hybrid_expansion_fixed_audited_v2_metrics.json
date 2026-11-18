@@ -1,0 +1,11 @@
+{
+    "experiment": "Audited scheme-filtered hybrid retrieval with targeted query expansion",
+    "model": "intfloat/multilingual-e5-small",
+    "fusion": "Reciprocal Rank Fusion",
+    "rrf_k": 60,
+    "expanded_queries": 4,
+    "total_queries": 12,
+    "corpus_passages": 573,
+    "recall_at_3": 0.75,
+    "mrr_at_3": 0.8194444444444443
+}
