@@ -1,0 +1,29 @@
+BM25 Baseline Output (Dummy Corpus, Step 2)
+
+Query: 'PM Kisan amount'
+  1. PMKISAN_P1 (score: 0.5569)   [CORRECT]
+  2. SCAM_P1 (score: 0.5082)
+  3. KCC_P1 (score: 0.2292)
+
+Query: 'installment'
+  1. PMKISAN_P1 (score: 0.0000)   [FAIL - all zero]
+  2. PMKISAN_P2 (score: 0.0000)   [CORRECT ANSWER, RANKED 2 WITH SCORE 0]
+  3. PMFBY_P1 (score: 0.0000)
+
+Query: 'crop insurance'
+  1. PMFBY_P1 (score: 2.2857)     [CORRECT]
+  2. PMKISAN_P1 (score: 0.0000)
+  3. PMKISAN_P2 (score: 0.0000)
+
+Query: 'registration fee'
+  1. SCAM_P1 (score: 1.9858)      [CORRECT - near-miss trap works]
+
+Query: 'how to get a loan'
+  1. SCAM_P1 (score: 1.6627)      [WRONG - scam passage ranked first]
+  2. PMFBY_P1 (score: 0.2350)
+  3. KCC_P1 (score: 0.2292)       [CORRECT ANSWER, RANKED LAST]
+
+OBSERVATIONS FOR PAPER:
+- Plural/singular mismatch: "installment" vs "installments" → BM25 score 0
+- Synonym gap: "loan" vs "credit" → BM25 ranks wrong passage first
+- These failures motivate dense retrieval (Step 4)

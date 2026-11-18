@@ -1,0 +1,30 @@
+[
+  {
+    "query": "Who is eligible for PMFBY?",
+    "relevant_passages": ["PMFBY_P20", "PMFBY_P24"]
+  },
+  {
+    "query": "What are the premium rates under PMFBY?",
+    "relevant_passages": ["PMFBY_P94", "PMFBY_P95"]
+  },
+  {
+    "query": "Which crops are covered under PMFBY?",
+    "relevant_passages": ["PMFBY_P25"]
+  },
+  {
+    "query": "What crop damage and risks are covered?",
+    "relevant_passages": ["PMFBY_P25", "PMFBY_P26"]
+  },
+  {
+    "query": "How are crop insurance claims calculated and settled?",
+    "relevant_passages": ["PMFBY_P193", "PMFBY_P194", "PMFBY_P270", "PMFBY_P271"]
+  },
+  {
+    "query": "How can a farmer enrol in PMFBY and what documents are needed?",
+    "relevant_passages": ["PMFBY_P136", "PMFBY_P139", "PMFBY_P345"]
+  },
+  {
+    "query": "How can farmers raise grievances under PMFBY?",
+    "relevant_passages": ["PMFBY_P303"]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "query": "How much money does PM-KISAN provide?",
+    "relevant_passages": ["PMKISAN_P1", "PMKISAN_P16"]
+  },
+  {
+    "query": "How are PM-KISAN installments paid?",
+    "relevant_passages": ["PMKISAN_P16", "PMKISAN_P17", "PMKISAN_P18"]
+  },
+  {
+    "query": "Who is eligible for PM-KISAN?",
+    "relevant_passages": ["PMKISAN_P1", "PMKISAN_P3", "PMKISAN_P5", "PMKISAN_P7"]
+  },
+  {
+    "query": "Who is excluded from PM-KISAN?",
+    "relevant_passages": ["PMKISAN_P2", "PMKISAN_P3"]
+  },
+  {
+    "query": "How are farmers registered under PM-KISAN?",
+    "relevant_passages": ["PMKISAN_P14", "PMKISAN_P15", "PMKISAN_P16"]
+  },
+  {
+    "query": "What information is required for PM-KISAN registration?",
+    "relevant_passages": ["PMKISAN_P10", "PMKISAN_P14"]
+  },
+  {
+    "query": "How is PM-KISAN money transferred to farmers?",
+    "relevant_passages": ["PMKISAN_P17", "PMKISAN_P18", "PMKISAN_P19", "PMKISAN_P20"]
+  },
+  {
+    "query": "How can farmers raise PM-KISAN complaints?",
+    "relevant_passages": ["PMKISAN_P12", "PMKISAN_P21"]
+  }
+]
