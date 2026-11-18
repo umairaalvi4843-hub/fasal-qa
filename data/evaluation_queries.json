@@ -61,6 +61,7 @@
     {
         "query": "What types of crop damage are covered by PMFBY?",
         "relevant_passages": [
+            "PMFBY_P25",
             "PMFBY_P26"
         ]
     },

@@ -1,0 +1,272 @@
+[
+    {
+        "query": "How to get a KCC loan",
+        "expanded_query": "How to get a KCC loan",
+        "original_top_3": [
+            "KCC_P10",
+            "KCC_P12",
+            "KCC_P7"
+        ],
+        "expanded_top_3": [
+            "KCC_P10",
+            "KCC_P12",
+            "KCC_P7"
+        ],
+        "relevant_passages": [
+            "KCC_P5",
+            "KCC_P12"
+        ],
+        "original_recall": 0.5,
+        "expanded_recall": 0.5,
+        "original_rr": 0.5,
+        "expanded_rr": 0.5
+    },
+    {
+        "query": "Who is eligible for KCC?",
+        "expanded_query": "Who is eligible for KCC?",
+        "original_top_3": [
+            "KCC_P5",
+            "KCC_P13",
+            "KCC_P7"
+        ],
+        "expanded_top_3": [
+            "KCC_P5",
+            "KCC_P13",
+            "KCC_P7"
+        ],
+        "relevant_passages": [
+            "KCC_P8",
+            "KCC_P5",
+            "KCC_P9",
+            "KCC_P13"
+        ],
+        "original_recall": 0.5,
+        "expanded_recall": 0.5,
+        "original_rr": 1.0,
+        "expanded_rr": 1.0
+    },
+    {
+        "query": "What documents are required for KCC?",
+        "expanded_query": "What documents are required for KCC?",
+        "original_top_3": [
+            "KCC_P27",
+            "KCC_P7",
+            "KCC_P12"
+        ],
+        "expanded_top_3": [
+            "KCC_P27",
+            "KCC_P7",
+            "KCC_P12"
+        ],
+        "relevant_passages": [
+            "KCC_P13",
+            "KCC_P12"
+        ],
+        "original_recall": 0.5,
+        "expanded_recall": 0.5,
+        "original_rr": 0.3333333333333333,
+        "expanded_rr": 0.3333333333333333
+    },
+    {
+        "query": "What is the KCC loan limit?",
+        "expanded_query": "What is the KCC loan limit?",
+        "original_top_3": [
+            "KCC_P7",
+            "KCC_P20",
+            "KCC_P11"
+        ],
+        "expanded_top_3": [
+            "KCC_P7",
+            "KCC_P20",
+            "KCC_P11"
+        ],
+        "relevant_passages": [
+            "KCC_P8",
+            "KCC_P5",
+            "KCC_P7",
+            "KCC_P6"
+        ],
+        "original_recall": 0.25,
+        "expanded_recall": 0.25,
+        "original_rr": 1.0,
+        "expanded_rr": 1.0
+    },
+    {
+        "query": "Is collateral required for KCC?",
+        "expanded_query": "Is collateral required for KCC?",
+        "original_top_3": [
+            "KCC_P11",
+            "KCC_P7",
+            "KCC_P12"
+        ],
+        "expanded_top_3": [
+            "KCC_P11",
+            "KCC_P7",
+            "KCC_P12"
+        ],
+        "relevant_passages": [
+            "KCC_P12",
+            "KCC_P11"
+        ],
+        "original_recall": 1.0,
+        "expanded_recall": 1.0,
+        "original_rr": 1.0,
+        "expanded_rr": 1.0
+    },
+    {
+        "query": "Who is eligible for PMFBY crop insurance?",
+        "expanded_query": "Who is eligible for PMFBY crop insurance? eligible farmers insurable interest notified crops tenant farmers sharecroppers loanee non-loanee farmers",
+        "original_top_3": [
+            "PMFBY_P202",
+            "PMFBY_P378",
+            "PMFBY_P376"
+        ],
+        "expanded_top_3": [
+            "PMFBY_P20",
+            "PMFBY_P21",
+            "PMFBY_P330"
+        ],
+        "relevant_passages": [
+            "PMFBY_P24",
+            "PMFBY_P20"
+        ],
+        "original_recall": 0.0,
+        "expanded_recall": 0.5,
+        "original_rr": 0,
+        "expanded_rr": 1.0
+    },
+    {
+        "query": "What premium does a farmer have to pay for crop insurance?",
+        "expanded_query": "What premium does a farmer have to pay for crop insurance? premium rates maximum premium rate payable by farmer sum insured Kharif Rabi food grains oilseeds actuarial rate",
+        "original_top_3": [
+            "PMFBY_P355",
+            "PMFBY_P242",
+            "PMFBY_P100"
+        ],
+        "expanded_top_3": [
+            "PMFBY_P94",
+            "PMFBY_P95",
+            "PMFBY_P100"
+        ],
+        "relevant_passages": [
+            "PMFBY_P94",
+            "PMFBY_P95"
+        ],
+        "original_recall": 0.0,
+        "expanded_recall": 1.0,
+        "original_rr": 0,
+        "expanded_rr": 1.0
+    },
+    {
+        "query": "Which crops are covered under PMFBY?",
+        "expanded_query": "Which crops are covered under PMFBY? coverage of crops food crops cereals millets pulses oilseeds annual commercial horticultural crops",
+        "original_top_3": [
+            "PMFBY_P371",
+            "PMFBY_P370",
+            "PMFBY_P35"
+        ],
+        "expanded_top_3": [
+            "PMFBY_P94",
+            "PMFBY_P25",
+            "PMFBY_P371"
+        ],
+        "relevant_passages": [
+            "PMFBY_P25"
+        ],
+        "original_recall": 0.0,
+        "expanded_recall": 1.0,
+        "original_rr": 0,
+        "expanded_rr": 0.5
+    },
+    {
+        "query": "What types of crop damage are covered by PMFBY?",
+        "expanded_query": "What types of crop damage are covered by PMFBY? coverage of risks and exclusions standing crops sowing harvesting prevented sowing mid-season adversity post-harvest losses localized calamities",
+        "original_top_3": [
+            "PMFBY_P371",
+            "PMFBY_P222",
+            "PMFBY_P372"
+        ],
+        "expanded_top_3": [
+            "PMFBY_P258",
+            "PMFBY_P259",
+            "PMFBY_P211"
+        ],
+        "relevant_passages": [
+            "PMFBY_P25",
+            "PMFBY_P26"
+        ],
+        "original_recall": 0.0,
+        "expanded_recall": 0.0,
+        "original_rr": 0,
+        "expanded_rr": 0
+    },
+    {
+        "query": "How is crop insurance compensation calculated?",
+        "expanded_query": "How is crop insurance compensation calculated?",
+        "original_top_3": [
+            "PMFBY_P193",
+            "PMFBY_P366",
+            "PMFBY_P202"
+        ],
+        "expanded_top_3": [
+            "PMFBY_P193",
+            "PMFBY_P366",
+            "PMFBY_P202"
+        ],
+        "relevant_passages": [
+            "PMFBY_P194",
+            "PMFBY_P193"
+        ],
+        "original_recall": 0.5,
+        "expanded_recall": 0.5,
+        "original_rr": 1.0,
+        "expanded_rr": 1.0
+    },
+    {
+        "query": "How can a farmer apply for PMFBY?",
+        "expanded_query": "How can a farmer apply for PMFBY?",
+        "original_top_3": [
+            "PMFBY_P139",
+            "PMFBY_P136",
+            "PMFBY_P374"
+        ],
+        "expanded_top_3": [
+            "PMFBY_P139",
+            "PMFBY_P136",
+            "PMFBY_P374"
+        ],
+        "relevant_passages": [
+            "PMFBY_P345",
+            "PMFBY_P139",
+            "PMFBY_P136"
+        ],
+        "original_recall": 0.6666666666666666,
+        "expanded_recall": 0.6666666666666666,
+        "original_rr": 1.0,
+        "expanded_rr": 1.0
+    },
+    {
+        "query": "How can farmers file complaints about PMFBY?",
+        "expanded_query": "How can farmers file complaints about PMFBY?",
+        "original_top_3": [
+            "PMFBY_P294",
+            "PMFBY_P300",
+            "PMFBY_P303"
+        ],
+        "expanded_top_3": [
+            "PMFBY_P294",
+            "PMFBY_P300",
+            "PMFBY_P303"
+        ],
+        "relevant_passages": [
+            "PMFBY_P46",
+            "PMFBY_P47",
+            "PMFBY_P303",
+            "PMFBY_P300"
+        ],
+        "original_recall": 0.5,
+        "expanded_recall": 0.5,
+        "original_rr": 0.5,
+        "expanded_rr": 0.5
+    }
+]
